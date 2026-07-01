@@ -2599,6 +2599,40 @@ components:
         - const: "GLN"
           title: "GLN"
           description: "Global Location Number, een wereldwijd uniek nummer om een partij of locatie te identificeren."
+    ClassificationType:
+      description: "Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_0c58977f-b2a6-40e4-bb9e-a098625327ca). Gecontroleerd 01-07-2026: Treehouse toont 1 gepubliceerde waarde."
+      type: string
+      enum:
+        - "NLSFB_tabel1"
+    "ClassificationType.Display":
+      description: "ClassificationType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_0c58977f-b2a6-40e4-bb9e-a098625327ca). Gecontroleerd 01-07-2026: Treehouse toont 1 gepubliceerde waarde."
+      oneOf:
+        - const: "NLSFB_tabel1"
+          title: "NL-SfB tabel 1"
+          description: "Tabel 1 van de elementen classificatie NL-SfB."
+    InstallationLifeCycleStatusType:
+      description: "Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_bb5ef48b-2440-422a-b0f2-c37cc7c977c9). Gecontroleerd 01-07-2026: Treehouse toont 4 gepubliceerde waarden, laatst bijgewerkt 2026-06-30."
+      type: string
+      enum:
+        - "Installed"
+        - "Commissioned"
+        - "Decommissioned"
+        - "Removed"
+    "InstallationLifeCycleStatusType.Display":
+      description: "InstallationLifeCycleStatusType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_bb5ef48b-2440-422a-b0f2-c37cc7c977c9). Gecontroleerd 01-07-2026: Treehouse toont 4 gepubliceerde waarden, laatst bijgewerkt 2026-06-30."
+      oneOf:
+        - const: "Installed"
+          title: "Geinstalleerd"
+          description: "De installatie is geplaatst en aangesloten."
+        - const: "Commissioned"
+          title: "In bedrijf gesteld"
+          description: "De installatie is in bedrijf gesteld (commissioning afgerond)."
+        - const: "Decommissioned"
+          title: "Uit bedrijf genomen"
+          description: "De installatie is uit bedrijf genomen (decommissioning)."
+        - const: "Removed"
+          title: "Verwijderd"
+          description: "De installatie is fysiek verwijderd."
 
 # TODO: codelijsten die WEL op Semantic Treehouse zijn geregistreerd, maar daar nog 0 waarden hebben.
 # Niet invullen met oude concept-waarden uit draft-specs (venetian blind pilot / GIR) -- die zijn niet
@@ -2611,12 +2645,4 @@ x-todoCodelists:
   - name: "LifeCycleStageType"
     bron: "https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_42da2c0b-2100-4a31-b78c-c8ba5f336adc"
     omschrijving: "Levenscyclusfase-codes (vermoedelijk conform EN 15804, A1..D). Geregistreerd op Treehouse, gebruikt door EnvironmentalData v1.0/v2.0, maar daar nog 0 waarden gepubliceerd (gecontroleerd 01-07-2026)."
-    waarden: "nog geen waarden gepubliceerd op Semantic Treehouse"
-  - name: "InstallationLifeCycleStatusType"
-    bron: "https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_bb5ef48b-2440-422a-b0f2-c37cc7c977c9"
-    omschrijving: "Levenscyclusstatus van een installatie. Geregistreerd op Treehouse, gebruikt door 3 GIR Basisdata Message-specs, maar daar nog 0 waarden gepubliceerd (gecontroleerd 01-07-2026)."
-    waarden: "nog geen waarden gepubliceerd op Semantic Treehouse"
-  - name: "ClassificationType"
-    bron: "https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_0c58977f-b2a6-40e4-bb9e-a098625327ca"
-    omschrijving: "Classificatiesysteem voor installaties (bijv. NL-SfB). Geregistreerd op Treehouse, gebruikt door 5 GIR Basisdata Message-specs, maar daar nog 0 waarden gepubliceerd (gecontroleerd 01-07-2026)."
     waarden: "nog geen waarden gepubliceerd op Semantic Treehouse"
