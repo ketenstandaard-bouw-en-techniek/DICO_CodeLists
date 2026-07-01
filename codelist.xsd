@@ -1,0 +1,3084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://www.ketenstandaard.nl/SALES/Codelist"
+	targetNamespace="http://www.ketenstandaard.nl/SALES/Codelist"
+	elementFormDefault="qualified">
+	<!--____________________________________________________________-->
+	<!--                  DICO Standaard CODELIST SALES005                -->
+	<!--____________________________________________________________-->
+	<xs:annotation>
+		<xs:documentation>
+			<Title>DICO Standaard CODELIST SALES005</Title>
+			<!-- Initial releasdate -->
+			<ReleaseDate>2018-11-01</ReleaseDate>
+			<!-- latest revision -->
+			<RevisionDate>2026-05-01</RevisionDate>
+			<ModificationHistory>
+				<date v="2026-05-01">
+					<Changes code="EmissionsType">Added CO2eKG</Changes>
+				</date>
+				<date v="2026-02-05">
+					<Changes code="AttachmentType">Added POD</Changes>
+					<Changes code="ReturnReason">Created list Added 33, 17, WAR, 2, 35, 49, 43, 10, 3, 29, 14</Changes>
+					<Changes code="OrderType">Added 733</Changes>
+					<Changes code="ActionDescriptionType">Added 41</Changes>
+					<Changes code="ClaimType">Added P80, P90, F80, F90, FR80, FR90</Changes>
+				</date>
+				<Date v="2024-06-01">
+					<Changes code="GlassControlMethodType">Created list Added cord, rod, none</Changes>
+					<Changes code="GlassControlPositionType">Created list Added left, right, both</Changes>
+					<Changes code="GlassPositionType">Created list Added left, right, top, bottom</Changes>
+					
+				</Date>
+				<Date v="2023-12-01">
+					<Changes code="AttachmentType">Added LCA, EPD</Changes>
+					<Changes code="CertificateType">Added RoHS, EPD</Changes>
+					<Changes code="SpaceType">Created list Added GCA, OTH</Changes>
+					<Changes code="TaskType">Created list Added INS, MAI, REP</Changes>
+					<Changes code="SeveretyOfSituationType">Created list Added URG, SEV, NOT</Changes>
+					<Changes code="PseudoUoMType">Created list Added PPM</Changes>
+					<Changes code="PartyIDType">Created list Added CRT</Changes>
+					<Changes code="NatureOfNotificationType">Created list Added NO1, NO4, NO2, NO3,	NO5</Changes>
+					<Changes code="MeterReadingTypes">Created list Added MAXBELASTING, LAAG, HOOG, TERUGLAAG, BLINDLAAG, BP, INTEGRAAL, BLINDHOOG, TERUGINTEGRAAL, TERUGHOOG, BLINDINTEGRAAL</Changes>
+					<Changes code="MeasurementType">Created list Added CO</Changes>
+					<Changes code="LocationIDType">Created list Added BAG</Changes>
+					<Changes code="ItemClassificationCodes">Created list Added NETCARE, OTHER, SUPPLY, NETMNGT, MEASURING</Changes>
+					<Changes code="IndicatorType">Created list Added OTH, REACH</Changes>
+					<Changes code="FuelTypes">Created list Added BIO, SOLAR, FOSSIL, WIND, HYDRO</Changes>
+					<Changes code="EnergyUoMType">Created list Added MWH, KWH, MAW, KVA, GWH, WHR, A90, AMP, KWT, 3B, K3, KJO, GV, JOU, KVR</Changes>
+					<Changes code="DeviceType">Created list Added A, B, C</Changes>
+					<Changes code="CommodityCodes">Created list Added 83101500, 83101600, 83101800,	83101900</Changes>
+					<Changes code="ChargeToType">Created list Added DER, GAR, HUU</Changes>
+					<Changes code="BIMStatusType">Created list Added test, incomplete, ready</Changes>
+				</Date>
+				<Date v="2023-01-09">
+					<Changes code="OrderType">Added 732</Changes>
+					<Changes code="VATRateType">Added G, K, L, M, O, Z</Changes>
+				</Date>
+				<Date v="2021-02-08">
+					<Changes code="CheckoutType">Created list Added DEL, PIC</Changes>
+					<Changes code="IoTStatusType">Created list Added URG, PRE, REG</Changes>
+					<Changes code="IoTMessageType">Created list Added ADH, ANA, PLA</Changes>
+					<Changes code="AttachmentType">Added PHO</Changes>
+				</Date>
+				<Date v="2021-02-01">
+					<Changes code="TimeUoMType">Added MON, ANN, SEC</Changes>
+				</Date>
+				<Date v="2019-03-26">
+					<Changes code="AttachmentType">Added LPP</Changes>
+				</Date>
+				<Date v="2019-01-07">
+					<Changes code="CommonChargeType">Added AEQ</Changes>
+					<Changes code="SubChargeType">Deleted AEQ</Changes>
+				</Date>
+				<Date v="2018-11-01">
+					<Changes code="All">Initial release</Changes>
+				</Date>
+				<!-- Format changelog entry
+				<Date v="YYYY-MM-DD">
+				<Changes code="{listname}">Created list Deleted list Added {value1}, {value2} Deleted {value1},
+				{value2}</Changes>
+				</Date>
+				Example:
+				<Date v="2018-11-01">
+				<Changes code="ActionDescriptionType">Deleted 11, 12 Added 4</Changes>
+				<Changes code="AllowanceType">Created list Added ADR, DBD</Changes>
+				</Date>
+				-->
+			</ModificationHistory>
+		</xs:documentation>
+	</xs:annotation>
+	<!-- ________________________Action request/notification description
+	code___________________________________ -->
+	<xs:simpleType name="ActionDescriptionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="4">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">No action</xs:documentation>
+					<xs:documentation xml:lang="NL">(nog) onbekend</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="5">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Accepted without amendment</xs:documentation>
+					<xs:documentation xml:lang="NL">Geaccepteerd zonder wijzigingen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="6">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Accepted with amendment</xs:documentation>
+					<xs:documentation xml:lang="NL">Geaccepteerd met wijzigingen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="7">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Not accepted</xs:documentation>
+					<xs:documentation xml:lang="NL">Niet geaccepteerd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="41">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Proposed for review</xs:documentation>
+					<xs:documentation xml:lang="NL">Voorgesteld ter beoordeling</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Common Allowance type code___________________________________ -->
+	<xs:simpleType name="CommonAllowanceType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ADO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Efficient logistics</xs:documentation>
+					<xs:documentation xml:lang="NL">Logistieke korting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ADR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Other services</xs:documentation>
+					<xs:documentation xml:lang="NL">Overige korting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Sub 1 Allowance type code___________________________________ -->
+	<xs:simpleType name="Sub1AllowanceType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CAC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Cash discount</xs:documentation>
+					<xs:documentation xml:lang="NL">Kontante korting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Sub 2 Allowance type code___________________________________ -->
+	<xs:simpleType name="Sub2AllowanceType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ADZ">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Direct delivery allowance</xs:documentation>
+					<xs:documentation xml:lang="NL">Korting rechtstreekse levering/afwijkend
+						afleveradres</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DAE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Distributor discount/allowance</xs:documentation>
+					<xs:documentation xml:lang="NL">Distributie arrangement korting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DBD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Debtor bound</xs:documentation>
+					<xs:documentation xml:lang="NL">Debiteur gebonden korting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PAD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Promotional allowance</xs:documentation>
+					<xs:documentation xml:lang="NL">Actiekorting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PI">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Pick-up allowance</xs:documentation>
+					<xs:documentation xml:lang="NL">Afhaalkorting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="QD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Quantity discount</xs:documentation>
+					<xs:documentation xml:lang="NL">Staffelkorting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Trade discount</xs:documentation>
+					<xs:documentation xml:lang="NL">Handelskorting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WHE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Wholesaling discount</xs:documentation>
+					<xs:documentation xml:lang="NL">Korting magazijnlevering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="X21">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Special agreement</xs:documentation>
+					<xs:documentation xml:lang="NL">Speciale regeling</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Allowance type code combined___________________________________ -->
+	<xs:simpleType name="AllowanceType">
+		<xs:union memberTypes="CommonAllowanceType Sub1AllowanceType Sub2AllowanceType" />
+	</xs:simpleType>
+	<!-- ________________________Invoice Allowance type code___________________________________ -->
+	<xs:simpleType name="InvoiceAllowanceType">
+		<xs:union memberTypes="CommonAllowanceType Sub1AllowanceType" />
+	</xs:simpleType>
+	<!-- ________________________Order Response Allowance type code____________________________ -->
+	<!-- _____________WARNING: Has overlap with common and sub1/sub2 allowance types___________ -->
+	<xs:simpleType name="OrderResponseAllowanceType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ADR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Other services</xs:documentation>
+					<xs:documentation xml:lang="NL">Overige korting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DBD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Debtor bound</xs:documentation>
+					<xs:documentation xml:lang="NL">Debiteur gebonden korting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PAD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Promotional allowance</xs:documentation>
+					<xs:documentation xml:lang="NL">Actiekorting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Trade discount</xs:documentation>
+					<xs:documentation xml:lang="NL">Handelskorting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Attachment type code___________________________________ -->
+	<xs:simpleType name="AttachmentType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CAD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">CAD object or symbol</xs:documentation>
+					<xs:documentation xml:lang="NL">CAD object of symbool</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CHR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Data sheet</xs:documentation>
+					<xs:documentation xml:lang="NL">Karakteristieken sheet</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FAC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Invoice</xs:documentation>
+					<xs:documentation xml:lang="NL">Factuur</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LOG">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Logo</xs:documentation>
+					<xs:documentation xml:lang="NL">Logo</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LPP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Link to Product Page</xs:documentation>
+					<xs:documentation xml:lang="NL">Link naar de Product Pagina</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MAN">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Manual</xs:documentation>
+					<xs:documentation xml:lang="NL">Handleiding</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MTE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Installation- and maintenance document</xs:documentation>
+					<xs:documentation xml:lang="NL">Installatie- en onderhoudsdocument</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OTA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Others</xs:documentation>
+					<xs:documentation xml:lang="NL">Overige bijlage</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PAR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Exploded view</xs:documentation>
+					<xs:documentation xml:lang="NL">Explosietekening</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PHI">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Product picture high-resolution</xs:documentation>
+					<xs:documentation xml:lang="NL">Productfoto hoge resolutie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PPI">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Product picture low-resolution</xs:documentation>
+					<xs:documentation xml:lang="NL">Productfoto lage resolutie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PRT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Presentation document/brochure</xs:documentation>
+					<xs:documentation xml:lang="NL">Presentatie document/brochure</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PVI">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Presentation video</xs:documentation>
+					<xs:documentation xml:lang="NL">Presentatie video</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SCH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Diagram</xs:documentation>
+					<xs:documentation xml:lang="NL">Schema</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SOF">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Software</xs:documentation>
+					<xs:documentation xml:lang="NL">Software</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="STR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Certificate</xs:documentation>
+					<xs:documentation xml:lang="NL">Certificaat</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PHO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Photo</xs:documentation>
+					<xs:documentation xml:lang="NL">Foto</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EPD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Environmental Product Declaration</xs:documentation>
+					<xs:documentation xml:lang="NL">Milieuproductverklaring</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LCA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Life cycle analysis</xs:documentation>
+					<xs:documentation xml:lang="NL">Levenscyclusanalyse</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="POD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Proof of delivery</xs:documentation>
+					<xs:documentation xml:lang="NL">Bewijs van levering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Certificate type code___________________________________ -->
+	<xs:simpleType name="CertificateType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="FSC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Forest Stewardship Council</xs:documentation>
+					<xs:documentation xml:lang="NL">Forest Stewardship Council</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISPM">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">International Standards For Phytosanitary
+						Measures No. 15</xs:documentation>
+					<xs:documentation xml:lang="NL">International Standards For Phytosanitary
+						Measures No. 15</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KEMA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">KEMA-KEUR</xs:documentation>
+					<xs:documentation xml:lang="NL">KEMA-KEUR</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Keurhout</xs:documentation>
+					<xs:documentation xml:lang="NL">Keurhout</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KIWA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">KIWA</xs:documentation>
+					<xs:documentation xml:lang="NL">KIWA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KOMO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">KOMO</xs:documentation>
+					<xs:documentation xml:lang="NL">KOMO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PEFC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Programme for Endorsement of Forest
+						Certification</xs:documentation>
+					<xs:documentation xml:lang="NL">Programme for Endorsement of Forest
+						Certification</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PVW">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Police quality mark Safe Housing</xs:documentation>
+					<xs:documentation xml:lang="NL">Politiekeurmerk Veilig Wonen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IHM">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Inventory of hazardous materials</xs:documentation>
+					<xs:documentation xml:lang="NL">Inventaris gevaarlijke materialen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SDS">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Safety data sheet</xs:documentation>
+					<xs:documentation xml:lang="NL">Veiligheidsblad</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="REACH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Registration, Evaluation, Authorisation and
+						restriction of CHemicals</xs:documentation>
+					<xs:documentation xml:lang="NL">Registratie, Evaluatie, Authorisatie en
+						restrictie van CHemicaliën</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ART">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">ART mark (motor-)cycle locks</xs:documentation>
+					<xs:documentation xml:lang="NL">ART keurmerk tweewielersloten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Gastec">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Gastec mark</xs:documentation>
+					<xs:documentation xml:lang="NL">Gastec keurmerk</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Gaskeur">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Gaskeur mark</xs:documentation>
+					<xs:documentation xml:lang="NL">Gaskeur keurmerk</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ADR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">European Agreement concerning the International
+						Carriage of Dangerous Goods by Road</xs:documentation>
+					<xs:documentation xml:lang="NL">Europese verdrag voor het internationale vervoer
+						van gevaarlijke goederen over de weg</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UN">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Hazardous materials identification number</xs:documentation>
+					<xs:documentation xml:lang="NL">Identificatienummer gevaarlijke stoffen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GHS">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Globally Harmonized System of Classification and
+						Labelling of Chemicals</xs:documentation>
+					<xs:documentation xml:lang="NL">Wijze van indeling, kenmerking en etikettering
+						van chemische stoffen en preparaten.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LQC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Limited Quantity Value</xs:documentation>
+					<xs:documentation xml:lang="NL">Limited Quantity waarde</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CMR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">United Nations Convention on the Contract for
+						the International Carriage of Goods by Road Information</xs:documentation>
+					<xs:documentation xml:lang="NL">Internationale conventie bij grensoverschrijdend
+						wegvervoer informatie </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DIN">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">DIN information</xs:documentation>
+					<xs:documentation xml:lang="NL">DIN informatie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">ISO information</xs:documentation>
+					<xs:documentation xml:lang="NL">ISO informatie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ECCN">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Export Control Classification Number</xs:documentation>
+					<xs:documentation xml:lang="NL">Export Control Classification Number</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WEEE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Waste of Electrical and Electronic Equipment</xs:documentation>
+					<xs:documentation xml:lang="NL">Richtlijn afgedankte elektrische en
+						elektronische apparatuur (AEEA)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DOP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Declaration of Performance</xs:documentation>
+					<xs:documentation xml:lang="NL">Prestatieverklaring</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EEL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">EU energy label</xs:documentation>
+					<xs:documentation xml:lang="NL">EU energielabel</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ECO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">ECO label</xs:documentation>
+					<xs:documentation xml:lang="NL">ECO label</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seal">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Seal of Approval</xs:documentation>
+					<xs:documentation xml:lang="NL">Keurmerk</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DECL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Suppliers declaration of preferential origin</xs:documentation>
+					<xs:documentation xml:lang="NL">Leveranciersverklaring van preferentiële
+						oorsprong</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CAL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Calibration certificate</xs:documentation>
+					<xs:documentation xml:lang="NL">kalibratiecertificaat</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DOCCE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Declaration of Conformity</xs:documentation>
+					<xs:documentation xml:lang="NL">conformiteitsverklaring</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MTCS">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Malaysian Timber Certification System</xs:documentation>
+					<xs:documentation xml:lang="NL">Malaysian Timber Certification System</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RoHS">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">RoHS Directive (Restriction of Hazardous
+						Substances)</xs:documentation>
+					<xs:documentation xml:lang="NL">RoHS-richtlijn (van het Engelse Restriction of
+						Hazardous Substances - beperking van gevaarlijke stoffen)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EPD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Environmental Product Declaration</xs:documentation>
+					<xs:documentation xml:lang="NL">Milieuproductverklaring</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="8" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Common Charge type code___________________________________ -->
+	<xs:simpleType name="CommonChargeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AAT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Rush delivery</xs:documentation>
+					<xs:documentation xml:lang="NL">Spoed levering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ADR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Other services</xs:documentation>
+					<xs:documentation xml:lang="NL">Overige toeslag</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ADZ">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Direct delivery Charge</xs:documentation>
+					<xs:documentation xml:lang="NL">Toeslag rechtstreekse levering/afwijkend
+						afleveradres</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AEM">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Clerical or administrative services</xs:documentation>
+					<xs:documentation xml:lang="NL">Administratiekosten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AEO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Collection and recycling service</xs:documentation>
+					<xs:documentation xml:lang="NL">Afvalbeheerbijdrage</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Freight charge</xs:documentation>
+					<xs:documentation xml:lang="NL">Vrachtkosten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MAC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Minimum order/minimum billing charge</xs:documentation>
+					<xs:documentation xml:lang="NL">Kleine orderkosten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AEQ">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Charge for exceeding agreed ordered quantity</xs:documentation>
+					<xs:documentation xml:lang="NL">Overschrijdingstoeslag</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Sub Charge type code___________________________________ -->
+	<xs:simpleType name="SubChargeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ABL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Packaging surcharge</xs:documentation>
+					<xs:documentation xml:lang="NL">Verpakkingskosten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AEP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Copyright fee collection services</xs:documentation>
+					<xs:documentation xml:lang="NL">Heffing auteursrechten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="CAI">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Cutting charge</xs:documentation>
+					<xs:documentation xml:lang="NL">Snijkosten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DAE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Distributor discount/allowance</xs:documentation>
+					<xs:documentation xml:lang="NL">Distributie arrangement toeslag</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DBD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Debtor bound</xs:documentation>
+					<xs:documentation xml:lang="NL">Debiteur gebonden toeslag</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Handling</xs:documentation>
+					<xs:documentation xml:lang="NL">Handling</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RAD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Returnable container</xs:documentation>
+					<xs:documentation xml:lang="NL">Statiegeld</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Special handling service</xs:documentation>
+					<xs:documentation xml:lang="NL">Bewerkingstoeslag</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="X21">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Special agreement</xs:documentation>
+					<xs:documentation xml:lang="NL">Speciale regeling</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Sub Charge type code combined___________________________________ -->
+	<xs:simpleType name="ChargeType">
+		<xs:union memberTypes="CommonChargeType SubChargeType" />
+	</xs:simpleType>
+	<!-- _______________________Order Response Charge type code________________________________ -->
+	<!-- _____________WARNING: Has overlap with common and sub charge types____________________ -->
+	<xs:simpleType name="OrderResponseChargeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ABL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Packaging surcharge</xs:documentation>
+					<xs:documentation xml:lang="NL">Verpakkingskosten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ADR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Other services</xs:documentation>
+					<xs:documentation xml:lang="NL">Overige toeslag</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AEO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Collection and recycling service</xs:documentation>
+					<xs:documentation xml:lang="NL">Afvalbeheerbijdrage</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AEP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Copyright fee collection services</xs:documentation>
+					<xs:documentation xml:lang="NL">Heffing auteursrechten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CAI">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Cutting charge</xs:documentation>
+					<xs:documentation xml:lang="NL">Snijkosten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RAD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Returnable container</xs:documentation>
+					<xs:documentation xml:lang="NL">Statiegeld</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Claim type code___________________________________ -->
+	<xs:simpleType name="ClaimType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="F100">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">FSC 100%</xs:documentation>
+					<xs:documentation xml:lang="NL">FSC 100%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="F90">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">FSC mix 90%</xs:documentation>
+					<xs:documentation xml:lang="NL">FSC mix 90%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="F80">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">FSC mix 80%</xs:documentation>
+					<xs:documentation xml:lang="NL">FSC mix 80%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="F70">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">FSC mix 70%</xs:documentation>
+					<xs:documentation xml:lang="NL">FSC mix 70%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FCW">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">FSC Controlled Wood</xs:documentation>
+					<xs:documentation xml:lang="NL">FSC Controlled Wood</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FMC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">FSC Mix Credit</xs:documentation>
+					<xs:documentation xml:lang="NL">FSC Mix Credit</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FR100">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">FSC Recycled 100%</xs:documentation>
+					<xs:documentation xml:lang="NL">FSC Recycled 100%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FR90">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">FSC Recycled 90%</xs:documentation>
+					<xs:documentation xml:lang="NL">FSC Recycled 90%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FR80">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">FSC Recycled 80%</xs:documentation>
+					<xs:documentation xml:lang="NL">FSC Recycled 80%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FR70">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">FSC Recycled 70%</xs:documentation>
+					<xs:documentation xml:lang="NL">FSC Recycled 70%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FRC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">FSC Recycled Credit</xs:documentation>
+					<xs:documentation xml:lang="NL">FSC Recycled Credit</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISPM">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">ISPM 15 cerified</xs:documentation>
+					<xs:documentation xml:lang="NL">ISPM 15 gecertificeerd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Keurhout legal</xs:documentation>
+					<xs:documentation xml:lang="NL">Keurhout legaal</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KL1">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Keurhout sustainable L1</xs:documentation>
+					<xs:documentation xml:lang="NL">Keurhout duurzaam L1</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KL2">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Keurhout sustainable L2</xs:documentation>
+					<xs:documentation xml:lang="NL">Keurhout duurzaam L2</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="P100">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">100% PEFC certified</xs:documentation>
+					<xs:documentation xml:lang="NL">100% PEFC gecertificeerd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="P90">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">90% PEFC certified</xs:documentation>
+					<xs:documentation xml:lang="NL">90% PEFC gecertificeerd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="P80">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">80% PEFC certified</xs:documentation>
+					<xs:documentation xml:lang="NL">80% PEFC gecertificeerd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="P70">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">70% PEFC certified</xs:documentation>
+					<xs:documentation xml:lang="NL">70% PEFC gecertificeer</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RW">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Recycled Wood</xs:documentation>
+					<xs:documentation xml:lang="NL">Recycled Wood</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="8" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Delivery or transport terms description
+	code___________________________________ -->
+	<xs:simpleType name="DeliveryTransportTermsType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="01E">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Contact delivery party before delivery</xs:documentation>
+					<xs:documentation xml:lang="NL">Neem contact op met afleveradres voor levering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="02E">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Despatch goods urgent delivery</xs:documentation>
+					<xs:documentation xml:lang="NL">Verzend goederen met spoed</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="03E">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Special delivery conditions</xs:documentation>
+					<xs:documentation xml:lang="NL">Levering onder speciale condities</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="04E">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Cash on delivery</xs:documentation>
+					<xs:documentation xml:lang="NL">Contant bij aflevering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CFR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Cost and Freight</xs:documentation>
+					<xs:documentation xml:lang="NL">Kostprijs en vracht</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CIF">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Cost, Insurance and Freight </xs:documentation>
+					<xs:documentation xml:lang="NL">Kostprijs, verzekering en vracht</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CIP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Carriage and Insurance Paid To</xs:documentation>
+					<xs:documentation xml:lang="NL">Vrachtvrij inclusief verzekering tot</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CPT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Carriage paid to</xs:documentation>
+					<xs:documentation xml:lang="NL">Vrachtvrij tot</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DAP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Delivered at place</xs:documentation>
+					<xs:documentation xml:lang="NL">Franco ter plaatse</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DAT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Delivered at terminal</xs:documentation>
+					<xs:documentation xml:lang="NL">Franco terminal</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DDP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Delivery duty paid</xs:documentation>
+					<xs:documentation xml:lang="NL">Franco inclusief rechten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EXW">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Ex works</xs:documentation>
+					<xs:documentation xml:lang="NL">Af fabriek</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FAS">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Free alongside ship</xs:documentation>
+					<xs:documentation xml:lang="NL">Vrij langzij schip</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FCA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Free carrier</xs:documentation>
+					<xs:documentation xml:lang="NL">Vrachtvrij tot vervoerder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FOB">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Free on board</xs:documentation>
+					<xs:documentation xml:lang="NL">Vrij aan boord</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RDN">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Return the delivery note signed by the goods
+						recipient</xs:documentation>
+					<xs:documentation xml:lang="NL">Leveringsbon retour ondertekend door ontvanger</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RDP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Return the number of the "proof of delivery"
+						generated by the goods recipient has to be returned</xs:documentation>
+					<xs:documentation xml:lang="NL">Retourneer het aantal 'Proof of delivery'
+						gegenereerd door ontvanger</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Shipment of order split over more than one means
+						of transport</xs:documentation>
+					<xs:documentation xml:lang="NL">Verzending van order verdeeld over meerdere
+						transportmiddelen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Despatch advice structure type
+	code___________________________________ -->
+	<xs:simpleType name="DespatchStructureType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="EANNL1">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Trade items per shipment</xs:documentation>
+					<xs:documentation xml:lang="NL">Artikelen per zending</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EANNL4">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Trade items per despatch unit</xs:documentation>
+					<xs:documentation xml:lang="NL">Artikelen per verzendeenheid</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="17" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Invoice type code___________________________________ -->
+	<xs:simpleType name="InvoiceType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="380">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Commercial invoice</xs:documentation>
+					<xs:documentation xml:lang="NL">Factuur</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="384">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Corrected invoice</xs:documentation>
+					<xs:documentation xml:lang="NL">Correctiefactuur</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Measurement unit code number___________________________________ -->
+	<xs:simpleType name="NumberUoMType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="PCE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Piece</xs:documentation>
+					<xs:documentation xml:lang="NL">Stuk</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Measurement unit code length___________________________________ -->
+	<xs:simpleType name="LengthUoMType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MMT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Millimetre</xs:documentation>
+					<xs:documentation xml:lang="NL">Millimeter</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CMT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Centimetre</xs:documentation>
+					<xs:documentation xml:lang="NL">Centimeter</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MTR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Metre</xs:documentation>
+					<xs:documentation xml:lang="NL">Meter</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Measurement unit code area___________________________________ -->
+	<xs:simpleType name="AreaUoMType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MTK">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Square metre</xs:documentation>
+					<xs:documentation xml:lang="NL">Vierkante meter</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________Measurement unit code angle___________________________________ -->
+	<xs:simpleType name="AngleUoMType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="DD">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Degrees</xs:documentation>
+					<xs:documentation xml:lang="NL">Graden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________Measurement unit code volume___________________________________ -->
+	<xs:simpleType name="VolumeUoMType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MLT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Millilire</xs:documentation>
+					<xs:documentation xml:lang="NL">Milliliter</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LTR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Litre</xs:documentation>
+					<xs:documentation xml:lang="NL">Liter</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MTQ">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Cubic metre</xs:documentation>
+					<xs:documentation xml:lang="NL">Kubieke meter</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Measurement unit code weigth___________________________________ -->
+	<xs:simpleType name="WeightUoMType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="GRM">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Gram</xs:documentation>
+					<xs:documentation xml:lang="NL">Gram</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KGM">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Kilogram</xs:documentation>
+					<xs:documentation xml:lang="NL">Kilogram</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TNE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Metric Ton</xs:documentation>
+					<xs:documentation xml:lang="NL">Ton</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Measurement unit code time___________________________________ -->
+	<xs:simpleType name="TimeUoMType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MIN">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Minute</xs:documentation>
+					<xs:documentation xml:lang="NL">Minuut</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HUR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Hour</xs:documentation>
+					<xs:documentation xml:lang="NL">Uur</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DAY">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Day</xs:documentation>
+					<xs:documentation xml:lang="NL">Dag</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WEE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Week</xs:documentation>
+					<xs:documentation xml:lang="NL">Week</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="MON">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Month</xs:documentation>
+					<xs:documentation xml:lang="NL">Maand</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ANN">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Year</xs:documentation>
+					<xs:documentation xml:lang="NL">Jaar</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SEC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Second</xs:documentation>
+					<xs:documentation xml:lang="NL">Seconde</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________Measurement unit code combined___________________________________ -->
+	<xs:simpleType name="UoMType">
+		<xs:union
+			memberTypes="NumberUoMType LengthUoMType AreaUoMType VolumeUoMType WeightUoMType TimeUoMType AngleUoMType" />
+	</xs:simpleType>
+	<!-- ________________________Measurement unit code combined version
+	2___________________________________ -->
+	<xs:simpleType name="UoMUnionType">
+		<xs:union
+			memberTypes="NumberUoMType LengthUoMType AreaUoMType VolumeUoMType WeightUoMType TimeUoMType AngleUoMType PseudoUoMType" />
+	</xs:simpleType>
+
+	<!-- ________________________Mutation Type Code___________________________________ -->
+	<xs:simpleType name="MutationType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="4">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Change</xs:documentation>
+					<xs:documentation xml:lang="NL">Gewijzigd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Original</xs:documentation>
+					<xs:documentation xml:lang="NL">Origineel</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________Quotation Status Type Code___________________________________ -->
+	<xs:simpleType name="QuotationStatusType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="46">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Provisional</xs:documentation>
+					<xs:documentation xml:lang="NL">Voorlopig</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="49">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Definitive</xs:documentation>
+					<xs:documentation xml:lang="NL">Definitief</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________Quotation Request Status Type
+	Code___________________________________ -->
+	<xs:simpleType name="QuotationRequestStatusType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="6">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Confirmation</xs:documentation>
+					<xs:documentation xml:lang="NL">Akkoord</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="13">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Request</xs:documentation>
+					<xs:documentation xml:lang="NL">Aanvraag/verzoek</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="27">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Not accepted</xs:documentation>
+					<xs:documentation xml:lang="NL">Niet geaccepteerd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="29">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Accepted without amendment</xs:documentation>
+					<xs:documentation xml:lang="NL">Geaccepteerd zonder wijzigingen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<!-- ________________________Order Response Status Type Code___________________________________ -->
+	<xs:simpleType name="OrderResponseStatusType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="4">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Change</xs:documentation>
+					<xs:documentation xml:lang="NL">Gewijzigd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="12">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Not processed</xs:documentation>
+					<xs:documentation xml:lang="NL">Niet verwerkt</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="27">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Not accepted</xs:documentation>
+					<xs:documentation xml:lang="NL">Niet geaccepteerd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="29">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Accepted without amendment</xs:documentation>
+					<xs:documentation xml:lang="NL">Geaccepteerd zonder wijzigingen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________Order type code___________________________________ -->
+	<xs:simpleType name="OrderType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="220">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Order</xs:documentation>
+					<xs:documentation xml:lang="NL">Order</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="402">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Cross docking order</xs:documentation>
+					<xs:documentation xml:lang="NL">Crossdock order</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="732">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Announcement for returns</xs:documentation>
+					<xs:documentation xml:lang="NL">Aanmelding van retouren</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="733">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Instruction for returns</xs:documentation>
+					<xs:documentation xml:lang="NL">Instructie voor retourzendingen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Package type description code___________________________________ -->
+	<xs:simpleType name="PackageDescriptionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="08">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Oneway pallet (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Eenmalige pallet (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="09">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Returnable pallet (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Retour te zenden pallet (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="200">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Pallet ISO 0 - 1/2 EURO Pallet (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Pallet ISO 0 - 1/2 EURO Pallet (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="201">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Pallet ISO 1 - 1/1 EURO Pallet (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Pallet ISO 1 - 1/1 EURO Pallet (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="202">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Pallet ISO 2 (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Pallet ISO 2 (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="203">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">1/4 EURO Pallet (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">1/4 EURO Pallet (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="204">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">1/8 EURO Pallet (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">1/8 EURO Pallet (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="205">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Synthetic pallet ISO 1 (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Synthetische pallet ISO 1 (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="206">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Synthetic pallet ISO 2 (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Synthetische pallet ISO 2 (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="210">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Wholesaler pallet (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Groothandelaar pallet (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="211">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Pallet 80 X 100 cm (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Pallet 80 X 100 cm (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="212">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Pallet 60 X 100 cm (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Pallet 60 X 100 cm (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="APE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Aluminium packed (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Aluminimum verpakt (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BGE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Large bag, pallet sized (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Grote zak, pallet formaat (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BME">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Blister pack (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Blisterverpakking (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BRI">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Brick (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Pak (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CBL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Container bottle like (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Fles-achtige houder (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CCE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Cardboard carrier (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Kartonnen drager (gs1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FOB">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Folding box (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Vouwdoos (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FPE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Foil packed (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Verpakt in metaalfolie (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LAB">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Labeled package (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Verpakt met label (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MPE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Multipack (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Multipack (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OPE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Oxygen packed (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Met zuurstof verpakt (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PAE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Paper (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Papier (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PLP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Peel pack (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Peel pack (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="POP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Cone shaped paper wrapper (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Konische papierer wikkel (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PPE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Polypropylene bag (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Polypropyleenzak (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PUE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Tray packed in plastic (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Tray verpakt in plastic (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RB3">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Wheeled pallet with raised rim. 81 x 60 x 16 cm
+						(length x width x height). (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Pallet op wielen met opstaande rand. 81 x 60 x
+						16 cm (lengte x breedte x hoogte). (GS1-code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RCB">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Two sided cage on wheels with fixing strap (GS1
+						Code) 900 x 770 x 1513 cm (length x width x height)</xs:documentation>
+					<xs:documentation xml:lang="NL">Tweezijdige kooi op wielen met bevestigingsriem
+						(GS1-code) 900 x 770 x 1513 cm (lengte x breedte x hoogte)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SEC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Article Surveillance (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Artikelbeveiliging (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="STL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Stick (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Stick (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TEV">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">A type of package giving easy or immediate
+						recognition that the package has been tampered with after it has been
+						sealed. (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Een verpakking waarvan duidelijk wordt dat deze
+						is aangetast / verbroken / …. na verzegeling. (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="THE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Three pack (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Drie pak (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TRE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Trolley (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Trolley (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TTE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Tube, standing (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Tube, staand (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TWE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Two pack (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Duoverpakking (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UUE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Tube net (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Net (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UVQ">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Wrapped in plastic sheet (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Verpakt in plastic folie (GS1-code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WRP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Wrapper (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Wikkel ()GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="X11">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Banded package (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Verpakking met bandversterking (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="X15">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Oneway pallet ISO 0 - 1/2 Euro Pallet (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Eenmalige pallet ISO 0 - 1/2 Euro Pallet (GS1
+						Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="X16">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Oneway pallet ISO 1 - 1/1 Euro Pallet (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Eenmalige pallet ISO 1 - 1/1 Euro Pallet (GS1
+						Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="X17">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Pallet with exceptional dimensions (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Pallet met uitzonderlijke afmetingen (GS1 Code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="X3">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Standard stack of stones (GS1 Code)</xs:documentation>
+					<xs:documentation xml:lang="NL">Standaard stapel stenen (GS1-code)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Payment means code___________________________________ -->
+	<xs:simpleType name="PaymentMeansType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="10">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">In cash</xs:documentation>
+					<xs:documentation xml:lang="NL">Contant</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="42">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Payment to bank account</xs:documentation>
+					<xs:documentation xml:lang="NL">Op rekening</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="49">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Direct debit</xs:documentation>
+					<xs:documentation xml:lang="NL">Automatische incasso</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Project phase code___________________________________ -->
+	<xs:simpleType name="ProjectPhaseType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="IU">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">In progress</xs:documentation>
+					<xs:documentation xml:lang="NL">In uitvoering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PV">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Pricing</xs:documentation>
+					<xs:documentation xml:lang="NL">Prijsvorming</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Reason no value code___________________________________ -->
+	<xs:simpleType name="ReasonNoValueType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MV">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Missing ETIM value</xs:documentation>
+					<xs:documentation xml:lang="NL">Ontbrekende ETIM waarde</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Not applicable</xs:documentation>
+					<xs:documentation xml:lang="NL">Niet van toepassing</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UN">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Unknown</xs:documentation>
+					<xs:documentation xml:lang="NL">Onbekend</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Relation kind code___________________________________ -->
+	<xs:simpleType name="RelationKindType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Article-article relation</xs:documentation>
+					<xs:documentation xml:lang="NL">Artikel-artikel relatie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Product-product relation</xs:documentation>
+					<xs:documentation xml:lang="NL">Product-product relatie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Relation type code___________________________________ -->
+	<xs:simpleType name="RelationType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ALT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Alternative</xs:documentation>
+					<xs:documentation xml:lang="NL">Alternatief</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BEO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Contains part</xs:documentation>
+					<xs:documentation xml:lang="NL">Bevat onderdeel</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GSP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Mirrored</xs:documentation>
+					<xs:documentation xml:lang="NL">Gespiegeld</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HOB">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Belongs to</xs:documentation>
+					<xs:documentation xml:lang="NL">Hoort bij</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KNZ">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Can not without</xs:documentation>
+					<xs:documentation xml:lang="NL">Kan niet zonder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ONV">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Part of</xs:documentation>
+					<xs:documentation xml:lang="NL">Onderdeel van</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OPV">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">successor</xs:documentation>
+					<xs:documentation xml:lang="NL">Opvolger</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RES">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Spare</xs:documentation>
+					<xs:documentation xml:lang="NL">Reserve</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TEP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Technical fit</xs:documentation>
+					<xs:documentation xml:lang="NL">Technisch passend</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VOO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">predecessor</xs:documentation>
+					<xs:documentation xml:lang="NL">Voorganger</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________ROHS indicator code___________________________________ -->
+	<xs:simpleType name="ROHSIndicatorType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="J">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">ROHS applicable</xs:documentation>
+					<xs:documentation xml:lang="NL">ROHS van toepassing</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="N">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">ROHS not applicable</xs:documentation>
+					<xs:documentation xml:lang="NL">ROHS niet van toepassing</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="V">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">ROHS exempt</xs:documentation>
+					<xs:documentation xml:lang="NL">ROHS vrijgesteld </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Special condition code___________________________________ -->
+	<xs:simpleType name="SpecialConditionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="125">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">New item, not yet available</xs:documentation>
+					<xs:documentation xml:lang="NL">Inlopend</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="126">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">New, available</xs:documentation>
+					<xs:documentation xml:lang="NL">Nieuw, beschikbaar (lopend)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="130">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Discontinued</xs:documentation>
+					<xs:documentation xml:lang="NL">Vervallen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="155">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Destroy publication</xs:documentation>
+					<xs:documentation xml:lang="NL">Vernietig publicatie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="175">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Suspended</xs:documentation>
+					<xs:documentation xml:lang="NL">Geschorst</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="94E">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Deletion, announcement only</xs:documentation>
+					<xs:documentation xml:lang="NL">Uitlopend</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Terms type code___________________________________ -->
+	<xs:simpleType name="TermsType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Promotional term</xs:documentation>
+					<xs:documentation xml:lang="NL">Actieconditie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Basic term</xs:documentation>
+					<xs:documentation xml:lang="NL">Basisconditie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Project term</xs:documentation>
+					<xs:documentation xml:lang="NL">Projectconditie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Transport instruction type code___________________________________ -->
+	<xs:simpleType name="TransportInstructionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CRN">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Take back packaging</xs:documentation>
+					<xs:documentation xml:lang="NL">Verpakking retour nemen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="G05">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Maximum package weight 500 KG</xs:documentation>
+					<xs:documentation xml:lang="NL">Collogewicht maximaal 500 KG</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="G07">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Maximum package weight 700 KG</xs:documentation>
+					<xs:documentation xml:lang="NL">Collogewicht maximaal 700 KG</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="G10">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Maximum package weight 1000 KG</xs:documentation>
+					<xs:documentation xml:lang="NL">Collogewicht maximaal 1000 KG</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="G12">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Maximum package weight 1200 KG</xs:documentation>
+					<xs:documentation xml:lang="NL">Collogewicht maximaal 1200 KG</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="G15">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Maximum package weight 1500 KG</xs:documentation>
+					<xs:documentation xml:lang="NL">Collogewicht maximaal 1500 KG</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="G20">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Maximum package weight 2000 KG</xs:documentation>
+					<xs:documentation xml:lang="NL">Collogewicht maximaal 2000 KG</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="G25">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Maximum package weight 2500 KG</xs:documentation>
+					<xs:documentation xml:lang="NL">Collogewicht maximaal 2500 KG</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="G30">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Maximum package weight 3000 KG</xs:documentation>
+					<xs:documentation xml:lang="NL">Collogewicht maximaal 3000 KG</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="G40">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Maximum package weight 4000 KG</xs:documentation>
+					<xs:documentation xml:lang="NL">Collogewicht maximaal 4000 KG</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IEU">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Deliver the order in one shipment</xs:documentation>
+					<xs:documentation xml:lang="NL">Bestelling in 1 keer uitleveren</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IRM">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Deliver the remains with this delivery</xs:documentation>
+					<xs:documentation xml:lang="NL">Restanten meeleveren</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MCH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Driver has to register</xs:documentation>
+					<xs:documentation xml:lang="NL">Chauffeur meldt zich aan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MVA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Pre-register shipment</xs:documentation>
+					<xs:documentation xml:lang="NL">Zending vooraf aanmelden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PAF">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Always cover package</xs:documentation>
+					<xs:documentation xml:lang="NL">Collo altijd afdekken</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PBE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Protect products</xs:documentation>
+					<xs:documentation xml:lang="NL">Producten beschermen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PDV">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Transport the products dry</xs:documentation>
+					<xs:documentation xml:lang="NL">Producten droog vervoeren</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PIN">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Separate each product</xs:documentation>
+					<xs:documentation xml:lang="NL">Producten individueel scheiden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PLA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Load products at the back side</xs:documentation>
+					<xs:documentation xml:lang="NL">Producten laden aan achterzijde</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PLL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Load products at the left side</xs:documentation>
+					<xs:documentation xml:lang="NL">Producten laden aan linkerzijde</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PLR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Load products at the right side</xs:documentation>
+					<xs:documentation xml:lang="NL">Producten laden aan rechterzijde</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PLV">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Load products at the front side</xs:documentation>
+					<xs:documentation xml:lang="NL">Producten laden aan voorzijde</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="POH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Unload with synthetic slings</xs:documentation>
+					<xs:documentation xml:lang="NL">Lossen met kunststof hijsbanden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="POT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Unload with forklift</xs:documentation>
+					<xs:documentation xml:lang="NL">Lossen met heftruck</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SEP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Pack separately</xs:documentation>
+					<xs:documentation xml:lang="NL">Separaat verpakken</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VDA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Truck with turnable rear axis</xs:documentation>
+					<xs:documentation xml:lang="NL">Vrachtwagen met draaibare achteras</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VEA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Truck with single-axle trailer</xs:documentation>
+					<xs:documentation xml:lang="NL">Vrachtwagen met een-assige trailer</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VKO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Short truck</xs:documentation>
+					<xs:documentation xml:lang="NL">Korte vrachtwagen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VKR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Truck with crane</xs:documentation>
+					<xs:documentation xml:lang="NL">Vrachtwagen met kraan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VLA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Long truck</xs:documentation>
+					<xs:documentation xml:lang="NL">Lange vrachtwagen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VLK">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Truck with load lift</xs:documentation>
+					<xs:documentation xml:lang="NL">Vrachtwagen met laadklep</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________Value Type Code___________________________________ -->
+	<xs:simpleType name="ValueType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="A">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Alpha numeric</xs:documentation>
+					<xs:documentation xml:lang="NL">Alfanumeriek</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JN">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Yes, No (boolean)</xs:documentation>
+					<xs:documentation xml:lang="NL">Ja, Nee (boolean)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="N">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Numeric</xs:documentation>
+					<xs:documentation xml:lang="NL">Numeriek</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________VAT rate code___________________________________ -->
+	<xs:simpleType name="VATRateType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">VAT reverse charge</xs:documentation>
+					<xs:documentation xml:lang="NL">BTW verlegd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="E">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Exempt from tax</xs:documentation>
+					<xs:documentation xml:lang="NL">Vrijgesteld tarief</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="G">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Free export item, tax not charged</xs:documentation>
+					<xs:documentation xml:lang="NL">Gratis exportitem, geen belasting geheven</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="K">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">VAT exempt for EEA intra-community supply of
+						goods and services</xs:documentation>
+					<xs:documentation xml:lang="NL">BTW-vrijgesteld voor
+						binnen-EEA-intracommunautaire levering van goederen en diensten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="L">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Canary Islands general indirect tax</xs:documentation>
+					<xs:documentation xml:lang="NL">Kanarische eilanden algemene omzetbelasting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="M">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Tax for production, services and importation in
+						Ceuta and Melilla</xs:documentation>
+					<xs:documentation xml:lang="NL">Belasting voor productie, diensten en invoer op
+						Ceuta en Melilla</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="O">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Service outside scope of tax</xs:documentation>
+					<xs:documentation xml:lang="NL">Dienst buiten het belastinggebied</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="S">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Standard rate</xs:documentation>
+					<xs:documentation xml:lang="NL">Standaard tarief</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Z">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Zero rated goods</xs:documentation>
+					<xs:documentation xml:lang="NL">Goederen met een nul tarief</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________  Charge to code (Ten laste van
+	code)___________________________________ -->
+	<xs:simpleType name="ChargeToType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="GAR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Charge to warranty</xs:documentation>
+					<xs:documentation xml:lang="NL">Ten laste van garantie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HUU">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Charge to tenant</xs:documentation>
+					<xs:documentation xml:lang="NL">Ten laste van huurder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DER">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Charge to third party</xs:documentation>
+					<xs:documentation xml:lang="NL">Ten laste van derden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________  Checkout Code ___________________________________ -->
+	<xs:simpleType name="CheckoutType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="DEL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Delivery</xs:documentation>
+					<xs:documentation xml:lang="NL">Bezorgen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PIC">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Pick up</xs:documentation>
+					<xs:documentation xml:lang="NL">Ophalen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________  IoTMessage Code ___________________________________ -->
+	<xs:simpleType name="IoTMessageType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ADH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Ad Hoc</xs:documentation>
+					<xs:documentation xml:lang="NL">Ad Hoc</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ANA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Mandatory analysis</xs:documentation>
+					<xs:documentation xml:lang="NL">Analyse verplicht</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PLA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Plannable</xs:documentation>
+					<xs:documentation xml:lang="NL">Planbaar</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________  IoTStatus Code ___________________________________ -->
+	<xs:simpleType name="IoTStatusType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="FAT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Fatal</xs:documentation>
+					<xs:documentation xml:lang="NL">Ernstige fout waardoor de toepassing niet kan
+						worden voortgezet.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DEB">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Debug</xs:documentation>
+					<xs:documentation xml:lang="NL">Een algemeen foutopsporingsbericht.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="INF">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Info</xs:documentation>
+					<xs:documentation xml:lang="NL">Melding heeft een informatief doel.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TRA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Trace</xs:documentation>
+					<xs:documentation xml:lang="NL">Gedetailleerd foutopsporingsbericht.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WAR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Warn</xs:documentation>
+					<xs:documentation xml:lang="NL">Gebeurtenis die mogelijk tot een fout zou kunnen
+						leiden.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ERR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Error</xs:documentation>
+					<xs:documentation xml:lang="NL">Fout in de applicatie, mogelijk herstelbaar.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  TaskType Code ___________________________________ -->
+	<xs:simpleType name="TaskType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="INS">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Installation</xs:documentation>
+					<xs:documentation xml:lang="NL">Installatie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MAI">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Maintenance</xs:documentation>
+					<xs:documentation xml:lang="NL">Onderhoud</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="REP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Repair</xs:documentation>
+					<xs:documentation xml:lang="NL">Reparatie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________  SpaceType Code ___________________________________ -->
+	<xs:simpleType name="SpaceType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="GCA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Gas combustion appliance staging area</xs:documentation>
+					<xs:documentation xml:lang="NL">Opstelruimte Gasverbrandingstoestel</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OTH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Other</xs:documentation>
+					<xs:documentation xml:lang="NL">Overige</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  SeverityOfSituationType Code ___________________________________ -->
+	<xs:simpleType name="SeverityOfSituationType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="URG">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Urgent and action desired by Competent Authority
+						[legal notification based on Article 1.38 of Building Regulations 2012]</xs:documentation>
+					<xs:documentation xml:lang="NL">Urgent en aktie Bevoegd Gezag gewenst
+						[wettelijke melding op grond van artikel 1.38 Bouwbesluit 2012]</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SEV">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Serious, but resolved and no objections [legal
+						notification based on Article 1.38 of Building Regulations 2012]</xs:documentation>
+					<xs:documentation xml:lang="NL">Ernstig, maar opgelost en geen bezwaren
+						[wettelijke melding op grond van artikel 1.38 Bouwbesluit 2012]</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NOT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Notification [decision to Competent Authority]</xs:documentation>
+					<xs:documentation xml:lang="NL">Melding [oordeel aan Bevoegd Gezag]</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  PseudoUoMType Code ___________________________________ -->
+	<xs:simpleType name="PseudoUoMType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="PPM">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Parts per million</xs:documentation>
+					<xs:documentation xml:lang="NL">Delen per miljoen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  PartyIDType Code ___________________________________ -->
+	<xs:simpleType name="PartyIDType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CRT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Number provided by Centraal Register Techniek</xs:documentation>
+					<xs:documentation xml:lang="NL">Nummer uitgegeven door Centraal Register
+						Techniek</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  NatureOfNotificationType Code ___________________________________ -->
+	<xs:simpleType name="NatureOfNotificationType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NO1">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Notification 1: Urgent advice; Installation has
+						no objections after accident report and has been put into operation</xs:documentation>
+					<xs:documentation xml:lang="NL">Melding 1: dringend advies; Installatie geen
+						bezwaar na ongevalsmelding en in bedrijf gesteld</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NO4">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Notification 4: Urgent advice; Installation does
+						not comply with Building Regulations and/or manufacturer's requirements and
+						is an unsafe situation</xs:documentation>
+					<xs:documentation xml:lang="NL">Melding 4: dringend advies; Installatie voldoet
+						niet aan Bouwbesluit en/of fabrikanten(en)voorschriften en is een onveilige
+						situatie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NO2">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Notification 2: URGENT mandatory; Installation
+						has been taken out of operation and not put into operation (unsafe
+						situation)</xs:documentation>
+					<xs:documentation xml:lang="NL">Melding 2: URGENT verplicht; Installatie uit
+						bedrijf genomen en niet in bedrijf gesteld (onveilige situatie)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NO3">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Notification 3: Mandatory; Installation has no
+						objections and has been put into operation</xs:documentation>
+					<xs:documentation xml:lang="NL">Melding 3: verplicht; Installatie geen bezwaar
+						en in bedrijf gesteld</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NO5">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Notification 5: Not a legal notification and for
+						information purposes to the Building Control Department; see description of
+						the situation for Competent Authority</xs:documentation>
+					<xs:documentation xml:lang="NL">Melding 5: geen wettelijke melding en ter
+						informatie aan BWT; zie beschrijving situatie voor Bevoegd Gezag</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________  MeterReadingTypes Code ___________________________________ -->
+	<xs:simpleType name="MeterReadingTypes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MAXBELASTING">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Maximale belasting</xs:documentation>
+					<xs:documentation xml:lang="NL">Maximale belasting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LAAG">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Levering laag/dal/nacht (in geval dubbel
+						telwerk)</xs:documentation>
+					<xs:documentation xml:lang="NL">Levering laag/dal/nacht (in geval dubbel
+						telwerk)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HOOG">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Levering hoog/piek/dag/normaal (in geval dubbel
+						telwerk)</xs:documentation>
+					<xs:documentation xml:lang="NL">Levering hoog/piek/dag/normaal (in geval dubbel
+						telwerk)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TERUGLAAG">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Teruglevering laag/dal/nacht (in geval dubbel
+						telwerk)</xs:documentation>
+					<xs:documentation xml:lang="NL">Teruglevering laag/dal/nacht (in geval dubbel
+						telwerk)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BLINDLAAG">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Blindverbruik laag/dal/nacht (in geval dubbel
+						telwerk)</xs:documentation>
+					<xs:documentation xml:lang="NL">Blindverbruik laag/dal/nacht (in geval dubbel
+						telwerk)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Bruto productie (van WKK, Windmolen,
+						Zonnepaneel, etc)</xs:documentation>
+					<xs:documentation xml:lang="NL">Bruto productie (van WKK, Windmolen,
+						Zonnepaneel, etc)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="INTEGRAAL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Levering enkel/normaal (in geval enkel telwerk)</xs:documentation>
+					<xs:documentation xml:lang="NL">Levering enkel/normaal (in geval enkel telwerk)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BLINDHOOG">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Blindverbruik hoog (in geval dubbel telwerk)</xs:documentation>
+					<xs:documentation xml:lang="NL">Blindverbruik hoog (in geval dubbel telwerk)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TERUGINTEGRAAL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Teruglevering enkel/normaal (in geval enkel
+						telwerk)</xs:documentation>
+					<xs:documentation xml:lang="NL">Teruglevering enkel/normaal (in geval enkel
+						telwerk)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TERUGHOOG">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Teruglevering hoog/piek/dag/normaal (in geval
+						dubbel telwerk)</xs:documentation>
+					<xs:documentation xml:lang="NL">Teruglevering hoog/piek/dag/normaal (in geval
+						dubbel telwerk)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BLINDINTEGRAAL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Blindverbruik normaal (in geval enkel telwerk)</xs:documentation>
+					<xs:documentation xml:lang="NL">Blindverbruik normaal (in geval enkel telwerk)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  MeasurementType Code ___________________________________ -->
+	<xs:simpleType name="MeasurementType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Carbon monoxide measurement</xs:documentation>
+					<xs:documentation xml:lang="NL">Koolstofmonoxide meting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  LocationIDType Code ___________________________________ -->
+	<xs:simpleType name="LocationIDType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BAG">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">BAG ID: identifying characteristic as recorded
+						in the BAG (Basic Registration of Addresses and Buildings).</xs:documentation>
+					<xs:documentation xml:lang="NL">BAG ID: identificerend kenmerk zoals opgenomen
+						in de BAG (Basisregistratie Adressen en Gebouwen).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  ItemClassificationCodes Code ___________________________________ -->
+	<xs:simpleType name="ItemClassificationCodes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NETCARE">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Netcare</xs:documentation>
+					<xs:documentation xml:lang="NL">Netcare</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OTHER">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Overig</xs:documentation>
+					<xs:documentation xml:lang="NL">Overig</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SUPPLY">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Levering</xs:documentation>
+					<xs:documentation xml:lang="NL">Levering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NETMNGT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Netbeheer</xs:documentation>
+					<xs:documentation xml:lang="NL">Netbeheer</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MEASURING">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Meetdienst</xs:documentation>
+					<xs:documentation xml:lang="NL">Meetdienst</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  IndicatorType Code ___________________________________ -->
+	<xs:simpleType name="IndicatorType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OTH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Other</xs:documentation>
+					<xs:documentation xml:lang="NL">Overig</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="REACH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Indication, if the product contains a &quot;SVHC
+						= substance of very high concern&quot; in a concentration of more than 0.1
+						mass percentage (referring to the candidates/substances that were published
+						by ECHA at the previous given date). Possible values (lowercase!): -
+						&quot;true&quot; contains substances &gt; 0.1 mass percentage -
+						&quot;false&quot; does not contain substances &gt;0.1 mass percentage -
+						&quot;no data&quot; if REACH info is not yet available for a certain
+						product. If &quot;true&quot; is given, a deeplink to info is mandatory</xs:documentation>
+					<xs:documentation xml:lang="NL">Aanduiding of het product een &quot;SVHC = zeer
+						zorgwekkende stof&quot; bevat in een concentratie van meer dan 0,1
+						massaprocent (verwijzend naar de kandidaten/stoffen die door ECHA werden
+						gepubliceerd op de vorige opgegeven datum). Mogelijke waarden (kleine
+						letters!): - &quot;true&quot; bevat stoffen &gt; 0.1 massapercentage -
+						&quot;false&quot; bevat geen stoffen &gt; 0.1 massapercentage - &quot;Geen
+						gegevens&quot; als er nog geen REACH-informatie beschikbaar is voor een
+						bepaald product. Als &quot;true&quot; is gegeven, is een deeplink naar info
+						verplicht</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  FuelTypes Code ___________________________________ -->
+	<xs:simpleType name="FuelTypes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BIO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Biomassa</xs:documentation>
+					<xs:documentation xml:lang="NL">Biomassa</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SOLAR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Zonne-energie</xs:documentation>
+					<xs:documentation xml:lang="NL">Zonne-energie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FOSSIL">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Fossiele branstof</xs:documentation>
+					<xs:documentation xml:lang="NL">Fossiele branstof</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WIND">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Windenergie</xs:documentation>
+					<xs:documentation xml:lang="NL">Windenergie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HYDRO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Waterkracht</xs:documentation>
+					<xs:documentation xml:lang="NL">Waterkracht</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  EnergyUoMType Code ___________________________________ -->
+	<xs:simpleType name="EnergyUoMType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MWH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Megawatt hour</xs:documentation>
+					<xs:documentation xml:lang="NL">Megawattuur</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KWH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Kilowatt hour</xs:documentation>
+					<xs:documentation xml:lang="NL">Kilowattuur</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MAW">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Megawatt</xs:documentation>
+					<xs:documentation xml:lang="NL">Megawatt</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KVA">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Kilovolt ampere</xs:documentation>
+					<xs:documentation xml:lang="NL">Kilovoltampère</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GWH">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Gigawatt hour</xs:documentation>
+					<xs:documentation xml:lang="NL">Gigawattuur</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WHR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Watt hour</xs:documentation>
+					<xs:documentation xml:lang="NL">Watthour</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="A90">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Gigawatt</xs:documentation>
+					<xs:documentation xml:lang="NL">Gigawatt</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AMP">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Ampere</xs:documentation>
+					<xs:documentation xml:lang="NL">Ampère</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KWT">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Kilowatt</xs:documentation>
+					<xs:documentation xml:lang="NL">Kilowatt</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3B">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Megajoule</xs:documentation>
+					<xs:documentation xml:lang="NL">Megajoule</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="K3">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Kilovolt ampere reactive hours</xs:documentation>
+					<xs:documentation xml:lang="NL">Kilovoltampère reactieve uren</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KJO">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Kilojoule</xs:documentation>
+					<xs:documentation xml:lang="NL">Kilojoule</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GV">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Gigajoule</xs:documentation>
+					<xs:documentation xml:lang="NL">Gigajoule</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JOU">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Joule</xs:documentation>
+					<xs:documentation xml:lang="NL">Joule</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KVR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Kilovolt ampere (reactive)</xs:documentation>
+					<xs:documentation xml:lang="NL">Kilovoltampère (reactief)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  DeviceType Code ___________________________________ -->
+	<xs:simpleType name="DeviceType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="A">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Type toestel A</xs:documentation>
+					<xs:documentation xml:lang="NL">Type toestel A</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="B">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Type toestel B</xs:documentation>
+					<xs:documentation xml:lang="NL">Type toestel B</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="C">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Type toestel C</xs:documentation>
+					<xs:documentation xml:lang="NL">Type toestel C</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  CommodityCodes Code ___________________________________ -->
+	<xs:simpleType name="CommodityCodes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="83101500">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Water</xs:documentation>
+					<xs:documentation xml:lang="NL">Water</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="83101600">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Gas</xs:documentation>
+					<xs:documentation xml:lang="NL">Gas</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="83101800">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Elektriciteit</xs:documentation>
+					<xs:documentation xml:lang="NL">Elektriciteit</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="83101900">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Warmte en Koude</xs:documentation>
+					<xs:documentation xml:lang="NL">Warmte en Koude</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  MeterReadingMethods Code ___________________________________ -->
+	<xs:simpleType name="MeterReadingMethods">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MRM005">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Berekend door leverancier</xs:documentation>
+					<xs:documentation xml:lang="NL">Berekend door leverancier</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MRM007">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Berekend/geschat door Meetbedrijf</xs:documentation>
+					<xs:documentation xml:lang="NL">Berekend/geschat door Meetbedrijf</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MRM004">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Automatisch door slimme meter</xs:documentation>
+					<xs:documentation xml:lang="NL">Automatisch door slimme meter</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MRM003">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Opname door klant</xs:documentation>
+					<xs:documentation xml:lang="NL">Opname door klant</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MRM002">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Opname door netbeheerder</xs:documentation>
+					<xs:documentation xml:lang="NL">Opname door netbeheerder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MRM008">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Berekend/geschat door Netbeheerder</xs:documentation>
+					<xs:documentation xml:lang="NL">Berekend/geschat door Netbeheerder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MRM006">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Berekend/geschat door Partij Verantwoordelijke
+						(PV)</xs:documentation>
+					<xs:documentation xml:lang="NL">Berekend/geschat door Partij Verantwoordelijke
+						(PV)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MRM001">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Opname door meetbedrijf</xs:documentation>
+					<xs:documentation xml:lang="NL">Opname door meetbedrijf</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________  BIMStatusType Code ___________________________________ -->
+	<xs:simpleType name="BIMStatusType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="test">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">BIM data has the test status.</xs:documentation>
+					<xs:documentation xml:lang="NL">BIM-gegevens hebben de teststatus.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="incomplete">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">BIM data is not complete.</xs:documentation>
+					<xs:documentation xml:lang="NL">BIM-gegevens zijn niet compleet.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ready">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">BIM data is complete and ready for use in a BIM
+						environment.</xs:documentation>
+					<xs:documentation xml:lang="NL">BIM-gegevens zijn volledig en klaar voor gebruik
+						in een BIM-omgeving.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="10" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  GlassControlMethodType Code ___________________________________ -->
+	<xs:simpleType name="GlassControlMethodType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="cord">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Cord</xs:documentation>
+					<xs:documentation xml:lang="NL">Koord</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rod">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Rod</xs:documentation>
+					<xs:documentation xml:lang="NL">Stang</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="none">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">None</xs:documentation>
+					<xs:documentation xml:lang="NL">Geen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="4" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  GlassControlPositionType Code ___________________________________ -->
+	<xs:simpleType name="GlassControlPositionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="left">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">left</xs:documentation>
+					<xs:documentation xml:lang="NL">Links</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="right">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Right</xs:documentation>
+					<xs:documentation xml:lang="NL">Rechts</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="both">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Both sides</xs:documentation>
+					<xs:documentation xml:lang="NL">Beide kanten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="10" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________  GlassPositionType Code ___________________________________ -->
+	<xs:simpleType name="GlassPositionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="left">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">left</xs:documentation>
+					<xs:documentation xml:lang="NL">Links</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="right">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Right</xs:documentation>
+					<xs:documentation xml:lang="NL">Rechts</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="top">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Top side</xs:documentation>
+					<xs:documentation xml:lang="NL">Boven</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="bottom">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Bottom side</xs:documentation>
+					<xs:documentation xml:lang="NL">Onder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="10" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ________________________  ReturnReasonType Code ___________________________________ -->
+	<xs:simpleType name="ReturnReasonType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="33">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Late delivery</xs:documentation>
+					<xs:documentation xml:lang="NL">Te late levering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="17">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Transport damage</xs:documentation>
+					<xs:documentation xml:lang="NL">Transportschade</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WAR">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Warranty</xs:documentation>
+					<xs:documentation xml:lang="NL">Aangemeld voor garantie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Quality problem</xs:documentation>
+					<xs:documentation xml:lang="NL">Kwaliteitsprobleem</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="35">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">General return</xs:documentation>
+					<xs:documentation xml:lang="NL">Algemene retour</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="49">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Replacement product not fully according to desired specification</xs:documentation>
+					<xs:documentation xml:lang="NL">Vervangings product niet volledig volgens gewenste specificatie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="43">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Unknown reason</xs:documentation>
+					<xs:documentation xml:lang="NL">Onbekende reden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="10">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Price error</xs:documentation>
+					<xs:documentation xml:lang="NL">Prijsfout</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">General damage</xs:documentation>
+					<xs:documentation xml:lang="NL">Beschadiging algemeen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="29">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Customer refusal</xs:documentation>
+					<xs:documentation xml:lang="NL">Klant weigert</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="14">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Wrong article</xs:documentation>
+					<xs:documentation xml:lang="NL">Verkeerd artikel</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ________________________  EmissionsType Code ___________________________________ -->
+	<xs:simpleType name="EmissionsType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CO2eKG">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">Total greenhouse gas emissions, expressed in kilograms of CO₂ equivalent, divided by the mass of output/products produced in kilograms. This indicator shows how much CO₂ emissions are associated on average with each kilogram of goods produced. As referred to in ESRS E1, paragraph 53 of the CSRD.</xs:documentation>
+					<xs:documentation xml:lang="NL">Totale uitstoot van broeikasgassen, uitgedrukt in kilogram CO₂-equivalent, gedeeld door de massa van de geproduceerde output/producten in kilogram. Deze indicator toont hoeveel CO₂-uitstoot gemiddeld gepaard gaat met elke kilogram geproduceerde goederen. Zoals bedoeld in ESRS E1, paragraaf 53 van de CSRD.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:minLength value="1" />
+			<xs:maxLength value="6" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

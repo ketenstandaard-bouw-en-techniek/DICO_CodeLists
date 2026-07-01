@@ -1,0 +1,2584 @@
+# Auto-generated from codelist.xsd (DICO Standaard CODELIST SALES005)
+# Regenerate with scripts/generate_codelist_yaml.py -- do not hand-edit.
+# Bundled single-file codelist collection per DECISIONS.md D19/D20/D29
+# (D29 herzien 01-07-2026: bundeling per domein i.p.v. losse bestanden per codelijst, zie O04).
+x-title: "DICO Standaard CODELIST SALES005"
+x-releaseDate: "2018-11-01"
+x-revisionDate: "2026-05-01"
+x-modificationHistory:
+  - date: "2026-05-01"
+    changes:
+      - code: "EmissionsType"
+        description: "Added CO2eKG"
+  - date: "2026-02-05"
+    changes:
+      - code: "AttachmentType"
+        description: "Added POD"
+      - code: "ReturnReason"
+        description: "Created list Added 33, 17, WAR, 2, 35, 49, 43, 10, 3, 29, 14"
+      - code: "OrderType"
+        description: "Added 733"
+      - code: "ActionDescriptionType"
+        description: "Added 41"
+      - code: "ClaimType"
+        description: "Added P80, P90, F80, F90, FR80, FR90"
+  - date: "2024-06-01"
+    changes:
+      - code: "GlassControlMethodType"
+        description: "Created list Added cord, rod, none"
+      - code: "GlassControlPositionType"
+        description: "Created list Added left, right, both"
+      - code: "GlassPositionType"
+        description: "Created list Added left, right, top, bottom"
+  - date: "2023-12-01"
+    changes:
+      - code: "AttachmentType"
+        description: "Added LCA, EPD"
+      - code: "CertificateType"
+        description: "Added RoHS, EPD"
+      - code: "SpaceType"
+        description: "Created list Added GCA, OTH"
+      - code: "TaskType"
+        description: "Created list Added INS, MAI, REP"
+      - code: "SeveretyOfSituationType"
+        description: "Created list Added URG, SEV, NOT"
+      - code: "PseudoUoMType"
+        description: "Created list Added PPM"
+      - code: "PartyIDType"
+        description: "Created list Added CRT"
+      - code: "NatureOfNotificationType"
+        description: "Created list Added NO1, NO4, NO2, NO3, NO5"
+      - code: "MeterReadingTypes"
+        description: "Created list Added MAXBELASTING, LAAG, HOOG, TERUGLAAG, BLINDLAAG, BP, INTEGRAAL, BLINDHOOG, TERUGINTEGRAAL, TERUGHOOG, BLINDINTEGRAAL"
+      - code: "MeasurementType"
+        description: "Created list Added CO"
+      - code: "LocationIDType"
+        description: "Created list Added BAG"
+      - code: "ItemClassificationCodes"
+        description: "Created list Added NETCARE, OTHER, SUPPLY, NETMNGT, MEASURING"
+      - code: "IndicatorType"
+        description: "Created list Added OTH, REACH"
+      - code: "FuelTypes"
+        description: "Created list Added BIO, SOLAR, FOSSIL, WIND, HYDRO"
+      - code: "EnergyUoMType"
+        description: "Created list Added MWH, KWH, MAW, KVA, GWH, WHR, A90, AMP, KWT, 3B, K3, KJO, GV, JOU, KVR"
+      - code: "DeviceType"
+        description: "Created list Added A, B, C"
+      - code: "CommodityCodes"
+        description: "Created list Added 83101500, 83101600, 83101800, 83101900"
+      - code: "ChargeToType"
+        description: "Created list Added DER, GAR, HUU"
+      - code: "BIMStatusType"
+        description: "Created list Added test, incomplete, ready"
+  - date: "2023-01-09"
+    changes:
+      - code: "OrderType"
+        description: "Added 732"
+      - code: "VATRateType"
+        description: "Added G, K, L, M, O, Z"
+  - date: "2021-02-08"
+    changes:
+      - code: "CheckoutType"
+        description: "Created list Added DEL, PIC"
+      - code: "IoTStatusType"
+        description: "Created list Added URG, PRE, REG"
+      - code: "IoTMessageType"
+        description: "Created list Added ADH, ANA, PLA"
+      - code: "AttachmentType"
+        description: "Added PHO"
+  - date: "2021-02-01"
+    changes:
+      - code: "TimeUoMType"
+        description: "Added MON, ANN, SEC"
+  - date: "2019-03-26"
+    changes:
+      - code: "AttachmentType"
+        description: "Added LPP"
+  - date: "2019-01-07"
+    changes:
+      - code: "CommonChargeType"
+        description: "Added AEQ"
+      - code: "SubChargeType"
+        description: "Deleted AEQ"
+  - date: "2018-11-01"
+    changes:
+      - code: "All"
+        description: "Initial release"
+
+components:
+  schemas:
+    ActionDescriptionType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "4"
+        - "5"
+        - "6"
+        - "7"
+        - "41"
+    "ActionDescriptionType.Display":
+      description: "ActionDescriptionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "4"
+          title: "No action"
+          x-titleNl: "(nog) onbekend"
+        - const: "5"
+          title: "Accepted without amendment"
+          x-titleNl: "Geaccepteerd zonder wijzigingen"
+        - const: "6"
+          title: "Accepted with amendment"
+          x-titleNl: "Geaccepteerd met wijzigingen"
+        - const: "7"
+          title: "Not accepted"
+          x-titleNl: "Niet geaccepteerd"
+        - const: "41"
+          title: "Proposed for review"
+          x-titleNl: "Voorgesteld ter beoordeling"
+    CommonAllowanceType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "ADO"
+        - "ADR"
+    "CommonAllowanceType.Display":
+      description: "CommonAllowanceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "ADO"
+          title: "Efficient logistics"
+          x-titleNl: "Logistieke korting"
+        - const: "ADR"
+          title: "Other services"
+          x-titleNl: "Overige korting"
+    Sub1AllowanceType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "CAC"
+    "Sub1AllowanceType.Display":
+      description: "Sub1AllowanceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "CAC"
+          title: "Cash discount"
+          x-titleNl: "Kontante korting"
+    Sub2AllowanceType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "ADZ"
+        - "DAE"
+        - "DBD"
+        - "PAD"
+        - "PI"
+        - "QD"
+        - "TD"
+        - "WHE"
+        - "X21"
+    "Sub2AllowanceType.Display":
+      description: "Sub2AllowanceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "ADZ"
+          title: "Direct delivery allowance"
+          x-titleNl: "Korting rechtstreekse levering/afwijkend afleveradres"
+        - const: "DAE"
+          title: "Distributor discount/allowance"
+          x-titleNl: "Distributie arrangement korting"
+        - const: "DBD"
+          title: "Debtor bound"
+          x-titleNl: "Debiteur gebonden korting"
+        - const: "PAD"
+          title: "Promotional allowance"
+          x-titleNl: "Actiekorting"
+        - const: "PI"
+          title: "Pick-up allowance"
+          x-titleNl: "Afhaalkorting"
+        - const: "QD"
+          title: "Quantity discount"
+          x-titleNl: "Staffelkorting"
+        - const: "TD"
+          title: "Trade discount"
+          x-titleNl: "Handelskorting"
+        - const: "WHE"
+          title: "Wholesaling discount"
+          x-titleNl: "Korting magazijnlevering"
+        - const: "X21"
+          title: "Special agreement"
+          x-titleNl: "Speciale regeling"
+    AllowanceType:
+      description: "Union van CommonAllowanceType, Sub1AllowanceType, Sub2AllowanceType."
+      anyOf:
+        - $ref: "#/components/schemas/CommonAllowanceType"
+        - $ref: "#/components/schemas/Sub1AllowanceType"
+        - $ref: "#/components/schemas/Sub2AllowanceType"
+    "AllowanceType.Display":
+      description: "Union van CommonAllowanceType, Sub1AllowanceType, Sub2AllowanceType. (documentatie-variant, zie D20)"
+      anyOf:
+        - $ref: "#/components/schemas/CommonAllowanceType.Display"
+        - $ref: "#/components/schemas/Sub1AllowanceType.Display"
+        - $ref: "#/components/schemas/Sub2AllowanceType.Display"
+    InvoiceAllowanceType:
+      description: "Union van CommonAllowanceType, Sub1AllowanceType."
+      anyOf:
+        - $ref: "#/components/schemas/CommonAllowanceType"
+        - $ref: "#/components/schemas/Sub1AllowanceType"
+    "InvoiceAllowanceType.Display":
+      description: "Union van CommonAllowanceType, Sub1AllowanceType. (documentatie-variant, zie D20)"
+      anyOf:
+        - $ref: "#/components/schemas/CommonAllowanceType.Display"
+        - $ref: "#/components/schemas/Sub1AllowanceType.Display"
+    OrderResponseAllowanceType:
+      description: "WARNING (bron-xsd): overlapt met CommonAllowanceType/Sub1AllowanceType/Sub2AllowanceType, bewust geen union, subset met eigen waardebereik voor Order Response."
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "ADR"
+        - "DBD"
+        - "PAD"
+        - "TD"
+    "OrderResponseAllowanceType.Display":
+      description: "WARNING (bron-xsd): overlapt met CommonAllowanceType/Sub1AllowanceType/Sub2AllowanceType, bewust geen union, subset met eigen waardebereik voor Order Response."
+      oneOf:
+        - const: "ADR"
+          title: "Other services"
+          x-titleNl: "Overige korting"
+        - const: "DBD"
+          title: "Debtor bound"
+          x-titleNl: "Debiteur gebonden korting"
+        - const: "PAD"
+          title: "Promotional allowance"
+          x-titleNl: "Actiekorting"
+        - const: "TD"
+          title: "Trade discount"
+          x-titleNl: "Handelskorting"
+    AttachmentType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "CAD"
+        - "CHR"
+        - "FAC"
+        - "LOG"
+        - "LPP"
+        - "MAN"
+        - "MTE"
+        - "OTA"
+        - "PAR"
+        - "PHI"
+        - "PPI"
+        - "PRT"
+        - "PVI"
+        - "SCH"
+        - "SOF"
+        - "STR"
+        - "PHO"
+        - "EPD"
+        - "LCA"
+        - "POD"
+    "AttachmentType.Display":
+      description: "AttachmentType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "CAD"
+          title: "CAD object or symbol"
+          x-titleNl: "CAD object of symbool"
+        - const: "CHR"
+          title: "Data sheet"
+          x-titleNl: "Karakteristieken sheet"
+        - const: "FAC"
+          title: "Invoice"
+          x-titleNl: "Factuur"
+        - const: "LOG"
+          title: "Logo"
+          x-titleNl: "Logo"
+        - const: "LPP"
+          title: "Link to Product Page"
+          x-titleNl: "Link naar de Product Pagina"
+        - const: "MAN"
+          title: "Manual"
+          x-titleNl: "Handleiding"
+        - const: "MTE"
+          title: "Installation- and maintenance document"
+          x-titleNl: "Installatie- en onderhoudsdocument"
+        - const: "OTA"
+          title: "Others"
+          x-titleNl: "Overige bijlage"
+        - const: "PAR"
+          title: "Exploded view"
+          x-titleNl: "Explosietekening"
+        - const: "PHI"
+          title: "Product picture high-resolution"
+          x-titleNl: "Productfoto hoge resolutie"
+        - const: "PPI"
+          title: "Product picture low-resolution"
+          x-titleNl: "Productfoto lage resolutie"
+        - const: "PRT"
+          title: "Presentation document/brochure"
+          x-titleNl: "Presentatie document/brochure"
+        - const: "PVI"
+          title: "Presentation video"
+          x-titleNl: "Presentatie video"
+        - const: "SCH"
+          title: "Diagram"
+          x-titleNl: "Schema"
+        - const: "SOF"
+          title: "Software"
+          x-titleNl: "Software"
+        - const: "STR"
+          title: "Certificate"
+          x-titleNl: "Certificaat"
+        - const: "PHO"
+          title: "Photo"
+          x-titleNl: "Foto"
+        - const: "EPD"
+          title: "Environmental Product Declaration"
+          x-titleNl: "Milieuproductverklaring"
+        - const: "LCA"
+          title: "Life cycle analysis"
+          x-titleNl: "Levenscyclusanalyse"
+        - const: "POD"
+          title: "Proof of delivery"
+          x-titleNl: "Bewijs van levering"
+    CertificateType:
+      type: string
+      minLength: 1
+      maxLength: 8
+      enum:
+        - "FSC"
+        - "ISPM"
+        - "KEMA"
+        - "KH"
+        - "KIWA"
+        - "KOMO"
+        - "PEFC"
+        - "PVW"
+        - "IHM"
+        - "SDS"
+        - "REACH"
+        - "ART"
+        - "Gastec"
+        - "Gaskeur"
+        - "ADR"
+        - "UN"
+        - "GHS"
+        - "LQC"
+        - "CMR"
+        - "DIN"
+        - "ISO"
+        - "ECCN"
+        - "WEEE"
+        - "DOP"
+        - "EEL"
+        - "ECO"
+        - "Seal"
+        - "DECL"
+        - "CAL"
+        - "DOCCE"
+        - "MTCS"
+        - "RoHS"
+        - "EPD"
+    "CertificateType.Display":
+      description: "CertificateType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "FSC"
+          title: "Forest Stewardship Council"
+          x-titleNl: "Forest Stewardship Council"
+        - const: "ISPM"
+          title: "International Standards For Phytosanitary Measures No. 15"
+          x-titleNl: "International Standards For Phytosanitary Measures No. 15"
+        - const: "KEMA"
+          title: "KEMA-KEUR"
+          x-titleNl: "KEMA-KEUR"
+        - const: "KH"
+          title: "Keurhout"
+          x-titleNl: "Keurhout"
+        - const: "KIWA"
+          title: "KIWA"
+          x-titleNl: "KIWA"
+        - const: "KOMO"
+          title: "KOMO"
+          x-titleNl: "KOMO"
+        - const: "PEFC"
+          title: "Programme for Endorsement of Forest Certification"
+          x-titleNl: "Programme for Endorsement of Forest Certification"
+        - const: "PVW"
+          title: "Police quality mark Safe Housing"
+          x-titleNl: "Politiekeurmerk Veilig Wonen"
+        - const: "IHM"
+          title: "Inventory of hazardous materials"
+          x-titleNl: "Inventaris gevaarlijke materialen"
+        - const: "SDS"
+          title: "Safety data sheet"
+          x-titleNl: "Veiligheidsblad"
+        - const: "REACH"
+          title: "Registration, Evaluation, Authorisation and restriction of CHemicals"
+          x-titleNl: "Registratie, Evaluatie, Authorisatie en restrictie van CHemicaliën"
+        - const: "ART"
+          title: "ART mark (motor-)cycle locks"
+          x-titleNl: "ART keurmerk tweewielersloten"
+        - const: "Gastec"
+          title: "Gastec mark"
+          x-titleNl: "Gastec keurmerk"
+        - const: "Gaskeur"
+          title: "Gaskeur mark"
+          x-titleNl: "Gaskeur keurmerk"
+        - const: "ADR"
+          title: "European Agreement concerning the International Carriage of Dangerous Goods by Road"
+          x-titleNl: "Europese verdrag voor het internationale vervoer van gevaarlijke goederen over de weg"
+        - const: "UN"
+          title: "Hazardous materials identification number"
+          x-titleNl: "Identificatienummer gevaarlijke stoffen"
+        - const: "GHS"
+          title: "Globally Harmonized System of Classification and Labelling of Chemicals"
+          x-titleNl: "Wijze van indeling, kenmerking en etikettering van chemische stoffen en preparaten."
+        - const: "LQC"
+          title: "Limited Quantity Value"
+          x-titleNl: "Limited Quantity waarde"
+        - const: "CMR"
+          title: "United Nations Convention on the Contract for the International Carriage of Goods by Road Information"
+          x-titleNl: "Internationale conventie bij grensoverschrijdend wegvervoer informatie"
+        - const: "DIN"
+          title: "DIN information"
+          x-titleNl: "DIN informatie"
+        - const: "ISO"
+          title: "ISO information"
+          x-titleNl: "ISO informatie"
+        - const: "ECCN"
+          title: "Export Control Classification Number"
+          x-titleNl: "Export Control Classification Number"
+        - const: "WEEE"
+          title: "Waste of Electrical and Electronic Equipment"
+          x-titleNl: "Richtlijn afgedankte elektrische en elektronische apparatuur (AEEA)"
+        - const: "DOP"
+          title: "Declaration of Performance"
+          x-titleNl: "Prestatieverklaring"
+        - const: "EEL"
+          title: "EU energy label"
+          x-titleNl: "EU energielabel"
+        - const: "ECO"
+          title: "ECO label"
+          x-titleNl: "ECO label"
+        - const: "Seal"
+          title: "Seal of Approval"
+          x-titleNl: "Keurmerk"
+        - const: "DECL"
+          title: "Suppliers declaration of preferential origin"
+          x-titleNl: "Leveranciersverklaring van preferentiële oorsprong"
+        - const: "CAL"
+          title: "Calibration certificate"
+          x-titleNl: "kalibratiecertificaat"
+        - const: "DOCCE"
+          title: "Declaration of Conformity"
+          x-titleNl: "conformiteitsverklaring"
+        - const: "MTCS"
+          title: "Malaysian Timber Certification System"
+          x-titleNl: "Malaysian Timber Certification System"
+        - const: "RoHS"
+          title: "RoHS Directive (Restriction of Hazardous Substances)"
+          x-titleNl: "RoHS-richtlijn (van het Engelse Restriction of Hazardous Substances - beperking van gevaarlijke stoffen)"
+        - const: "EPD"
+          title: "Environmental Product Declaration"
+          x-titleNl: "Milieuproductverklaring"
+    CommonChargeType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "AAT"
+        - "ADR"
+        - "ADZ"
+        - "AEM"
+        - "AEO"
+        - "FC"
+        - "MAC"
+        - "AEQ"
+    "CommonChargeType.Display":
+      description: "CommonChargeType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "AAT"
+          title: "Rush delivery"
+          x-titleNl: "Spoed levering"
+        - const: "ADR"
+          title: "Other services"
+          x-titleNl: "Overige toeslag"
+        - const: "ADZ"
+          title: "Direct delivery Charge"
+          x-titleNl: "Toeslag rechtstreekse levering/afwijkend afleveradres"
+        - const: "AEM"
+          title: "Clerical or administrative services"
+          x-titleNl: "Administratiekosten"
+        - const: "AEO"
+          title: "Collection and recycling service"
+          x-titleNl: "Afvalbeheerbijdrage"
+        - const: "FC"
+          title: "Freight charge"
+          x-titleNl: "Vrachtkosten"
+        - const: "MAC"
+          title: "Minimum order/minimum billing charge"
+          x-titleNl: "Kleine orderkosten"
+        - const: "AEQ"
+          title: "Charge for exceeding agreed ordered quantity"
+          x-titleNl: "Overschrijdingstoeslag"
+    SubChargeType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "ABL"
+        - "AEP"
+        - "CAI"
+        - "DAE"
+        - "DBD"
+        - "HD"
+        - "RAD"
+        - "SH"
+        - "X21"
+    "SubChargeType.Display":
+      description: "SubChargeType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "ABL"
+          title: "Packaging surcharge"
+          x-titleNl: "Verpakkingskosten"
+        - const: "AEP"
+          title: "Copyright fee collection services"
+          x-titleNl: "Heffing auteursrechten"
+        - const: "CAI"
+          title: "Cutting charge"
+          x-titleNl: "Snijkosten"
+        - const: "DAE"
+          title: "Distributor discount/allowance"
+          x-titleNl: "Distributie arrangement toeslag"
+        - const: "DBD"
+          title: "Debtor bound"
+          x-titleNl: "Debiteur gebonden toeslag"
+        - const: "HD"
+          title: "Handling"
+          x-titleNl: "Handling"
+        - const: "RAD"
+          title: "Returnable container"
+          x-titleNl: "Statiegeld"
+        - const: "SH"
+          title: "Special handling service"
+          x-titleNl: "Bewerkingstoeslag"
+        - const: "X21"
+          title: "Special agreement"
+          x-titleNl: "Speciale regeling"
+    ChargeType:
+      description: "Union van CommonChargeType, SubChargeType."
+      anyOf:
+        - $ref: "#/components/schemas/CommonChargeType"
+        - $ref: "#/components/schemas/SubChargeType"
+    "ChargeType.Display":
+      description: "Union van CommonChargeType, SubChargeType. (documentatie-variant, zie D20)"
+      anyOf:
+        - $ref: "#/components/schemas/CommonChargeType.Display"
+        - $ref: "#/components/schemas/SubChargeType.Display"
+    OrderResponseChargeType:
+      description: "WARNING (bron-xsd): overlapt met CommonChargeType/SubChargeType, bewust geen union, subset met eigen waardebereik voor Order Response."
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "ABL"
+        - "ADR"
+        - "AEO"
+        - "AEP"
+        - "CAI"
+        - "RAD"
+    "OrderResponseChargeType.Display":
+      description: "WARNING (bron-xsd): overlapt met CommonChargeType/SubChargeType, bewust geen union, subset met eigen waardebereik voor Order Response."
+      oneOf:
+        - const: "ABL"
+          title: "Packaging surcharge"
+          x-titleNl: "Verpakkingskosten"
+        - const: "ADR"
+          title: "Other services"
+          x-titleNl: "Overige toeslag"
+        - const: "AEO"
+          title: "Collection and recycling service"
+          x-titleNl: "Afvalbeheerbijdrage"
+        - const: "AEP"
+          title: "Copyright fee collection services"
+          x-titleNl: "Heffing auteursrechten"
+        - const: "CAI"
+          title: "Cutting charge"
+          x-titleNl: "Snijkosten"
+        - const: "RAD"
+          title: "Returnable container"
+          x-titleNl: "Statiegeld"
+    ClaimType:
+      type: string
+      minLength: 1
+      maxLength: 8
+      enum:
+        - "F100"
+        - "F90"
+        - "F80"
+        - "F70"
+        - "FCW"
+        - "FMC"
+        - "FR100"
+        - "FR90"
+        - "FR80"
+        - "FR70"
+        - "FRC"
+        - "ISPM"
+        - "KL"
+        - "KL1"
+        - "KL2"
+        - "P100"
+        - "P90"
+        - "P80"
+        - "P70"
+        - "RW"
+    "ClaimType.Display":
+      description: "ClaimType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "F100"
+          title: "FSC 100%"
+          x-titleNl: "FSC 100%"
+        - const: "F90"
+          title: "FSC mix 90%"
+          x-titleNl: "FSC mix 90%"
+        - const: "F80"
+          title: "FSC mix 80%"
+          x-titleNl: "FSC mix 80%"
+        - const: "F70"
+          title: "FSC mix 70%"
+          x-titleNl: "FSC mix 70%"
+        - const: "FCW"
+          title: "FSC Controlled Wood"
+          x-titleNl: "FSC Controlled Wood"
+        - const: "FMC"
+          title: "FSC Mix Credit"
+          x-titleNl: "FSC Mix Credit"
+        - const: "FR100"
+          title: "FSC Recycled 100%"
+          x-titleNl: "FSC Recycled 100%"
+        - const: "FR90"
+          title: "FSC Recycled 90%"
+          x-titleNl: "FSC Recycled 90%"
+        - const: "FR80"
+          title: "FSC Recycled 80%"
+          x-titleNl: "FSC Recycled 80%"
+        - const: "FR70"
+          title: "FSC Recycled 70%"
+          x-titleNl: "FSC Recycled 70%"
+        - const: "FRC"
+          title: "FSC Recycled Credit"
+          x-titleNl: "FSC Recycled Credit"
+        - const: "ISPM"
+          title: "ISPM 15 cerified"
+          x-titleNl: "ISPM 15 gecertificeerd"
+        - const: "KL"
+          title: "Keurhout legal"
+          x-titleNl: "Keurhout legaal"
+        - const: "KL1"
+          title: "Keurhout sustainable L1"
+          x-titleNl: "Keurhout duurzaam L1"
+        - const: "KL2"
+          title: "Keurhout sustainable L2"
+          x-titleNl: "Keurhout duurzaam L2"
+        - const: "P100"
+          title: "100% PEFC certified"
+          x-titleNl: "100% PEFC gecertificeerd"
+        - const: "P90"
+          title: "90% PEFC certified"
+          x-titleNl: "90% PEFC gecertificeerd"
+        - const: "P80"
+          title: "80% PEFC certified"
+          x-titleNl: "80% PEFC gecertificeerd"
+        - const: "P70"
+          title: "70% PEFC certified"
+          x-titleNl: "70% PEFC gecertificeer"
+        - const: "RW"
+          title: "Recycled Wood"
+          x-titleNl: "Recycled Wood"
+    DeliveryTransportTermsType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "01E"
+        - "02E"
+        - "03E"
+        - "04E"
+        - "CFR"
+        - "CIF"
+        - "CIP"
+        - "CPT"
+        - "DAP"
+        - "DAT"
+        - "DDP"
+        - "EXW"
+        - "FAS"
+        - "FCA"
+        - "FOB"
+        - "RDN"
+        - "RDP"
+        - "SD"
+    "DeliveryTransportTermsType.Display":
+      description: "DeliveryTransportTermsType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "01E"
+          title: "Contact delivery party before delivery"
+          x-titleNl: "Neem contact op met afleveradres voor levering"
+        - const: "02E"
+          title: "Despatch goods urgent delivery"
+          x-titleNl: "Verzend goederen met spoed"
+        - const: "03E"
+          title: "Special delivery conditions"
+          x-titleNl: "Levering onder speciale condities"
+        - const: "04E"
+          title: "Cash on delivery"
+          x-titleNl: "Contant bij aflevering"
+        - const: "CFR"
+          title: "Cost and Freight"
+          x-titleNl: "Kostprijs en vracht"
+        - const: "CIF"
+          title: "Cost, Insurance and Freight"
+          x-titleNl: "Kostprijs, verzekering en vracht"
+        - const: "CIP"
+          title: "Carriage and Insurance Paid To"
+          x-titleNl: "Vrachtvrij inclusief verzekering tot"
+        - const: "CPT"
+          title: "Carriage paid to"
+          x-titleNl: "Vrachtvrij tot"
+        - const: "DAP"
+          title: "Delivered at place"
+          x-titleNl: "Franco ter plaatse"
+        - const: "DAT"
+          title: "Delivered at terminal"
+          x-titleNl: "Franco terminal"
+        - const: "DDP"
+          title: "Delivery duty paid"
+          x-titleNl: "Franco inclusief rechten"
+        - const: "EXW"
+          title: "Ex works"
+          x-titleNl: "Af fabriek"
+        - const: "FAS"
+          title: "Free alongside ship"
+          x-titleNl: "Vrij langzij schip"
+        - const: "FCA"
+          title: "Free carrier"
+          x-titleNl: "Vrachtvrij tot vervoerder"
+        - const: "FOB"
+          title: "Free on board"
+          x-titleNl: "Vrij aan boord"
+        - const: "RDN"
+          title: "Return the delivery note signed by the goods recipient"
+          x-titleNl: "Leveringsbon retour ondertekend door ontvanger"
+        - const: "RDP"
+          title: "Return the number of the \"proof of delivery\" generated by the goods recipient has to be returned"
+          x-titleNl: "Retourneer het aantal 'Proof of delivery' gegenereerd door ontvanger"
+        - const: "SD"
+          title: "Shipment of order split over more than one means of transport"
+          x-titleNl: "Verzending van order verdeeld over meerdere transportmiddelen"
+    DespatchStructureType:
+      type: string
+      minLength: 1
+      maxLength: 17
+      enum:
+        - "EANNL1"
+        - "EANNL4"
+    "DespatchStructureType.Display":
+      description: "DespatchStructureType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "EANNL1"
+          title: "Trade items per shipment"
+          x-titleNl: "Artikelen per zending"
+        - const: "EANNL4"
+          title: "Trade items per despatch unit"
+          x-titleNl: "Artikelen per verzendeenheid"
+    InvoiceType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "380"
+        - "384"
+    "InvoiceType.Display":
+      description: "InvoiceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "380"
+          title: "Commercial invoice"
+          x-titleNl: "Factuur"
+        - const: "384"
+          title: "Corrected invoice"
+          x-titleNl: "Correctiefactuur"
+    NumberUoMType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "PCE"
+    "NumberUoMType.Display":
+      description: "NumberUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "PCE"
+          title: "Piece"
+          x-titleNl: "Stuk"
+    LengthUoMType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "MMT"
+        - "CMT"
+        - "MTR"
+    "LengthUoMType.Display":
+      description: "LengthUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "MMT"
+          title: "Millimetre"
+          x-titleNl: "Millimeter"
+        - const: "CMT"
+          title: "Centimetre"
+          x-titleNl: "Centimeter"
+        - const: "MTR"
+          title: "Metre"
+          x-titleNl: "Meter"
+    AreaUoMType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "MTK"
+    "AreaUoMType.Display":
+      description: "AreaUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "MTK"
+          title: "Square metre"
+          x-titleNl: "Vierkante meter"
+    AngleUoMType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "DD"
+    "AngleUoMType.Display":
+      description: "AngleUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "DD"
+          title: "Degrees"
+          x-titleNl: "Graden"
+    VolumeUoMType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "MLT"
+        - "LTR"
+        - "MTQ"
+    "VolumeUoMType.Display":
+      description: "VolumeUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "MLT"
+          title: "Millilire"
+          x-titleNl: "Milliliter"
+        - const: "LTR"
+          title: "Litre"
+          x-titleNl: "Liter"
+        - const: "MTQ"
+          title: "Cubic metre"
+          x-titleNl: "Kubieke meter"
+    WeightUoMType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "GRM"
+        - "KGM"
+        - "TNE"
+    "WeightUoMType.Display":
+      description: "WeightUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "GRM"
+          title: "Gram"
+          x-titleNl: "Gram"
+        - const: "KGM"
+          title: "Kilogram"
+          x-titleNl: "Kilogram"
+        - const: "TNE"
+          title: "Metric Ton"
+          x-titleNl: "Ton"
+    TimeUoMType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "MIN"
+        - "HUR"
+        - "DAY"
+        - "WEE"
+        - "MON"
+        - "ANN"
+        - "SEC"
+    "TimeUoMType.Display":
+      description: "TimeUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "MIN"
+          title: "Minute"
+          x-titleNl: "Minuut"
+        - const: "HUR"
+          title: "Hour"
+          x-titleNl: "Uur"
+        - const: "DAY"
+          title: "Day"
+          x-titleNl: "Dag"
+        - const: "WEE"
+          title: "Week"
+          x-titleNl: "Week"
+        - const: "MON"
+          title: "Month"
+          x-titleNl: "Maand"
+        - const: "ANN"
+          title: "Year"
+          x-titleNl: "Jaar"
+        - const: "SEC"
+          title: "Second"
+          x-titleNl: "Seconde"
+    UoMType:
+      description: "Union van NumberUoMType, LengthUoMType, AreaUoMType, VolumeUoMType, WeightUoMType, TimeUoMType, AngleUoMType."
+      anyOf:
+        - $ref: "#/components/schemas/NumberUoMType"
+        - $ref: "#/components/schemas/LengthUoMType"
+        - $ref: "#/components/schemas/AreaUoMType"
+        - $ref: "#/components/schemas/VolumeUoMType"
+        - $ref: "#/components/schemas/WeightUoMType"
+        - $ref: "#/components/schemas/TimeUoMType"
+        - $ref: "#/components/schemas/AngleUoMType"
+    "UoMType.Display":
+      description: "Union van NumberUoMType, LengthUoMType, AreaUoMType, VolumeUoMType, WeightUoMType, TimeUoMType, AngleUoMType. (documentatie-variant, zie D20)"
+      anyOf:
+        - $ref: "#/components/schemas/NumberUoMType.Display"
+        - $ref: "#/components/schemas/LengthUoMType.Display"
+        - $ref: "#/components/schemas/AreaUoMType.Display"
+        - $ref: "#/components/schemas/VolumeUoMType.Display"
+        - $ref: "#/components/schemas/WeightUoMType.Display"
+        - $ref: "#/components/schemas/TimeUoMType.Display"
+        - $ref: "#/components/schemas/AngleUoMType.Display"
+    UoMUnionType:
+      description: "Union van NumberUoMType, LengthUoMType, AreaUoMType, VolumeUoMType, WeightUoMType, TimeUoMType, AngleUoMType, PseudoUoMType."
+      anyOf:
+        - $ref: "#/components/schemas/NumberUoMType"
+        - $ref: "#/components/schemas/LengthUoMType"
+        - $ref: "#/components/schemas/AreaUoMType"
+        - $ref: "#/components/schemas/VolumeUoMType"
+        - $ref: "#/components/schemas/WeightUoMType"
+        - $ref: "#/components/schemas/TimeUoMType"
+        - $ref: "#/components/schemas/AngleUoMType"
+        - $ref: "#/components/schemas/PseudoUoMType"
+    "UoMUnionType.Display":
+      description: "Union van NumberUoMType, LengthUoMType, AreaUoMType, VolumeUoMType, WeightUoMType, TimeUoMType, AngleUoMType, PseudoUoMType. (documentatie-variant, zie D20)"
+      anyOf:
+        - $ref: "#/components/schemas/NumberUoMType.Display"
+        - $ref: "#/components/schemas/LengthUoMType.Display"
+        - $ref: "#/components/schemas/AreaUoMType.Display"
+        - $ref: "#/components/schemas/VolumeUoMType.Display"
+        - $ref: "#/components/schemas/WeightUoMType.Display"
+        - $ref: "#/components/schemas/TimeUoMType.Display"
+        - $ref: "#/components/schemas/AngleUoMType.Display"
+        - $ref: "#/components/schemas/PseudoUoMType.Display"
+    MutationType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "4"
+        - "9"
+    "MutationType.Display":
+      description: "MutationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "4"
+          title: "Change"
+          x-titleNl: "Gewijzigd"
+        - const: "9"
+          title: "Original"
+          x-titleNl: "Origineel"
+    QuotationStatusType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "46"
+        - "49"
+    "QuotationStatusType.Display":
+      description: "QuotationStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "46"
+          title: "Provisional"
+          x-titleNl: "Voorlopig"
+        - const: "49"
+          title: "Definitive"
+          x-titleNl: "Definitief"
+    QuotationRequestStatusType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "6"
+        - "13"
+        - "27"
+        - "29"
+    "QuotationRequestStatusType.Display":
+      description: "QuotationRequestStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "6"
+          title: "Confirmation"
+          x-titleNl: "Akkoord"
+        - const: "13"
+          title: "Request"
+          x-titleNl: "Aanvraag/verzoek"
+        - const: "27"
+          title: "Not accepted"
+          x-titleNl: "Niet geaccepteerd"
+        - const: "29"
+          title: "Accepted without amendment"
+          x-titleNl: "Geaccepteerd zonder wijzigingen"
+    OrderResponseStatusType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "4"
+        - "12"
+        - "27"
+        - "29"
+    "OrderResponseStatusType.Display":
+      description: "OrderResponseStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "4"
+          title: "Change"
+          x-titleNl: "Gewijzigd"
+        - const: "12"
+          title: "Not processed"
+          x-titleNl: "Niet verwerkt"
+        - const: "27"
+          title: "Not accepted"
+          x-titleNl: "Niet geaccepteerd"
+        - const: "29"
+          title: "Accepted without amendment"
+          x-titleNl: "Geaccepteerd zonder wijzigingen"
+    OrderType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "220"
+        - "402"
+        - "732"
+        - "733"
+    "OrderType.Display":
+      description: "OrderType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "220"
+          title: "Order"
+          x-titleNl: "Order"
+        - const: "402"
+          title: "Cross docking order"
+          x-titleNl: "Crossdock order"
+        - const: "732"
+          title: "Announcement for returns"
+          x-titleNl: "Aanmelding van retouren"
+        - const: "733"
+          title: "Instruction for returns"
+          x-titleNl: "Instructie voor retourzendingen"
+    PackageDescriptionType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "08"
+        - "09"
+        - "200"
+        - "201"
+        - "202"
+        - "203"
+        - "204"
+        - "205"
+        - "206"
+        - "210"
+        - "211"
+        - "212"
+        - "APE"
+        - "BGE"
+        - "BME"
+        - "BRI"
+        - "CBL"
+        - "CCE"
+        - "FOB"
+        - "FPE"
+        - "LAB"
+        - "MPE"
+        - "OPE"
+        - "PAE"
+        - "PLP"
+        - "POP"
+        - "PPE"
+        - "PUE"
+        - "RB3"
+        - "RCB"
+        - "SEC"
+        - "STL"
+        - "TEV"
+        - "THE"
+        - "TRE"
+        - "TTE"
+        - "TWE"
+        - "UUE"
+        - "UVQ"
+        - "WRP"
+        - "X11"
+        - "X15"
+        - "X16"
+        - "X17"
+        - "X3"
+    "PackageDescriptionType.Display":
+      description: "PackageDescriptionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "08"
+          title: "Oneway pallet (GS1 Code)"
+          x-titleNl: "Eenmalige pallet (GS1 Code)"
+        - const: "09"
+          title: "Returnable pallet (GS1 Code)"
+          x-titleNl: "Retour te zenden pallet (GS1 Code)"
+        - const: "200"
+          title: "Pallet ISO 0 - 1/2 EURO Pallet (GS1 Code)"
+          x-titleNl: "Pallet ISO 0 - 1/2 EURO Pallet (GS1 Code)"
+        - const: "201"
+          title: "Pallet ISO 1 - 1/1 EURO Pallet (GS1 Code)"
+          x-titleNl: "Pallet ISO 1 - 1/1 EURO Pallet (GS1 Code)"
+        - const: "202"
+          title: "Pallet ISO 2 (GS1 Code)"
+          x-titleNl: "Pallet ISO 2 (GS1 Code)"
+        - const: "203"
+          title: "1/4 EURO Pallet (GS1 Code)"
+          x-titleNl: "1/4 EURO Pallet (GS1 Code)"
+        - const: "204"
+          title: "1/8 EURO Pallet (GS1 Code)"
+          x-titleNl: "1/8 EURO Pallet (GS1 Code)"
+        - const: "205"
+          title: "Synthetic pallet ISO 1 (GS1 Code)"
+          x-titleNl: "Synthetische pallet ISO 1 (GS1 Code)"
+        - const: "206"
+          title: "Synthetic pallet ISO 2 (GS1 Code)"
+          x-titleNl: "Synthetische pallet ISO 2 (GS1 Code)"
+        - const: "210"
+          title: "Wholesaler pallet (GS1 Code)"
+          x-titleNl: "Groothandelaar pallet (GS1 Code)"
+        - const: "211"
+          title: "Pallet 80 X 100 cm (GS1 Code)"
+          x-titleNl: "Pallet 80 X 100 cm (GS1 Code)"
+        - const: "212"
+          title: "Pallet 60 X 100 cm (GS1 Code)"
+          x-titleNl: "Pallet 60 X 100 cm (GS1 Code)"
+        - const: "APE"
+          title: "Aluminium packed (GS1 Code)"
+          x-titleNl: "Aluminimum verpakt (GS1 Code)"
+        - const: "BGE"
+          title: "Large bag, pallet sized (GS1 Code)"
+          x-titleNl: "Grote zak, pallet formaat (GS1 Code)"
+        - const: "BME"
+          title: "Blister pack (GS1 Code)"
+          x-titleNl: "Blisterverpakking (GS1 Code)"
+        - const: "BRI"
+          title: "Brick (GS1 Code)"
+          x-titleNl: "Pak (GS1 Code)"
+        - const: "CBL"
+          title: "Container bottle like (GS1 Code)"
+          x-titleNl: "Fles-achtige houder (GS1 Code)"
+        - const: "CCE"
+          title: "Cardboard carrier (GS1 Code)"
+          x-titleNl: "Kartonnen drager (gs1 Code)"
+        - const: "FOB"
+          title: "Folding box (GS1 Code)"
+          x-titleNl: "Vouwdoos (GS1 Code)"
+        - const: "FPE"
+          title: "Foil packed (GS1 Code)"
+          x-titleNl: "Verpakt in metaalfolie (GS1 Code)"
+        - const: "LAB"
+          title: "Labeled package (GS1 Code)"
+          x-titleNl: "Verpakt met label (GS1 Code)"
+        - const: "MPE"
+          title: "Multipack (GS1 Code)"
+          x-titleNl: "Multipack (GS1 Code)"
+        - const: "OPE"
+          title: "Oxygen packed (GS1 Code)"
+          x-titleNl: "Met zuurstof verpakt (GS1 Code)"
+        - const: "PAE"
+          title: "Paper (GS1 Code)"
+          x-titleNl: "Papier (GS1 Code)"
+        - const: "PLP"
+          title: "Peel pack (GS1 Code)"
+          x-titleNl: "Peel pack (GS1 Code)"
+        - const: "POP"
+          title: "Cone shaped paper wrapper (GS1 Code)"
+          x-titleNl: "Konische papierer wikkel (GS1 Code)"
+        - const: "PPE"
+          title: "Polypropylene bag (GS1 Code)"
+          x-titleNl: "Polypropyleenzak (GS1 Code)"
+        - const: "PUE"
+          title: "Tray packed in plastic (GS1 Code)"
+          x-titleNl: "Tray verpakt in plastic (GS1 Code)"
+        - const: "RB3"
+          title: "Wheeled pallet with raised rim. 81 x 60 x 16 cm (length x width x height). (GS1 Code)"
+          x-titleNl: "Pallet op wielen met opstaande rand. 81 x 60 x 16 cm (lengte x breedte x hoogte). (GS1-code)"
+        - const: "RCB"
+          title: "Two sided cage on wheels with fixing strap (GS1 Code) 900 x 770 x 1513 cm (length x width x height)"
+          x-titleNl: "Tweezijdige kooi op wielen met bevestigingsriem (GS1-code) 900 x 770 x 1513 cm (lengte x breedte x hoogte)"
+        - const: "SEC"
+          title: "Article Surveillance (GS1 Code)"
+          x-titleNl: "Artikelbeveiliging (GS1 Code)"
+        - const: "STL"
+          title: "Stick (GS1 Code)"
+          x-titleNl: "Stick (GS1 Code)"
+        - const: "TEV"
+          title: "A type of package giving easy or immediate recognition that the package has been tampered with after it has been sealed. (GS1 Code)"
+          x-titleNl: "Een verpakking waarvan duidelijk wordt dat deze is aangetast / verbroken / …. na verzegeling. (GS1 Code)"
+        - const: "THE"
+          title: "Three pack (GS1 Code)"
+          x-titleNl: "Drie pak (GS1 Code)"
+        - const: "TRE"
+          title: "Trolley (GS1 Code)"
+          x-titleNl: "Trolley (GS1 Code)"
+        - const: "TTE"
+          title: "Tube, standing (GS1 Code)"
+          x-titleNl: "Tube, staand (GS1 Code)"
+        - const: "TWE"
+          title: "Two pack (GS1 Code)"
+          x-titleNl: "Duoverpakking (GS1 Code)"
+        - const: "UUE"
+          title: "Tube net (GS1 Code)"
+          x-titleNl: "Net (GS1 Code)"
+        - const: "UVQ"
+          title: "Wrapped in plastic sheet (GS1 Code)"
+          x-titleNl: "Verpakt in plastic folie (GS1-code)"
+        - const: "WRP"
+          title: "Wrapper (GS1 Code)"
+          x-titleNl: "Wikkel ()GS1 Code)"
+        - const: "X11"
+          title: "Banded package (GS1 Code)"
+          x-titleNl: "Verpakking met bandversterking (GS1 Code)"
+        - const: "X15"
+          title: "Oneway pallet ISO 0 - 1/2 Euro Pallet (GS1 Code)"
+          x-titleNl: "Eenmalige pallet ISO 0 - 1/2 Euro Pallet (GS1 Code)"
+        - const: "X16"
+          title: "Oneway pallet ISO 1 - 1/1 Euro Pallet (GS1 Code)"
+          x-titleNl: "Eenmalige pallet ISO 1 - 1/1 Euro Pallet (GS1 Code)"
+        - const: "X17"
+          title: "Pallet with exceptional dimensions (GS1 Code)"
+          x-titleNl: "Pallet met uitzonderlijke afmetingen (GS1 Code)"
+        - const: "X3"
+          title: "Standard stack of stones (GS1 Code)"
+          x-titleNl: "Standaard stapel stenen (GS1-code)"
+    PaymentMeansType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "10"
+        - "42"
+        - "49"
+    "PaymentMeansType.Display":
+      description: "PaymentMeansType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "10"
+          title: "In cash"
+          x-titleNl: "Contant"
+        - const: "42"
+          title: "Payment to bank account"
+          x-titleNl: "Op rekening"
+        - const: "49"
+          title: "Direct debit"
+          x-titleNl: "Automatische incasso"
+    ProjectPhaseType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "IU"
+        - "PV"
+    "ProjectPhaseType.Display":
+      description: "ProjectPhaseType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "IU"
+          title: "In progress"
+          x-titleNl: "In uitvoering"
+        - const: "PV"
+          title: "Pricing"
+          x-titleNl: "Prijsvorming"
+    ReasonNoValueType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "MV"
+        - "NA"
+        - "UN"
+    "ReasonNoValueType.Display":
+      description: "ReasonNoValueType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "MV"
+          title: "Missing ETIM value"
+          x-titleNl: "Ontbrekende ETIM waarde"
+        - const: "NA"
+          title: "Not applicable"
+          x-titleNl: "Niet van toepassing"
+        - const: "UN"
+          title: "Unknown"
+          x-titleNl: "Onbekend"
+    RelationKindType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "AA"
+        - "PP"
+    "RelationKindType.Display":
+      description: "RelationKindType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "AA"
+          title: "Article-article relation"
+          x-titleNl: "Artikel-artikel relatie"
+        - const: "PP"
+          title: "Product-product relation"
+          x-titleNl: "Product-product relatie"
+    RelationType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "ALT"
+        - "BEO"
+        - "GSP"
+        - "HOB"
+        - "KNZ"
+        - "ONV"
+        - "OPV"
+        - "RES"
+        - "TEP"
+        - "VOO"
+    "RelationType.Display":
+      description: "RelationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "ALT"
+          title: "Alternative"
+          x-titleNl: "Alternatief"
+        - const: "BEO"
+          title: "Contains part"
+          x-titleNl: "Bevat onderdeel"
+        - const: "GSP"
+          title: "Mirrored"
+          x-titleNl: "Gespiegeld"
+        - const: "HOB"
+          title: "Belongs to"
+          x-titleNl: "Hoort bij"
+        - const: "KNZ"
+          title: "Can not without"
+          x-titleNl: "Kan niet zonder"
+        - const: "ONV"
+          title: "Part of"
+          x-titleNl: "Onderdeel van"
+        - const: "OPV"
+          title: "successor"
+          x-titleNl: "Opvolger"
+        - const: "RES"
+          title: "Spare"
+          x-titleNl: "Reserve"
+        - const: "TEP"
+          title: "Technical fit"
+          x-titleNl: "Technisch passend"
+        - const: "VOO"
+          title: "predecessor"
+          x-titleNl: "Voorganger"
+    ROHSIndicatorType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "J"
+        - "N"
+        - "V"
+    "ROHSIndicatorType.Display":
+      description: "ROHSIndicatorType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "J"
+          title: "ROHS applicable"
+          x-titleNl: "ROHS van toepassing"
+        - const: "N"
+          title: "ROHS not applicable"
+          x-titleNl: "ROHS niet van toepassing"
+        - const: "V"
+          title: "ROHS exempt"
+          x-titleNl: "ROHS vrijgesteld"
+    SpecialConditionType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "125"
+        - "126"
+        - "130"
+        - "155"
+        - "175"
+        - "94E"
+    "SpecialConditionType.Display":
+      description: "SpecialConditionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "125"
+          title: "New item, not yet available"
+          x-titleNl: "Inlopend"
+        - const: "126"
+          title: "New, available"
+          x-titleNl: "Nieuw, beschikbaar (lopend)"
+        - const: "130"
+          title: "Discontinued"
+          x-titleNl: "Vervallen"
+        - const: "155"
+          title: "Destroy publication"
+          x-titleNl: "Vernietig publicatie"
+        - const: "175"
+          title: "Suspended"
+          x-titleNl: "Geschorst"
+        - const: "94E"
+          title: "Deletion, announcement only"
+          x-titleNl: "Uitlopend"
+    TermsType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "AC"
+        - "BC"
+        - "PC"
+    "TermsType.Display":
+      description: "TermsType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "AC"
+          title: "Promotional term"
+          x-titleNl: "Actieconditie"
+        - const: "BC"
+          title: "Basic term"
+          x-titleNl: "Basisconditie"
+        - const: "PC"
+          title: "Project term"
+          x-titleNl: "Projectconditie"
+    TransportInstructionType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "CRN"
+        - "G05"
+        - "G07"
+        - "G10"
+        - "G12"
+        - "G15"
+        - "G20"
+        - "G25"
+        - "G30"
+        - "G40"
+        - "IEU"
+        - "IRM"
+        - "MCH"
+        - "MVA"
+        - "PAF"
+        - "PBE"
+        - "PDV"
+        - "PIN"
+        - "PLA"
+        - "PLL"
+        - "PLR"
+        - "PLV"
+        - "POH"
+        - "POT"
+        - "SEP"
+        - "VDA"
+        - "VEA"
+        - "VKO"
+        - "VKR"
+        - "VLA"
+        - "VLK"
+    "TransportInstructionType.Display":
+      description: "TransportInstructionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "CRN"
+          title: "Take back packaging"
+          x-titleNl: "Verpakking retour nemen"
+        - const: "G05"
+          title: "Maximum package weight 500 KG"
+          x-titleNl: "Collogewicht maximaal 500 KG"
+        - const: "G07"
+          title: "Maximum package weight 700 KG"
+          x-titleNl: "Collogewicht maximaal 700 KG"
+        - const: "G10"
+          title: "Maximum package weight 1000 KG"
+          x-titleNl: "Collogewicht maximaal 1000 KG"
+        - const: "G12"
+          title: "Maximum package weight 1200 KG"
+          x-titleNl: "Collogewicht maximaal 1200 KG"
+        - const: "G15"
+          title: "Maximum package weight 1500 KG"
+          x-titleNl: "Collogewicht maximaal 1500 KG"
+        - const: "G20"
+          title: "Maximum package weight 2000 KG"
+          x-titleNl: "Collogewicht maximaal 2000 KG"
+        - const: "G25"
+          title: "Maximum package weight 2500 KG"
+          x-titleNl: "Collogewicht maximaal 2500 KG"
+        - const: "G30"
+          title: "Maximum package weight 3000 KG"
+          x-titleNl: "Collogewicht maximaal 3000 KG"
+        - const: "G40"
+          title: "Maximum package weight 4000 KG"
+          x-titleNl: "Collogewicht maximaal 4000 KG"
+        - const: "IEU"
+          title: "Deliver the order in one shipment"
+          x-titleNl: "Bestelling in 1 keer uitleveren"
+        - const: "IRM"
+          title: "Deliver the remains with this delivery"
+          x-titleNl: "Restanten meeleveren"
+        - const: "MCH"
+          title: "Driver has to register"
+          x-titleNl: "Chauffeur meldt zich aan"
+        - const: "MVA"
+          title: "Pre-register shipment"
+          x-titleNl: "Zending vooraf aanmelden"
+        - const: "PAF"
+          title: "Always cover package"
+          x-titleNl: "Collo altijd afdekken"
+        - const: "PBE"
+          title: "Protect products"
+          x-titleNl: "Producten beschermen"
+        - const: "PDV"
+          title: "Transport the products dry"
+          x-titleNl: "Producten droog vervoeren"
+        - const: "PIN"
+          title: "Separate each product"
+          x-titleNl: "Producten individueel scheiden"
+        - const: "PLA"
+          title: "Load products at the back side"
+          x-titleNl: "Producten laden aan achterzijde"
+        - const: "PLL"
+          title: "Load products at the left side"
+          x-titleNl: "Producten laden aan linkerzijde"
+        - const: "PLR"
+          title: "Load products at the right side"
+          x-titleNl: "Producten laden aan rechterzijde"
+        - const: "PLV"
+          title: "Load products at the front side"
+          x-titleNl: "Producten laden aan voorzijde"
+        - const: "POH"
+          title: "Unload with synthetic slings"
+          x-titleNl: "Lossen met kunststof hijsbanden"
+        - const: "POT"
+          title: "Unload with forklift"
+          x-titleNl: "Lossen met heftruck"
+        - const: "SEP"
+          title: "Pack separately"
+          x-titleNl: "Separaat verpakken"
+        - const: "VDA"
+          title: "Truck with turnable rear axis"
+          x-titleNl: "Vrachtwagen met draaibare achteras"
+        - const: "VEA"
+          title: "Truck with single-axle trailer"
+          x-titleNl: "Vrachtwagen met een-assige trailer"
+        - const: "VKO"
+          title: "Short truck"
+          x-titleNl: "Korte vrachtwagen"
+        - const: "VKR"
+          title: "Truck with crane"
+          x-titleNl: "Vrachtwagen met kraan"
+        - const: "VLA"
+          title: "Long truck"
+          x-titleNl: "Lange vrachtwagen"
+        - const: "VLK"
+          title: "Truck with load lift"
+          x-titleNl: "Vrachtwagen met laadklep"
+    ValueType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "A"
+        - "JN"
+        - "N"
+    "ValueType.Display":
+      description: "ValueType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "A"
+          title: "Alpha numeric"
+          x-titleNl: "Alfanumeriek"
+        - const: "JN"
+          title: "Yes, No (boolean)"
+          x-titleNl: "Ja, Nee (boolean)"
+        - const: "N"
+          title: "Numeric"
+          x-titleNl: "Numeriek"
+    VATRateType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "AE"
+        - "E"
+        - "G"
+        - "K"
+        - "L"
+        - "M"
+        - "O"
+        - "S"
+        - "Z"
+    "VATRateType.Display":
+      description: "VATRateType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "AE"
+          title: "VAT reverse charge"
+          x-titleNl: "BTW verlegd"
+        - const: "E"
+          title: "Exempt from tax"
+          x-titleNl: "Vrijgesteld tarief"
+        - const: "G"
+          title: "Free export item, tax not charged"
+          x-titleNl: "Gratis exportitem, geen belasting geheven"
+        - const: "K"
+          title: "VAT exempt for EEA intra-community supply of goods and services"
+          x-titleNl: "BTW-vrijgesteld voor binnen-EEA-intracommunautaire levering van goederen en diensten"
+        - const: "L"
+          title: "Canary Islands general indirect tax"
+          x-titleNl: "Kanarische eilanden algemene omzetbelasting"
+        - const: "M"
+          title: "Tax for production, services and importation in Ceuta and Melilla"
+          x-titleNl: "Belasting voor productie, diensten en invoer op Ceuta en Melilla"
+        - const: "O"
+          title: "Service outside scope of tax"
+          x-titleNl: "Dienst buiten het belastinggebied"
+        - const: "S"
+          title: "Standard rate"
+          x-titleNl: "Standaard tarief"
+        - const: "Z"
+          title: "Zero rated goods"
+          x-titleNl: "Goederen met een nul tarief"
+    ChargeToType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "GAR"
+        - "HUU"
+        - "DER"
+    "ChargeToType.Display":
+      description: "ChargeToType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "GAR"
+          title: "Charge to warranty"
+          x-titleNl: "Ten laste van garantie"
+        - const: "HUU"
+          title: "Charge to tenant"
+          x-titleNl: "Ten laste van huurder"
+        - const: "DER"
+          title: "Charge to third party"
+          x-titleNl: "Ten laste van derden"
+    CheckoutType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "DEL"
+        - "PIC"
+    "CheckoutType.Display":
+      description: "CheckoutType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "DEL"
+          title: "Delivery"
+          x-titleNl: "Bezorgen"
+        - const: "PIC"
+          title: "Pick up"
+          x-titleNl: "Ophalen"
+    IoTMessageType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "ADH"
+        - "ANA"
+        - "PLA"
+    "IoTMessageType.Display":
+      description: "IoTMessageType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "ADH"
+          title: "Ad Hoc"
+          x-titleNl: "Ad Hoc"
+        - const: "ANA"
+          title: "Mandatory analysis"
+          x-titleNl: "Analyse verplicht"
+        - const: "PLA"
+          title: "Plannable"
+          x-titleNl: "Planbaar"
+    IoTStatusType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "FAT"
+        - "DEB"
+        - "INF"
+        - "TRA"
+        - "WAR"
+        - "ERR"
+    "IoTStatusType.Display":
+      description: "IoTStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "FAT"
+          title: "Fatal"
+          x-titleNl: "Ernstige fout waardoor de toepassing niet kan worden voortgezet."
+        - const: "DEB"
+          title: "Debug"
+          x-titleNl: "Een algemeen foutopsporingsbericht."
+        - const: "INF"
+          title: "Info"
+          x-titleNl: "Melding heeft een informatief doel."
+        - const: "TRA"
+          title: "Trace"
+          x-titleNl: "Gedetailleerd foutopsporingsbericht."
+        - const: "WAR"
+          title: "Warn"
+          x-titleNl: "Gebeurtenis die mogelijk tot een fout zou kunnen leiden."
+        - const: "ERR"
+          title: "Error"
+          x-titleNl: "Fout in de applicatie, mogelijk herstelbaar."
+    TaskType:
+      type: string
+      minLength: 1
+      enum:
+        - "INS"
+        - "MAI"
+        - "REP"
+    "TaskType.Display":
+      description: "TaskType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "INS"
+          title: "Installation"
+          x-titleNl: "Installatie"
+        - const: "MAI"
+          title: "Maintenance"
+          x-titleNl: "Onderhoud"
+        - const: "REP"
+          title: "Repair"
+          x-titleNl: "Reparatie"
+    SpaceType:
+      type: string
+      minLength: 1
+      enum:
+        - "GCA"
+        - "OTH"
+    "SpaceType.Display":
+      description: "SpaceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "GCA"
+          title: "Gas combustion appliance staging area"
+          x-titleNl: "Opstelruimte Gasverbrandingstoestel"
+        - const: "OTH"
+          title: "Other"
+          x-titleNl: "Overige"
+    SeverityOfSituationType:
+      type: string
+      minLength: 1
+      enum:
+        - "URG"
+        - "SEV"
+        - "NOT"
+    "SeverityOfSituationType.Display":
+      description: "SeverityOfSituationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "URG"
+          title: "Urgent and action desired by Competent Authority [legal notification based on Article 1.38 of Building Regulations 2012]"
+          x-titleNl: "Urgent en aktie Bevoegd Gezag gewenst [wettelijke melding op grond van artikel 1.38 Bouwbesluit 2012]"
+        - const: "SEV"
+          title: "Serious, but resolved and no objections [legal notification based on Article 1.38 of Building Regulations 2012]"
+          x-titleNl: "Ernstig, maar opgelost en geen bezwaren [wettelijke melding op grond van artikel 1.38 Bouwbesluit 2012]"
+        - const: "NOT"
+          title: "Notification [decision to Competent Authority]"
+          x-titleNl: "Melding [oordeel aan Bevoegd Gezag]"
+    PseudoUoMType:
+      type: string
+      minLength: 1
+      enum:
+        - "PPM"
+    "PseudoUoMType.Display":
+      description: "PseudoUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "PPM"
+          title: "Parts per million"
+          x-titleNl: "Delen per miljoen"
+    PartyIDType:
+      type: string
+      minLength: 1
+      enum:
+        - "CRT"
+    "PartyIDType.Display":
+      description: "PartyIDType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "CRT"
+          title: "Number provided by Centraal Register Techniek"
+          x-titleNl: "Nummer uitgegeven door Centraal Register Techniek"
+    NatureOfNotificationType:
+      type: string
+      minLength: 1
+      enum:
+        - "NO1"
+        - "NO4"
+        - "NO2"
+        - "NO3"
+        - "NO5"
+    "NatureOfNotificationType.Display":
+      description: "NatureOfNotificationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "NO1"
+          title: "Notification 1: Urgent advice; Installation has no objections after accident report and has been put into operation"
+          x-titleNl: "Melding 1: dringend advies; Installatie geen bezwaar na ongevalsmelding en in bedrijf gesteld"
+        - const: "NO4"
+          title: "Notification 4: Urgent advice; Installation does not comply with Building Regulations and/or manufacturer's requirements and is an unsafe situation"
+          x-titleNl: "Melding 4: dringend advies; Installatie voldoet niet aan Bouwbesluit en/of fabrikanten(en)voorschriften en is een onveilige situatie"
+        - const: "NO2"
+          title: "Notification 2: URGENT mandatory; Installation has been taken out of operation and not put into operation (unsafe situation)"
+          x-titleNl: "Melding 2: URGENT verplicht; Installatie uit bedrijf genomen en niet in bedrijf gesteld (onveilige situatie)"
+        - const: "NO3"
+          title: "Notification 3: Mandatory; Installation has no objections and has been put into operation"
+          x-titleNl: "Melding 3: verplicht; Installatie geen bezwaar en in bedrijf gesteld"
+        - const: "NO5"
+          title: "Notification 5: Not a legal notification and for information purposes to the Building Control Department; see description of the situation for Competent Authority"
+          x-titleNl: "Melding 5: geen wettelijke melding en ter informatie aan BWT; zie beschrijving situatie voor Bevoegd Gezag"
+    MeterReadingTypes:
+      type: string
+      minLength: 1
+      enum:
+        - "MAXBELASTING"
+        - "LAAG"
+        - "HOOG"
+        - "TERUGLAAG"
+        - "BLINDLAAG"
+        - "BP"
+        - "INTEGRAAL"
+        - "BLINDHOOG"
+        - "TERUGINTEGRAAL"
+        - "TERUGHOOG"
+        - "BLINDINTEGRAAL"
+    "MeterReadingTypes.Display":
+      description: "MeterReadingTypes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "MAXBELASTING"
+          title: "Maximale belasting"
+          x-titleNl: "Maximale belasting"
+        - const: "LAAG"
+          title: "Levering laag/dal/nacht (in geval dubbel telwerk)"
+          x-titleNl: "Levering laag/dal/nacht (in geval dubbel telwerk)"
+        - const: "HOOG"
+          title: "Levering hoog/piek/dag/normaal (in geval dubbel telwerk)"
+          x-titleNl: "Levering hoog/piek/dag/normaal (in geval dubbel telwerk)"
+        - const: "TERUGLAAG"
+          title: "Teruglevering laag/dal/nacht (in geval dubbel telwerk)"
+          x-titleNl: "Teruglevering laag/dal/nacht (in geval dubbel telwerk)"
+        - const: "BLINDLAAG"
+          title: "Blindverbruik laag/dal/nacht (in geval dubbel telwerk)"
+          x-titleNl: "Blindverbruik laag/dal/nacht (in geval dubbel telwerk)"
+        - const: "BP"
+          title: "Bruto productie (van WKK, Windmolen, Zonnepaneel, etc)"
+          x-titleNl: "Bruto productie (van WKK, Windmolen, Zonnepaneel, etc)"
+        - const: "INTEGRAAL"
+          title: "Levering enkel/normaal (in geval enkel telwerk)"
+          x-titleNl: "Levering enkel/normaal (in geval enkel telwerk)"
+        - const: "BLINDHOOG"
+          title: "Blindverbruik hoog (in geval dubbel telwerk)"
+          x-titleNl: "Blindverbruik hoog (in geval dubbel telwerk)"
+        - const: "TERUGINTEGRAAL"
+          title: "Teruglevering enkel/normaal (in geval enkel telwerk)"
+          x-titleNl: "Teruglevering enkel/normaal (in geval enkel telwerk)"
+        - const: "TERUGHOOG"
+          title: "Teruglevering hoog/piek/dag/normaal (in geval dubbel telwerk)"
+          x-titleNl: "Teruglevering hoog/piek/dag/normaal (in geval dubbel telwerk)"
+        - const: "BLINDINTEGRAAL"
+          title: "Blindverbruik normaal (in geval enkel telwerk)"
+          x-titleNl: "Blindverbruik normaal (in geval enkel telwerk)"
+    MeasurementType:
+      type: string
+      minLength: 1
+      enum:
+        - "CO"
+    "MeasurementType.Display":
+      description: "MeasurementType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "CO"
+          title: "Carbon monoxide measurement"
+          x-titleNl: "Koolstofmonoxide meting"
+    LocationIDType:
+      type: string
+      minLength: 1
+      enum:
+        - "BAG"
+    "LocationIDType.Display":
+      description: "LocationIDType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "BAG"
+          title: "BAG ID: identifying characteristic as recorded in the BAG (Basic Registration of Addresses and Buildings)."
+          x-titleNl: "BAG ID: identificerend kenmerk zoals opgenomen in de BAG (Basisregistratie Adressen en Gebouwen)."
+    ItemClassificationCodes:
+      type: string
+      minLength: 1
+      enum:
+        - "NETCARE"
+        - "OTHER"
+        - "SUPPLY"
+        - "NETMNGT"
+        - "MEASURING"
+    "ItemClassificationCodes.Display":
+      description: "ItemClassificationCodes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "NETCARE"
+          title: "Netcare"
+          x-titleNl: "Netcare"
+        - const: "OTHER"
+          title: "Overig"
+          x-titleNl: "Overig"
+        - const: "SUPPLY"
+          title: "Levering"
+          x-titleNl: "Levering"
+        - const: "NETMNGT"
+          title: "Netbeheer"
+          x-titleNl: "Netbeheer"
+        - const: "MEASURING"
+          title: "Meetdienst"
+          x-titleNl: "Meetdienst"
+    IndicatorType:
+      type: string
+      minLength: 1
+      enum:
+        - "OTH"
+        - "REACH"
+    "IndicatorType.Display":
+      description: "IndicatorType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "OTH"
+          title: "Other"
+          x-titleNl: "Overig"
+        - const: "REACH"
+          title: "Indication, if the product contains a \"SVHC = substance of very high concern\" in a concentration of more than 0.1 mass percentage (referring to the candidates/substances that were published by ECHA at the previous given date). Possible values (lowercase!): - \"true\" contains substances > 0.1 mass percentage - \"false\" does not contain substances >0.1 mass percentage - \"no data\" if REACH info is not yet available for a certain product. If \"true\" is given, a deeplink to info is mandatory"
+          x-titleNl: "Aanduiding of het product een \"SVHC = zeer zorgwekkende stof\" bevat in een concentratie van meer dan 0,1 massaprocent (verwijzend naar de kandidaten/stoffen die door ECHA werden gepubliceerd op de vorige opgegeven datum). Mogelijke waarden (kleine letters!): - \"true\" bevat stoffen > 0.1 massapercentage - \"false\" bevat geen stoffen > 0.1 massapercentage - \"Geen gegevens\" als er nog geen REACH-informatie beschikbaar is voor een bepaald product. Als \"true\" is gegeven, is een deeplink naar info verplicht"
+    FuelTypes:
+      type: string
+      minLength: 1
+      enum:
+        - "BIO"
+        - "SOLAR"
+        - "FOSSIL"
+        - "WIND"
+        - "HYDRO"
+    "FuelTypes.Display":
+      description: "FuelTypes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "BIO"
+          title: "Biomassa"
+          x-titleNl: "Biomassa"
+        - const: "SOLAR"
+          title: "Zonne-energie"
+          x-titleNl: "Zonne-energie"
+        - const: "FOSSIL"
+          title: "Fossiele branstof"
+          x-titleNl: "Fossiele branstof"
+        - const: "WIND"
+          title: "Windenergie"
+          x-titleNl: "Windenergie"
+        - const: "HYDRO"
+          title: "Waterkracht"
+          x-titleNl: "Waterkracht"
+    EnergyUoMType:
+      type: string
+      minLength: 1
+      enum:
+        - "MWH"
+        - "KWH"
+        - "MAW"
+        - "KVA"
+        - "GWH"
+        - "WHR"
+        - "A90"
+        - "AMP"
+        - "KWT"
+        - "3B"
+        - "K3"
+        - "KJO"
+        - "GV"
+        - "JOU"
+        - "KVR"
+    "EnergyUoMType.Display":
+      description: "EnergyUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "MWH"
+          title: "Megawatt hour"
+          x-titleNl: "Megawattuur"
+        - const: "KWH"
+          title: "Kilowatt hour"
+          x-titleNl: "Kilowattuur"
+        - const: "MAW"
+          title: "Megawatt"
+          x-titleNl: "Megawatt"
+        - const: "KVA"
+          title: "Kilovolt ampere"
+          x-titleNl: "Kilovoltampère"
+        - const: "GWH"
+          title: "Gigawatt hour"
+          x-titleNl: "Gigawattuur"
+        - const: "WHR"
+          title: "Watt hour"
+          x-titleNl: "Watthour"
+        - const: "A90"
+          title: "Gigawatt"
+          x-titleNl: "Gigawatt"
+        - const: "AMP"
+          title: "Ampere"
+          x-titleNl: "Ampère"
+        - const: "KWT"
+          title: "Kilowatt"
+          x-titleNl: "Kilowatt"
+        - const: "3B"
+          title: "Megajoule"
+          x-titleNl: "Megajoule"
+        - const: "K3"
+          title: "Kilovolt ampere reactive hours"
+          x-titleNl: "Kilovoltampère reactieve uren"
+        - const: "KJO"
+          title: "Kilojoule"
+          x-titleNl: "Kilojoule"
+        - const: "GV"
+          title: "Gigajoule"
+          x-titleNl: "Gigajoule"
+        - const: "JOU"
+          title: "Joule"
+          x-titleNl: "Joule"
+        - const: "KVR"
+          title: "Kilovolt ampere (reactive)"
+          x-titleNl: "Kilovoltampère (reactief)"
+    DeviceType:
+      type: string
+      minLength: 1
+      enum:
+        - "A"
+        - "B"
+        - "C"
+    "DeviceType.Display":
+      description: "DeviceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "A"
+          title: "Type toestel A"
+          x-titleNl: "Type toestel A"
+        - const: "B"
+          title: "Type toestel B"
+          x-titleNl: "Type toestel B"
+        - const: "C"
+          title: "Type toestel C"
+          x-titleNl: "Type toestel C"
+    CommodityCodes:
+      type: string
+      minLength: 1
+      enum:
+        - "83101500"
+        - "83101600"
+        - "83101800"
+        - "83101900"
+    "CommodityCodes.Display":
+      description: "CommodityCodes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "83101500"
+          title: "Water"
+          x-titleNl: "Water"
+        - const: "83101600"
+          title: "Gas"
+          x-titleNl: "Gas"
+        - const: "83101800"
+          title: "Elektriciteit"
+          x-titleNl: "Elektriciteit"
+        - const: "83101900"
+          title: "Warmte en Koude"
+          x-titleNl: "Warmte en Koude"
+    MeterReadingMethods:
+      type: string
+      enum:
+        - "MRM005"
+        - "MRM007"
+        - "MRM004"
+        - "MRM003"
+        - "MRM002"
+        - "MRM008"
+        - "MRM006"
+        - "MRM001"
+    "MeterReadingMethods.Display":
+      description: "MeterReadingMethods met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "MRM005"
+          title: "Berekend door leverancier"
+          x-titleNl: "Berekend door leverancier"
+        - const: "MRM007"
+          title: "Berekend/geschat door Meetbedrijf"
+          x-titleNl: "Berekend/geschat door Meetbedrijf"
+        - const: "MRM004"
+          title: "Automatisch door slimme meter"
+          x-titleNl: "Automatisch door slimme meter"
+        - const: "MRM003"
+          title: "Opname door klant"
+          x-titleNl: "Opname door klant"
+        - const: "MRM002"
+          title: "Opname door netbeheerder"
+          x-titleNl: "Opname door netbeheerder"
+        - const: "MRM008"
+          title: "Berekend/geschat door Netbeheerder"
+          x-titleNl: "Berekend/geschat door Netbeheerder"
+        - const: "MRM006"
+          title: "Berekend/geschat door Partij Verantwoordelijke (PV)"
+          x-titleNl: "Berekend/geschat door Partij Verantwoordelijke (PV)"
+        - const: "MRM001"
+          title: "Opname door meetbedrijf"
+          x-titleNl: "Opname door meetbedrijf"
+    BIMStatusType:
+      type: string
+      minLength: 1
+      maxLength: 10
+      enum:
+        - "test"
+        - "incomplete"
+        - "ready"
+    "BIMStatusType.Display":
+      description: "BIMStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "test"
+          title: "BIM data has the test status."
+          x-titleNl: "BIM-gegevens hebben de teststatus."
+        - const: "incomplete"
+          title: "BIM data is not complete."
+          x-titleNl: "BIM-gegevens zijn niet compleet."
+        - const: "ready"
+          title: "BIM data is complete and ready for use in a BIM environment."
+          x-titleNl: "BIM-gegevens zijn volledig en klaar voor gebruik in een BIM-omgeving."
+    GlassControlMethodType:
+      type: string
+      minLength: 1
+      maxLength: 4
+      enum:
+        - "cord"
+        - "rod"
+        - "none"
+    "GlassControlMethodType.Display":
+      description: "GlassControlMethodType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "cord"
+          title: "Cord"
+          x-titleNl: "Koord"
+        - const: "rod"
+          title: "Rod"
+          x-titleNl: "Stang"
+        - const: "none"
+          title: "None"
+          x-titleNl: "Geen"
+    GlassControlPositionType:
+      type: string
+      minLength: 1
+      maxLength: 10
+      enum:
+        - "left"
+        - "right"
+        - "both"
+    "GlassControlPositionType.Display":
+      description: "GlassControlPositionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "left"
+          title: "left"
+          x-titleNl: "Links"
+        - const: "right"
+          title: "Right"
+          x-titleNl: "Rechts"
+        - const: "both"
+          title: "Both sides"
+          x-titleNl: "Beide kanten"
+    GlassPositionType:
+      type: string
+      minLength: 1
+      maxLength: 10
+      enum:
+        - "left"
+        - "right"
+        - "top"
+        - "bottom"
+    "GlassPositionType.Display":
+      description: "GlassPositionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "left"
+          title: "left"
+          x-titleNl: "Links"
+        - const: "right"
+          title: "Right"
+          x-titleNl: "Rechts"
+        - const: "top"
+          title: "Top side"
+          x-titleNl: "Boven"
+        - const: "bottom"
+          title: "Bottom side"
+          x-titleNl: "Onder"
+    ReturnReasonType:
+      type: string
+      minLength: 1
+      maxLength: 3
+      enum:
+        - "33"
+        - "17"
+        - "WAR"
+        - "2"
+        - "35"
+        - "49"
+        - "43"
+        - "10"
+        - "3"
+        - "29"
+        - "14"
+    "ReturnReasonType.Display":
+      description: "ReturnReasonType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "33"
+          title: "Late delivery"
+          x-titleNl: "Te late levering"
+        - const: "17"
+          title: "Transport damage"
+          x-titleNl: "Transportschade"
+        - const: "WAR"
+          title: "Warranty"
+          x-titleNl: "Aangemeld voor garantie"
+        - const: "2"
+          title: "Quality problem"
+          x-titleNl: "Kwaliteitsprobleem"
+        - const: "35"
+          title: "General return"
+          x-titleNl: "Algemene retour"
+        - const: "49"
+          title: "Replacement product not fully according to desired specification"
+          x-titleNl: "Vervangings product niet volledig volgens gewenste specificatie"
+        - const: "43"
+          title: "Unknown reason"
+          x-titleNl: "Onbekende reden"
+        - const: "10"
+          title: "Price error"
+          x-titleNl: "Prijsfout"
+        - const: "3"
+          title: "General damage"
+          x-titleNl: "Beschadiging algemeen"
+        - const: "29"
+          title: "Customer refusal"
+          x-titleNl: "Klant weigert"
+        - const: "14"
+          title: "Wrong article"
+          x-titleNl: "Verkeerd artikel"
+    EmissionsType:
+      type: string
+      minLength: 1
+      maxLength: 6
+      enum:
+        - "CO2eKG"
+    "EmissionsType.Display":
+      description: "EmissionsType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      oneOf:
+        - const: "CO2eKG"
+          title: "Total greenhouse gas emissions, expressed in kilograms of CO₂ equivalent, divided by the mass of output/products produced in kilograms. This indicator shows how much CO₂ emissions are associated on average with each kilogram of goods produced. As referred to in ESRS E1, paragraph 53 of the CSRD."
+          x-titleNl: "Totale uitstoot van broeikasgassen, uitgedrukt in kilogram CO₂-equivalent, gedeeld door de massa van de geproduceerde output/producten in kilogram. Deze indicator toont hoeveel CO₂-uitstoot gemiddeld gepaard gaat met elke kilogram geproduceerde goederen. Zoals bedoeld in ESRS E1, paragraaf 53 van de CSRD."
+
+# Codelijsten met bron Semantic Treehouse (niet uit codelist.xsd, en xsd wordt hiervoor niet bijgewerkt).
+# Opgehaald 01-07-2026 van https://ketenstandaard.semantic-treehouse.nl/codelist -- controleer bij twijfel de URI opnieuw.
+    MaintenanceType:
+      description: "Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/MaintenanceType)."
+      type: string
+      enum:
+        - "MUT"
+        - "REN"
+        - "PLM"
+        - "REP"
+        - "PRE"
+    "MaintenanceType.Display":
+      description: "MaintenanceType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/MaintenanceType)."
+      oneOf:
+        - const: "MUT"
+          title: "Mutatie"
+          description: "Onderhoudswerkzaamheden die worden uitgevoerd bij vertrek van de huurder (mutatieonderhoud), om de woning gereed te maken voor een nieuwe bewoner."
+        - const: "REN"
+          title: "Renovatie"
+          description: "Grootschalige verbouwing of renovatie van een woning of object, vaak om de staat te verbeteren of te moderniseren."
+        - const: "PLM"
+          title: "Planmatig onderhoud"
+          description: "Planmatig onderhoud volgens een vooraf opgesteld onderhoudsplan, om onverwachte gebreken te voorkomen en de levensduur te verlengen."
+        - const: "REP"
+          title: "Reparatie"
+          description: "Herstelwerkzaamheden aan een gebrek of defect dat is gemeld door de huurder of gebruiker."
+        - const: "PRE"
+          title: "Preventief onderhoud"
+          description: "Preventief onderhoud volgens een vooraf opgesteld onderhoudsplan, om onverwachte gebreken te voorkomen en de levensduur te verlengen."
+    StatusCode:
+      description: "Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/StatusCode)."
+      type: string
+      enum:
+        - "AIN"
+        - "AGE"
+        - "VAN"
+        - "REA"
+        - "ACC"
+        - "OND"
+        - "REV"
+        - "WEI"
+        - "TGE"
+        - "VIN"
+        - "ANN"
+        - "VER"
+        - "REG"
+    "StatusCode.Display":
+      description: "StatusCode met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/StatusCode)."
+      oneOf:
+        - const: "AIN"
+          title: "Aanleveren aanvullende Informatie"
+          description: "Er is informatie aangevuld."
+        - const: "AGE"
+          title: "Administratief gereed"
+          description: "De order of verzoek is administratief afgerond door Uitvoeren Onderhoudsorder, er mag geen verdere communicatie over deze order verwacht worden."
+        - const: "VAN"
+          title: "Verzoek tot annuleren"
+          description: "De order of verzoek dient geannuleerd te worden."
+        - const: "REA"
+          title: "Reactie"
+          description: "Reactie op het reactie vereist bericht."
+        - const: "ACC"
+          title: "Geaccepteerd"
+          description: "Nadat de order of verzoek geaccepteerd is."
+        - const: "OND"
+          title: "Onderbroken"
+          description: "Geeft aan dat een taak, proces, opdracht of object tijdelijk is gepauzeerd en niet actief wordt voortgezet. De status on hold wordt gebruikt wanneer de uitvoering bewust is opgeschort, zonder dat een reactie of directe actie wordt verwacht, en zonder het item te annuleren."
+        - const: "REV"
+          title: "Reactie Vereist"
+          description: "Er wordt informatie doorgegeven waarop een reactie van de ontvangende partij vereist is. Het proces stopt tot de reactie gegeven is."
+        - const: "WEI"
+          title: "Weigeren"
+          description: "De order of verzoek is geweigerd."
+        - const: "TGE"
+          title: "Technisch gereed"
+          description: "De order of verzoek is technisch gereed, er zijn geen werkzaamheden meer nodig."
+        - const: "VIN"
+          title: "Verzoek tot Informatie"
+          description: "Een verzoek tot aanvullende informatie. Het proces kan doorlopen tijdens deze status."
+        - const: "ANN"
+          title: "Annuleren"
+          description: "De order of verzoek is geannuleerd."
+        - const: "VER"
+          title: "Verlengen doorlooptijd"
+          description: "De order of verzoek heeft meer tijd nodig om uitgevoerd te worden."
+        - const: "REG"
+          title: "Geregistreerd"
+          description: "De order of verzoek is aangemaakt en verzonden."
+    StatusDetailCode:
+      description: "Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/StatusDetailCode)."
+      type: string
+      enum:
+        - "THD"
+        - "VBW"
+        - "OHD"
+        - "BNT"
+        - "MIB"
+        - "AFR"
+        - "AFH"
+        - "AWE"
+        - "BBT"
+        - "AFW"
+        - "AVW"
+        - "AFN"
+        - "QUR"
+    "StatusDetailCode.Display":
+      description: "StatusDetailCode met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/StatusDetailCode)."
+      oneOf:
+        - const: "THD"
+          title: "Tijdelijk hersteld"
+          description: "De order of verzoek is tijdelijk hersteld, er zijn aanvullende werkzaamheden door de opdrachtnemer nodig om het geheel definitief te herstellen."
+        - const: "VBW"
+          title: "Verzoek Gebruiker"
+          description: "De statuswijziging of vertraging is het directe gevolg van een verzoek van de gebruiker."
+        - const: "OHD"
+          title: "Onderdeel niet beschikbaar"
+          description: "De order of verzoek is vertraagd omdat een benodigd onderdeel niet beschikbaar is."
+        - const: "BNT"
+          title: "Gebruiker niet aanwezig"
+          description: "De gebruiker was niet thuis bij het geplande bezoek."
+        - const: "MIB"
+          title: "Materiaal in bestelling"
+          description: "De order of verzoek is vertraagd omdat benodigd materiaal in bestelling is."
+        - const: "AFR"
+          title: "Afwachten reactie opzichter"
+          description: "De werkzaamheden zijn uitgesteld in afwachting van reactie van de opzichter."
+        - const: "AFH"
+          title: "Afspraak Gebruiker"
+          description: "Er is een afspraak gemaakt met de gebruiker."
+        - const: "AWE"
+          title: "Aanvullende werkzaamheden extern"
+          description: "Er is aanvullend werk nodig dat door een andere opdrachtnemer wordt uitgevoerd. De actie ligt bij de opdrachtgever om deze werkzaamheden te initiëren of te organiseren. De huidige opdrachtnemer zal geen aanvullende werkzaamheden uitvoeren."
+        - const: "BBT"
+          title: "Gebruiker belt terug"
+          description: "De gebruiker zal terugbellen voor het maken van een afspraak."
+        - const: "AFW"
+          title: "Afwachten in verband met weer"
+          description: "De werkzaamheden zijn uitgesteld vanwege weersomstandigheden."
+        - const: "AVW"
+          title: "Aanvullend werk nodig"
+          description: "Er is aanvullend werk nodig om de opdracht te voltooien. Een reactie van de opdrachtgever is vereist."
+        - const: "AFN"
+          title: "Afspraak Gebruiker niet gelukt"
+          description: "Het maken van een afspraak met de gebruiker is niet gelukt."
+        - const: "QUR"
+          title: "Offerte niet gegund"
+          description: "De offerte is niet gegund aan deze opdrachtnemer."
+    DeclaredUnitUnitType:
+      description: "Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_da23d459-b762-4b3d-83e8-c2dea56ff87d)."
+      type: string
+      enum:
+        - "FTQ"
+        - "FOT"
+        - "YDK"
+        - "PCE"
+        - "MTK"
+        - "LBR"
+        - "LTR"
+        - "KGM"
+        - "LTN"
+        - "MTQ"
+        - "YRD"
+        - "TNE"
+        - "MTR"
+        - "FTK"
+    "DeclaredUnitUnitType.Display":
+      description: "DeclaredUnitUnitType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_da23d459-b762-4b3d-83e8-c2dea56ff87d)."
+      oneOf:
+        - const: "FTQ"
+          title: "Cubic foot"
+        - const: "FOT"
+          title: "Foot"
+        - const: "YDK"
+          title: "Square yard"
+        - const: "PCE"
+          title: "Piece"
+        - const: "MTK"
+          title: "Square metre"
+        - const: "LBR"
+          title: "Pound"
+        - const: "LTR"
+          title: "Litre"
+        - const: "KGM"
+          title: "Kilogram"
+        - const: "LTN"
+          title: "Imperial ton (long ton)"
+        - const: "MTQ"
+          title: "Cubic metre"
+        - const: "YRD"
+          title: "Yard"
+        - const: "TNE"
+          title: "Metric ton"
+        - const: "MTR"
+          title: "Metre"
+        - const: "FTK"
+          title: "Square foot"
+    LcaDeclarationIndicatorType:
+      description: "Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_09771901-f08d-4d32-a37c-912a8cbde415)."
+      type: string
+      enum:
+        - "MND"
+        - "MNR"
+        - "AGG"
+        - "MDE"
+    "LcaDeclarationIndicatorType.Display":
+      description: "LcaDeclarationIndicatorType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_09771901-f08d-4d32-a37c-912a8cbde415)."
+      oneOf:
+        - const: "MND"
+          title: "Module not declared"
+        - const: "MNR"
+          title: "Module not relevant"
+        - const: "AGG"
+          title: "Only for stages A1, A2 and A3 - to indicate that results are aggregated (combined) under code A1-A3"
+        - const: "MDE"
+          title: "Module declared"
+    EnvironmentalDeclarationCategoryType:
+      description: "Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_6bcf7d69-fb3e-47af-9d24-97a155a65361)."
+      type: string
+      enum:
+        - "1"
+        - "2"
+        - "3"
+        - "3a"
+    "EnvironmentalDeclarationCategoryType.Display":
+      description: "EnvironmentalDeclarationCategoryType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_6bcf7d69-fb3e-47af-9d24-97a155a65361)."
+      oneOf:
+        - const: "1"
+          title: "Product- en merkspecifieke milieuverklaringen, vaak aangeleverd door fabrikanten."
+        - const: "2"
+          title: "Merkongebonden data van groepen van fabrikanten en/of toeleveranciers en branches."
+        - const: "3"
+          title: "Merkongebonden data van Stichting Nationale Milieudatabase."
+        - const: "3a"
+          title: "Merkongebonden data van Stichting Nationale Milieudatabase. Data van infrastructuur voor externe energielevering, energiedragers en milieuverklaringen van in zijn geheel her te gebruiken bouwelementen/installaties in nieuw te bouwen bouwwerken."
+    ControlSystemType:
+      description: "Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_1bdf5797-ce14-4d4b-b1ff-09f1c815ac55)."
+      type: string
+      enum:
+        - "GBS"
+        - "EMS"
+        - "APP"
+        - "GEE"
+    "ControlSystemType.Display":
+      description: "ControlSystemType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_1bdf5797-ce14-4d4b-b1ff-09f1c815ac55)."
+      oneOf:
+        - const: "GBS"
+          title: "Sturing via GBS, Gebouwbeheersysteem"
+        - const: "EMS"
+          title: "Sturing via EMS, Energiemanagementsysteem"
+        - const: "APP"
+          title: "Sturing via installatie-specifieke app"
+        - const: "GEE"
+          title: "Geen van bovenstaande alleen handmatig"
+    SourceType:
+      description: "Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_4c3984ea-d2c4-4096-8269-bbad720716d0)."
+      type: string
+      enum:
+        - "2baValid"
+        - "2baNonValid"
+    "SourceType.Display":
+      description: "SourceType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_4c3984ea-d2c4-4096-8269-bbad720716d0)."
+      oneOf:
+        - const: "2baValid"
+          title: "Een gevalideerde product op 2ba."
+        - const: "2baNonValid"
+          title: "Een niet gevalideerde product op 2ba."
+
+# TODO: codelijsten die WEL op Semantic Treehouse zijn geregistreerd, maar daar nog 0 waarden hebben.
+# Niet invullen met oude concept-waarden uit draft-specs (venetian blind pilot / GIR) -- die zijn niet
+# geverifieerd tegen Treehouse. Zodra Treehouse waarden toont: verplaatsen naar TREEHOUSE_CODELISTS.
+x-todoCodelists:
+  - name: "ThirdPartyVerificationType"
+    bron: "https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_ebda1d64-1d1b-4afd-b0dc-557e2813d9a0"
+    omschrijving: "Mate van onafhankelijke verificatie van milieudata. Geregistreerd op Treehouse, gebruikt door EnvironmentalData v1.0/v2.0, maar daar nog 0 waarden gepubliceerd (gecontroleerd 01-07-2026)."
+    waarden: "nog geen waarden gepubliceerd op Semantic Treehouse"
+  - name: "LifeCycleStageType"
+    bron: "https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_42da2c0b-2100-4a31-b78c-c8ba5f336adc"
+    omschrijving: "Levenscyclusfase-codes (vermoedelijk conform EN 15804, A1..D). Geregistreerd op Treehouse, gebruikt door EnvironmentalData v1.0/v2.0, maar daar nog 0 waarden gepubliceerd (gecontroleerd 01-07-2026)."
+    waarden: "nog geen waarden gepubliceerd op Semantic Treehouse"
+  - name: "InstallationOperationalStatusType"
+    bron: "https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_27ee3bda-1652-461a-bca7-6b49d35e5416"
+    omschrijving: "Operationele status van een installatie. Geregistreerd op Treehouse, gebruikt door 4 GIR-specs (Basisdata Message v0.97/v0.98/v0.99, Maintenance Log v0.6), maar daar nog 0 waarden gepubliceerd (gecontroleerd 01-07-2026)."
+    waarden: "nog geen waarden gepubliceerd op Semantic Treehouse"
+  - name: "InstallationLifeCycleStatusType"
+    bron: "https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_bb5ef48b-2440-422a-b0f2-c37cc7c977c9"
+    omschrijving: "Levenscyclusstatus van een installatie. Geregistreerd op Treehouse, gebruikt door 3 GIR Basisdata Message-specs, maar daar nog 0 waarden gepubliceerd (gecontroleerd 01-07-2026)."
+    waarden: "nog geen waarden gepubliceerd op Semantic Treehouse"
+  - name: "ClassificationType"
+    bron: "https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_0c58977f-b2a6-40e4-bb9e-a098625327ca"
+    omschrijving: "Classificatiesysteem voor installaties (bijv. NL-SfB). Geregistreerd op Treehouse, gebruikt door 5 GIR Basisdata Message-specs, maar daar nog 0 waarden gepubliceerd (gecontroleerd 01-07-2026)."
+    waarden: "nog geen waarden gepubliceerd op Semantic Treehouse"
