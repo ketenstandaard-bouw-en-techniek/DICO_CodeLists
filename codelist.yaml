@@ -2557,6 +2557,48 @@ components:
           title: "Een gevalideerde product op 2ba."
         - const: "2baNonValid"
           title: "Een niet gevalideerde product op 2ba."
+    InstallationOperationalStatusType:
+      description: "Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_27ee3bda-1652-461a-bca7-6b49d35e5416). Promoted 01-07-2026 uit x-todoCodelists: Treehouse-registratie had nog 0 waarden; onderstaande waarden komen uit de reeds gepubliceerde GIR-specs (GIR_Message_API_v1.yaml, GIR_Maintenance Message_API_v0.6.yaml), niet uit Treehouse zelf. Verifieer tegen Treehouse zodra daar waarden verschijnen."
+      type: string
+      enum:
+        - "Down"
+        - "ExternallyDisabled"
+        - "TemporarilyDisabled"
+        - "Standby"
+        - "Operational"
+        - "Degraded"
+    "InstallationOperationalStatusType.Display":
+      description: "InstallationOperationalStatusType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_27ee3bda-1652-461a-bca7-6b49d35e5416). Promoted 01-07-2026 uit x-todoCodelists: Treehouse-registratie had nog 0 waarden; onderstaande waarden komen uit de reeds gepubliceerde GIR-specs (GIR_Message_API_v1.yaml, GIR_Maintenance Message_API_v0.6.yaml), niet uit Treehouse zelf. Verifieer tegen Treehouse zodra daar waarden verschijnen."
+      oneOf:
+        - const: "Down"
+          title: "Uitgevallen"
+          description: "De installatie is niet beschikbaar."
+        - const: "ExternallyDisabled"
+          title: "Extern uitgeschakeld"
+          description: "De installatie is door een externe partij buiten werking gesteld."
+        - const: "TemporarilyDisabled"
+          title: "Tijdelijk uitgeschakeld"
+          description: "De installatie is tijdelijk buiten gebruik gesteld."
+        - const: "Standby"
+          title: "Stand-by"
+          description: "De installatie is beschikbaar maar inactief."
+        - const: "Operational"
+          title: "Operationeel"
+          description: "De installatie functioneert normaal."
+        - const: "Degraded"
+          title: "Verminderd"
+          description: "De installatie functioneert beperkt."
+    InstallationLocationIDType:
+      description: "Bron: Semantic Treehouse (nog niet geregistreerd). GIR-specifieke codelijst voor het type van een installatie-locatie-ID, apart van het bestaande SALES005 LocationIDType (BAG). Waarden afkomstig uit GIR_Message_API_v1.yaml / GIR_Maintenance Message_API_v0.6.yaml; aanmelden op Semantic Treehouse aanbevolen."
+      type: string
+      enum:
+        - "GLN"
+    "InstallationLocationIDType.Display":
+      description: "InstallationLocationIDType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (nog niet geregistreerd). GIR-specifieke codelijst voor het type van een installatie-locatie-ID, apart van het bestaande SALES005 LocationIDType (BAG). Waarden afkomstig uit GIR_Message_API_v1.yaml / GIR_Maintenance Message_API_v0.6.yaml; aanmelden op Semantic Treehouse aanbevolen."
+      oneOf:
+        - const: "GLN"
+          title: "GLN"
+          description: "Global Location Number, een wereldwijd uniek nummer om een partij of locatie te identificeren."
 
 # TODO: codelijsten die WEL op Semantic Treehouse zijn geregistreerd, maar daar nog 0 waarden hebben.
 # Niet invullen met oude concept-waarden uit draft-specs (venetian blind pilot / GIR) -- die zijn niet
@@ -2569,10 +2611,6 @@ x-todoCodelists:
   - name: "LifeCycleStageType"
     bron: "https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_42da2c0b-2100-4a31-b78c-c8ba5f336adc"
     omschrijving: "Levenscyclusfase-codes (vermoedelijk conform EN 15804, A1..D). Geregistreerd op Treehouse, gebruikt door EnvironmentalData v1.0/v2.0, maar daar nog 0 waarden gepubliceerd (gecontroleerd 01-07-2026)."
-    waarden: "nog geen waarden gepubliceerd op Semantic Treehouse"
-  - name: "InstallationOperationalStatusType"
-    bron: "https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_27ee3bda-1652-461a-bca7-6b49d35e5416"
-    omschrijving: "Operationele status van een installatie. Geregistreerd op Treehouse, gebruikt door 4 GIR-specs (Basisdata Message v0.97/v0.98/v0.99, Maintenance Log v0.6), maar daar nog 0 waarden gepubliceerd (gecontroleerd 01-07-2026)."
     waarden: "nog geen waarden gepubliceerd op Semantic Treehouse"
   - name: "InstallationLifeCycleStatusType"
     bron: "https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_bb5ef48b-2440-422a-b0f2-c37cc7c977c9"
