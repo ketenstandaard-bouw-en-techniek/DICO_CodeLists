@@ -1,7 +1,3 @@
-# Auto-generated from codelist.xsd (DICO Standaard CODELIST SALES005)
-# Regenerate with scripts/generate_codelist_yaml.py -- do not hand-edit.
-# Bundled single-file codelist collection per DECISIONS.md D19/D20/D29
-# (D29 herzien 01-07-2026: bundeling per domein i.p.v. losse bestanden per codelijst, zie O04).
 x-title: "DICO Standaard CODELIST SALES005"
 x-releaseDate: "2018-11-01"
 x-revisionDate: "2026-05-01"
@@ -2776,6 +2772,3 @@ components:
           title: "The SGTIN is the Serialized Global Trade Item Number."
         - const: "SerialNumber"
           title: "A serial number is a unique identifier used to uniquely identify an item, and is usually assigned incrementally or sequentially."
-
-# x-todoCodelists: momenteel leeg, alle eerder gesignaleerde Treehouse-codelijsten zijn gepromoveerd.
-x-todoCodelists: []
