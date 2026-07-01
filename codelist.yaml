@@ -2750,6 +2750,32 @@ components:
           title: "Naam c2 Omschrijving van c2."
         - const: "c3"
           title: "Naam c3 Omschrijving van c3."
+    InstallationIDType:
+      description: "Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_c2513a11-942e-4034-8a5e-af477d52b4de). Toegevoegd 01-07-2026."
+      type: string
+      enum:
+        - "GUID"
+        - "GIAI"
+    "InstallationIDType.Display":
+      description: "InstallationIDType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_c2513a11-942e-4034-8a5e-af477d52b4de). Toegevoegd 01-07-2026."
+      oneOf:
+        - const: "GUID"
+          title: "Een globally unique identifier of GUID is een pseudowillekeurig getal dat gebruikt wordt in softwaretoepassingen, en dat verondersteld wordt wereldwijd uniek te zijn."
+        - const: "GIAI"
+          title: "Het GS1 Global Individual Asset Identifier (GIAI) is een GS1 sleutel voor identificatie van assets."
+    ComponentIDType:
+      description: "Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_1f207a46-dde1-4b89-a974-c5dbaeee6b6a). Toegevoegd 01-07-2026."
+      type: string
+      enum:
+        - "SGTIN"
+        - "SerialNumber"
+    "ComponentIDType.Display":
+      description: "ComponentIDType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_1f207a46-dde1-4b89-a974-c5dbaeee6b6a). Toegevoegd 01-07-2026."
+      oneOf:
+        - const: "SGTIN"
+          title: "The SGTIN is the Serialized Global Trade Item Number."
+        - const: "SerialNumber"
+          title: "A serial number is a unique identifier used to uniquely identify an item, and is usually assigned incrementally or sequentially."
 
 # x-todoCodelists: momenteel leeg, alle eerder gesignaleerde Treehouse-codelijsten zijn gepromoveerd.
 x-todoCodelists: []
