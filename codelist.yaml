@@ -1,4 +1,8 @@
-x-title: "DICO Standaard CODELIST SALES005"
+x-title: "DICO codelijsten, gedeelde bundel"
+x-description: >
+  Gedeelde codelijstbundel voor DICO-specificaties. Bevat de codelijsten uit de legacy
+  SALES005-xsd en de codelijsten die uit Semantic Treehouse zijn overgenomen. De herkomst
+  staat per codelijst in de description van het bijbehorende .Display-schema.
 x-releaseDate: "2018-11-01"
 x-revisionDate: "2026-05-01"
 x-modificationHistory:
@@ -114,7 +118,7 @@ components:
         - "7"
         - "41"
     "ActionDescriptionType.Display":
-      description: "ActionDescriptionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "ActionDescriptionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "4"
           title: "No action"
@@ -139,7 +143,7 @@ components:
         - "ADO"
         - "ADR"
     "CommonAllowanceType.Display":
-      description: "CommonAllowanceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "CommonAllowanceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "ADO"
           title: "Efficient logistics"
@@ -154,7 +158,7 @@ components:
       enum:
         - "CAC"
     "Sub1AllowanceType.Display":
-      description: "Sub1AllowanceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "Sub1AllowanceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "CAC"
           title: "Cash discount"
@@ -174,7 +178,7 @@ components:
         - "WHE"
         - "X21"
     "Sub2AllowanceType.Display":
-      description: "Sub2AllowanceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "Sub2AllowanceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "ADZ"
           title: "Direct delivery allowance"
@@ -210,7 +214,7 @@ components:
         - $ref: "#/components/schemas/Sub1AllowanceType"
         - $ref: "#/components/schemas/Sub2AllowanceType"
     "AllowanceType.Display":
-      description: "Union van CommonAllowanceType, Sub1AllowanceType, Sub2AllowanceType. (documentatie-variant, zie D20)"
+      description: "Union van CommonAllowanceType, Sub1AllowanceType, Sub2AllowanceType. (documentatie-variant, zie D22)"
       anyOf:
         - $ref: "#/components/schemas/CommonAllowanceType.Display"
         - $ref: "#/components/schemas/Sub1AllowanceType.Display"
@@ -221,7 +225,7 @@ components:
         - $ref: "#/components/schemas/CommonAllowanceType"
         - $ref: "#/components/schemas/Sub1AllowanceType"
     "InvoiceAllowanceType.Display":
-      description: "Union van CommonAllowanceType, Sub1AllowanceType. (documentatie-variant, zie D20)"
+      description: "Union van CommonAllowanceType, Sub1AllowanceType. (documentatie-variant, zie D22)"
       anyOf:
         - $ref: "#/components/schemas/CommonAllowanceType.Display"
         - $ref: "#/components/schemas/Sub1AllowanceType.Display"
@@ -276,7 +280,7 @@ components:
         - "LCA"
         - "POD"
     "AttachmentType.Display":
-      description: "AttachmentType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "AttachmentType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "CAD"
           title: "CAD object or symbol"
@@ -377,7 +381,7 @@ components:
         - "RoHS"
         - "EPD"
     "CertificateType.Display":
-      description: "CertificateType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "CertificateType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "FSC"
           title: "Forest Stewardship Council"
@@ -492,7 +496,7 @@ components:
         - "MAC"
         - "AEQ"
     "CommonChargeType.Display":
-      description: "CommonChargeType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "CommonChargeType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "AAT"
           title: "Rush delivery"
@@ -533,7 +537,7 @@ components:
         - "SH"
         - "X21"
     "SubChargeType.Display":
-      description: "SubChargeType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "SubChargeType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "ABL"
           title: "Packaging surcharge"
@@ -568,7 +572,7 @@ components:
         - $ref: "#/components/schemas/CommonChargeType"
         - $ref: "#/components/schemas/SubChargeType"
     "ChargeType.Display":
-      description: "Union van CommonChargeType, SubChargeType. (documentatie-variant, zie D20)"
+      description: "Union van CommonChargeType, SubChargeType. (documentatie-variant, zie D22)"
       anyOf:
         - $ref: "#/components/schemas/CommonChargeType.Display"
         - $ref: "#/components/schemas/SubChargeType.Display"
@@ -631,7 +635,7 @@ components:
         - "P70"
         - "RW"
     "ClaimType.Display":
-      description: "ClaimType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "ClaimType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "F100"
           title: "FSC 100%"
@@ -717,7 +721,7 @@ components:
         - "RDP"
         - "SD"
     "DeliveryTransportTermsType.Display":
-      description: "DeliveryTransportTermsType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "DeliveryTransportTermsType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "01E"
           title: "Contact delivery party before delivery"
@@ -781,7 +785,7 @@ components:
         - "EANNL1"
         - "EANNL4"
     "DespatchStructureType.Display":
-      description: "DespatchStructureType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "DespatchStructureType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "EANNL1"
           title: "Trade items per shipment"
@@ -797,7 +801,7 @@ components:
         - "380"
         - "384"
     "InvoiceType.Display":
-      description: "InvoiceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "InvoiceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "380"
           title: "Commercial invoice"
@@ -812,7 +816,7 @@ components:
       enum:
         - "PCE"
     "NumberUoMType.Display":
-      description: "NumberUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "NumberUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "PCE"
           title: "Piece"
@@ -826,7 +830,7 @@ components:
         - "CMT"
         - "MTR"
     "LengthUoMType.Display":
-      description: "LengthUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "LengthUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "MMT"
           title: "Millimetre"
@@ -844,7 +848,7 @@ components:
       enum:
         - "MTK"
     "AreaUoMType.Display":
-      description: "AreaUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "AreaUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "MTK"
           title: "Square metre"
@@ -856,7 +860,7 @@ components:
       enum:
         - "DD"
     "AngleUoMType.Display":
-      description: "AngleUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "AngleUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "DD"
           title: "Degrees"
@@ -870,7 +874,7 @@ components:
         - "LTR"
         - "MTQ"
     "VolumeUoMType.Display":
-      description: "VolumeUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "VolumeUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "MLT"
           title: "Millilire"
@@ -890,7 +894,7 @@ components:
         - "KGM"
         - "TNE"
     "WeightUoMType.Display":
-      description: "WeightUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "WeightUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "GRM"
           title: "Gram"
@@ -914,7 +918,7 @@ components:
         - "ANN"
         - "SEC"
     "TimeUoMType.Display":
-      description: "TimeUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "TimeUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "MIN"
           title: "Minute"
@@ -948,7 +952,7 @@ components:
         - $ref: "#/components/schemas/TimeUoMType"
         - $ref: "#/components/schemas/AngleUoMType"
     "UoMType.Display":
-      description: "Union van NumberUoMType, LengthUoMType, AreaUoMType, VolumeUoMType, WeightUoMType, TimeUoMType, AngleUoMType. (documentatie-variant, zie D20)"
+      description: "Union van NumberUoMType, LengthUoMType, AreaUoMType, VolumeUoMType, WeightUoMType, TimeUoMType, AngleUoMType. (documentatie-variant, zie D22)"
       anyOf:
         - $ref: "#/components/schemas/NumberUoMType.Display"
         - $ref: "#/components/schemas/LengthUoMType.Display"
@@ -969,7 +973,7 @@ components:
         - $ref: "#/components/schemas/AngleUoMType"
         - $ref: "#/components/schemas/PseudoUoMType"
     "UoMUnionType.Display":
-      description: "Union van NumberUoMType, LengthUoMType, AreaUoMType, VolumeUoMType, WeightUoMType, TimeUoMType, AngleUoMType, PseudoUoMType. (documentatie-variant, zie D20)"
+      description: "Union van NumberUoMType, LengthUoMType, AreaUoMType, VolumeUoMType, WeightUoMType, TimeUoMType, AngleUoMType, PseudoUoMType. (documentatie-variant, zie D22)"
       anyOf:
         - $ref: "#/components/schemas/NumberUoMType.Display"
         - $ref: "#/components/schemas/LengthUoMType.Display"
@@ -987,7 +991,7 @@ components:
         - "4"
         - "9"
     "MutationType.Display":
-      description: "MutationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "MutationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "4"
           title: "Change"
@@ -1003,7 +1007,7 @@ components:
         - "46"
         - "49"
     "QuotationStatusType.Display":
-      description: "QuotationStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "QuotationStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "46"
           title: "Provisional"
@@ -1021,7 +1025,7 @@ components:
         - "27"
         - "29"
     "QuotationRequestStatusType.Display":
-      description: "QuotationRequestStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "QuotationRequestStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "6"
           title: "Confirmation"
@@ -1045,7 +1049,7 @@ components:
         - "27"
         - "29"
     "OrderResponseStatusType.Display":
-      description: "OrderResponseStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "OrderResponseStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "4"
           title: "Change"
@@ -1069,7 +1073,7 @@ components:
         - "732"
         - "733"
     "OrderType.Display":
-      description: "OrderType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "OrderType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "220"
           title: "Order"
@@ -1134,7 +1138,7 @@ components:
         - "X17"
         - "X3"
     "PackageDescriptionType.Display":
-      description: "PackageDescriptionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "PackageDescriptionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "08"
           title: "Oneway pallet (GS1 Code)"
@@ -1280,7 +1284,7 @@ components:
         - "42"
         - "49"
     "PaymentMeansType.Display":
-      description: "PaymentMeansType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "PaymentMeansType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "10"
           title: "In cash"
@@ -1299,7 +1303,7 @@ components:
         - "IU"
         - "PV"
     "ProjectPhaseType.Display":
-      description: "ProjectPhaseType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "ProjectPhaseType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "IU"
           title: "In progress"
@@ -1316,7 +1320,7 @@ components:
         - "NA"
         - "UN"
     "ReasonNoValueType.Display":
-      description: "ReasonNoValueType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "ReasonNoValueType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "MV"
           title: "Missing ETIM value"
@@ -1335,7 +1339,7 @@ components:
         - "AA"
         - "PP"
     "RelationKindType.Display":
-      description: "RelationKindType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "RelationKindType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "AA"
           title: "Article-article relation"
@@ -1359,7 +1363,7 @@ components:
         - "TEP"
         - "VOO"
     "RelationType.Display":
-      description: "RelationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "RelationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "ALT"
           title: "Alternative"
@@ -1400,7 +1404,7 @@ components:
         - "N"
         - "V"
     "ROHSIndicatorType.Display":
-      description: "ROHSIndicatorType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "ROHSIndicatorType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "J"
           title: "ROHS applicable"
@@ -1423,7 +1427,7 @@ components:
         - "175"
         - "94E"
     "SpecialConditionType.Display":
-      description: "SpecialConditionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "SpecialConditionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "125"
           title: "New item, not yet available"
@@ -1452,7 +1456,7 @@ components:
         - "BC"
         - "PC"
     "TermsType.Display":
-      description: "TermsType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "TermsType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "AC"
           title: "Promotional term"
@@ -1500,7 +1504,7 @@ components:
         - "VLA"
         - "VLK"
     "TransportInstructionType.Display":
-      description: "TransportInstructionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "TransportInstructionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "CRN"
           title: "Take back packaging"
@@ -1604,7 +1608,7 @@ components:
         - "JN"
         - "N"
     "ValueType.Display":
-      description: "ValueType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "ValueType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "A"
           title: "Alpha numeric"
@@ -1630,7 +1634,7 @@ components:
         - "S"
         - "Z"
     "VATRateType.Display":
-      description: "VATRateType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "VATRateType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "AE"
           title: "VAT reverse charge"
@@ -1668,7 +1672,7 @@ components:
         - "HUU"
         - "DER"
     "ChargeToType.Display":
-      description: "ChargeToType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "ChargeToType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "GAR"
           title: "Charge to warranty"
@@ -1687,7 +1691,7 @@ components:
         - "DEL"
         - "PIC"
     "CheckoutType.Display":
-      description: "CheckoutType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "CheckoutType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "DEL"
           title: "Delivery"
@@ -1704,7 +1708,7 @@ components:
         - "ANA"
         - "PLA"
     "IoTMessageType.Display":
-      description: "IoTMessageType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "IoTMessageType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "ADH"
           title: "Ad Hoc"
@@ -1727,7 +1731,7 @@ components:
         - "WAR"
         - "ERR"
     "IoTStatusType.Display":
-      description: "IoTStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "IoTStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "FAT"
           title: "Fatal"
@@ -1755,7 +1759,7 @@ components:
         - "MAI"
         - "REP"
     "TaskType.Display":
-      description: "TaskType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "TaskType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "INS"
           title: "Installation"
@@ -1773,7 +1777,7 @@ components:
         - "GCA"
         - "OTH"
     "SpaceType.Display":
-      description: "SpaceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "SpaceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "GCA"
           title: "Gas combustion appliance staging area"
@@ -1789,7 +1793,7 @@ components:
         - "SEV"
         - "NOT"
     "SeverityOfSituationType.Display":
-      description: "SeverityOfSituationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "SeverityOfSituationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "URG"
           title: "Urgent and action desired by Competent Authority [legal notification based on Article 1.38 of Building Regulations 2012]"
@@ -1806,7 +1810,7 @@ components:
       enum:
         - "PPM"
     "PseudoUoMType.Display":
-      description: "PseudoUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "PseudoUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "PPM"
           title: "Parts per million"
@@ -1817,7 +1821,7 @@ components:
       enum:
         - "CRT"
     "PartyIDType.Display":
-      description: "PartyIDType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "PartyIDType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "CRT"
           title: "Number provided by Centraal Register Techniek"
@@ -1832,7 +1836,7 @@ components:
         - "NO3"
         - "NO5"
     "NatureOfNotificationType.Display":
-      description: "NatureOfNotificationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "NatureOfNotificationType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "NO1"
           title: "Notification 1: Urgent advice; Installation has no objections after accident report and has been put into operation"
@@ -1865,7 +1869,7 @@ components:
         - "TERUGHOOG"
         - "BLINDINTEGRAAL"
     "MeterReadingTypes.Display":
-      description: "MeterReadingTypes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "MeterReadingTypes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "MAXBELASTING"
           title: "Maximale belasting"
@@ -1906,7 +1910,7 @@ components:
       enum:
         - "CO"
     "MeasurementType.Display":
-      description: "MeasurementType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "MeasurementType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "CO"
           title: "Carbon monoxide measurement"
@@ -1917,7 +1921,7 @@ components:
       enum:
         - "BAG"
     "LocationIDType.Display":
-      description: "LocationIDType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "LocationIDType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "BAG"
           title: "BAG ID: identifying characteristic as recorded in the BAG (Basic Registration of Addresses and Buildings)."
@@ -1932,7 +1936,7 @@ components:
         - "NETMNGT"
         - "MEASURING"
     "ItemClassificationCodes.Display":
-      description: "ItemClassificationCodes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "ItemClassificationCodes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "NETCARE"
           title: "Netcare"
@@ -1956,7 +1960,7 @@ components:
         - "OTH"
         - "REACH"
     "IndicatorType.Display":
-      description: "IndicatorType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "IndicatorType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "OTH"
           title: "Other"
@@ -1974,7 +1978,7 @@ components:
         - "WIND"
         - "HYDRO"
     "FuelTypes.Display":
-      description: "FuelTypes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "FuelTypes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "BIO"
           title: "Biomassa"
@@ -2011,7 +2015,7 @@ components:
         - "JOU"
         - "KVR"
     "EnergyUoMType.Display":
-      description: "EnergyUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "EnergyUoMType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "MWH"
           title: "Megawatt hour"
@@ -2066,7 +2070,7 @@ components:
         - "B"
         - "C"
     "DeviceType.Display":
-      description: "DeviceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "DeviceType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "A"
           title: "Type toestel A"
@@ -2086,7 +2090,7 @@ components:
         - "83101800"
         - "83101900"
     "CommodityCodes.Display":
-      description: "CommodityCodes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "CommodityCodes met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "83101500"
           title: "Water"
@@ -2112,7 +2116,7 @@ components:
         - "MRM006"
         - "MRM001"
     "MeterReadingMethods.Display":
-      description: "MeterReadingMethods met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "MeterReadingMethods met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "MRM005"
           title: "Berekend door leverancier"
@@ -2147,7 +2151,7 @@ components:
         - "incomplete"
         - "ready"
     "BIMStatusType.Display":
-      description: "BIMStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "BIMStatusType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "test"
           title: "BIM data has the test status."
@@ -2167,7 +2171,7 @@ components:
         - "rod"
         - "none"
     "GlassControlMethodType.Display":
-      description: "GlassControlMethodType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "GlassControlMethodType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "cord"
           title: "Cord"
@@ -2187,7 +2191,7 @@ components:
         - "right"
         - "both"
     "GlassControlPositionType.Display":
-      description: "GlassControlPositionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "GlassControlPositionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "left"
           title: "left"
@@ -2208,7 +2212,7 @@ components:
         - "top"
         - "bottom"
     "GlassPositionType.Display":
-      description: "GlassPositionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "GlassPositionType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "left"
           title: "left"
@@ -2239,7 +2243,7 @@ components:
         - "29"
         - "14"
     "ReturnReasonType.Display":
-      description: "ReturnReasonType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "ReturnReasonType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "33"
           title: "Late delivery"
@@ -2281,7 +2285,7 @@ components:
       enum:
         - "CO2eKG"
     "EmissionsType.Display":
-      description: "EmissionsType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D20)."
+      description: "EmissionsType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
         - const: "CO2eKG"
           title: "Total greenhouse gas emissions, expressed in kilograms of CO₂ equivalent, divided by the mass of output/products produced in kilograms. This indicator shows how much CO₂ emissions are associated on average with each kilogram of goods produced. As referred to in ESRS E1, paragraph 53 of the CSRD."
@@ -2299,7 +2303,7 @@ components:
         - "REP"
         - "PRE"
     "MaintenanceType.Display":
-      description: "MaintenanceType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/MaintenanceType)."
+      description: "MaintenanceType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/MaintenanceType)."
       oneOf:
         - const: "MUT"
           title: "Mutatie"
@@ -2334,7 +2338,7 @@ components:
         - "VER"
         - "REG"
     "StatusCode.Display":
-      description: "StatusCode met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/StatusCode)."
+      description: "StatusCode met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/StatusCode)."
       oneOf:
         - const: "AIN"
           title: "Aanleveren aanvullende Informatie"
@@ -2393,7 +2397,7 @@ components:
         - "AFN"
         - "QUR"
     "StatusDetailCode.Display":
-      description: "StatusDetailCode met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/StatusDetailCode)."
+      description: "StatusDetailCode met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/StatusDetailCode)."
       oneOf:
         - const: "THD"
           title: "Tijdelijk hersteld"
@@ -2453,7 +2457,7 @@ components:
         - "MTR"
         - "FTK"
     "DeclaredUnitUnitType.Display":
-      description: "DeclaredUnitUnitType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_da23d459-b762-4b3d-83e8-c2dea56ff87d)."
+      description: "DeclaredUnitUnitType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_da23d459-b762-4b3d-83e8-c2dea56ff87d)."
       oneOf:
         - const: "FTQ"
           title: "Cubic foot"
@@ -2492,7 +2496,7 @@ components:
         - "AGG"
         - "MDE"
     "LcaDeclarationIndicatorType.Display":
-      description: "LcaDeclarationIndicatorType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_09771901-f08d-4d32-a37c-912a8cbde415)."
+      description: "LcaDeclarationIndicatorType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_09771901-f08d-4d32-a37c-912a8cbde415)."
       oneOf:
         - const: "MND"
           title: "Module not declared"
@@ -2511,7 +2515,7 @@ components:
         - "3"
         - "3a"
     "EnvironmentalDeclarationCategoryType.Display":
-      description: "EnvironmentalDeclarationCategoryType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_6bcf7d69-fb3e-47af-9d24-97a155a65361)."
+      description: "EnvironmentalDeclarationCategoryType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_6bcf7d69-fb3e-47af-9d24-97a155a65361)."
       oneOf:
         - const: "1"
           title: "Product- en merkspecifieke milieuverklaringen, vaak aangeleverd door fabrikanten."
@@ -2530,7 +2534,7 @@ components:
         - "APP"
         - "GEE"
     "ControlSystemType.Display":
-      description: "ControlSystemType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_1bdf5797-ce14-4d4b-b1ff-09f1c815ac55)."
+      description: "ControlSystemType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_1bdf5797-ce14-4d4b-b1ff-09f1c815ac55)."
       oneOf:
         - const: "GBS"
           title: "Sturing via GBS, Gebouwbeheersysteem"
@@ -2547,7 +2551,7 @@ components:
         - "2baValid"
         - "2baNonValid"
     "SourceType.Display":
-      description: "SourceType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_4c3984ea-d2c4-4096-8269-bbad720716d0)."
+      description: "SourceType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_4c3984ea-d2c4-4096-8269-bbad720716d0)."
       oneOf:
         - const: "2baValid"
           title: "Een gevalideerde product op 2ba."
@@ -2564,7 +2568,7 @@ components:
         - "Operational"
         - "Degraded"
     "InstallationOperationalStatusType.Display":
-      description: "InstallationOperationalStatusType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_27ee3bda-1652-461a-bca7-6b49d35e5416). Promoted 01-07-2026 uit x-todoCodelists: Treehouse-registratie had nog 0 waarden; onderstaande waarden komen uit de reeds gepubliceerde GIR-specs (GIR_Message_API_v1.yaml, GIR_Maintenance Message_API_v0.6.yaml), niet uit Treehouse zelf. Verifieer tegen Treehouse zodra daar waarden verschijnen."
+      description: "InstallationOperationalStatusType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_27ee3bda-1652-461a-bca7-6b49d35e5416). Promoted 01-07-2026 uit x-todoCodelists: Treehouse-registratie had nog 0 waarden; onderstaande waarden komen uit de reeds gepubliceerde GIR-specs (GIR_Message_API_v1.yaml, GIR_Maintenance Message_API_v0.6.yaml), niet uit Treehouse zelf. Verifieer tegen Treehouse zodra daar waarden verschijnen."
       oneOf:
         - const: "Down"
           title: "Uitgevallen"
@@ -2590,7 +2594,7 @@ components:
       enum:
         - "GLN"
     "InstallationLocationIDType.Display":
-      description: "InstallationLocationIDType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (nog niet geregistreerd). GIR-specifieke codelijst voor het type van een installatie-locatie-ID, apart van het bestaande SALES005 LocationIDType (BAG). Waarden afkomstig uit GIR_Message_API_v1.yaml / GIR_Maintenance Message_API_v0.6.yaml; aanmelden op Semantic Treehouse aanbevolen."
+      description: "InstallationLocationIDType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (nog niet geregistreerd). GIR-specifieke codelijst voor het type van een installatie-locatie-ID, apart van het bestaande SALES005 LocationIDType (BAG). Waarden afkomstig uit GIR_Message_API_v1.yaml / GIR_Maintenance Message_API_v0.6.yaml; aanmelden op Semantic Treehouse aanbevolen."
       oneOf:
         - const: "GLN"
           title: "GLN"
@@ -2601,7 +2605,7 @@ components:
       enum:
         - "NLSFB_tabel1"
     "ClassificationType.Display":
-      description: "ClassificationType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_0c58977f-b2a6-40e4-bb9e-a098625327ca). Gecontroleerd 01-07-2026: Treehouse toont 1 gepubliceerde waarde."
+      description: "ClassificationType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_0c58977f-b2a6-40e4-bb9e-a098625327ca). Gecontroleerd 01-07-2026: Treehouse toont 1 gepubliceerde waarde."
       oneOf:
         - const: "NLSFB_tabel1"
           title: "NL-SfB tabel 1"
@@ -2615,7 +2619,7 @@ components:
         - "Decommissioned"
         - "Removed"
     "InstallationLifeCycleStatusType.Display":
-      description: "InstallationLifeCycleStatusType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_bb5ef48b-2440-422a-b0f2-c37cc7c977c9). Gecontroleerd 01-07-2026: Treehouse toont 4 gepubliceerde waarden, laatst bijgewerkt 2026-06-30."
+      description: "InstallationLifeCycleStatusType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_bb5ef48b-2440-422a-b0f2-c37cc7c977c9). Gecontroleerd 01-07-2026: Treehouse toont 4 gepubliceerde waarden, laatst bijgewerkt 2026-06-30."
       oneOf:
         - const: "Installed"
           title: "Geinstalleerd"
@@ -2637,7 +2641,7 @@ components:
         - "Internally"
         - "Externally"
     "ThirdPartyVerificationType.Display":
-      description: "ThirdPartyVerificationType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_ebda1d64-1d1b-4afd-b0dc-557e2813d9a0). Promoted 01-07-2026 uit x-todoCodelists: Treehouse toont nu 3 gepubliceerde waarden (voorheen 0)."
+      description: "ThirdPartyVerificationType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_ebda1d64-1d1b-4afd-b0dc-557e2813d9a0). Promoted 01-07-2026 uit x-todoCodelists: Treehouse toont nu 3 gepubliceerde waarden (voorheen 0)."
       oneOf:
         - const: "None"
           title: "No third-party verification has been conducted."
@@ -2670,7 +2674,7 @@ components:
         - "C1-C4"
         - "D"
     "LifeCycleStageType.Display":
-      description: "LifeCycleStageType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_42da2c0b-2100-4a31-b78c-c8ba5f336adc). Promoted 01-07-2026 uit x-todoCodelists: Treehouse toont nu 20 gepubliceerde waarden (voorheen 0). Let op: code 'A1 - A3' heeft spaties rond het streepje op Treehouse zelf (geverifieerd), in tegenstelling tot 'B1-B7' en 'C1-C4' zonder spaties."
+      description: "LifeCycleStageType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_42da2c0b-2100-4a31-b78c-c8ba5f336adc). Promoted 01-07-2026 uit x-todoCodelists: Treehouse toont nu 20 gepubliceerde waarden (voorheen 0). Let op: code 'A1 - A3' heeft spaties rond het streepje op Treehouse zelf (geverifieerd), in tegenstelling tot 'B1-B7' en 'C1-C4' zonder spaties."
       oneOf:
         - const: "A1"
           title: "Raw material extraction and processing, processing of secondary material input (e.g. recycling processes)"
@@ -2726,7 +2730,7 @@ components:
         - "c2"
         - "c3"
     "ConfigurationCode.Display":
-      description: "ConfigurationCode met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/ConfigurationCode). Toegevoegd 01-07-2026. Let op: waarden op Treehouse zien er placeholder-achtig uit (\"Naam a1 Omschrijving van a1.\", etc) ondanks een reguliere maintainer/versie (1.0) -- navragen bij DICO Helpdesk of dit definitieve waarden zijn voordat een spec hierop bouwt."
+      description: "ConfigurationCode met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://www.ketenstandaard.nl/codelist/dico/ConfigurationCode). Toegevoegd 01-07-2026. Let op: waarden op Treehouse zien er placeholder-achtig uit (\"Naam a1 Omschrijving van a1.\", etc) ondanks een reguliere maintainer/versie (1.0) -- navragen bij DICO Helpdesk of dit definitieve waarden zijn voordat een spec hierop bouwt."
       oneOf:
         - const: "a1"
           title: "Naam a1 Omschrijving van a1."
@@ -2753,7 +2757,7 @@ components:
         - "GUID"
         - "GIAI"
     "InstallationIDType.Display":
-      description: "InstallationIDType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_c2513a11-942e-4034-8a5e-af477d52b4de). Toegevoegd 01-07-2026."
+      description: "InstallationIDType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_c2513a11-942e-4034-8a5e-af477d52b4de). Toegevoegd 01-07-2026."
       oneOf:
         - const: "GUID"
           title: "Een globally unique identifier of GUID is een pseudowillekeurig getal dat gebruikt wordt in softwaretoepassingen, en dat verondersteld wordt wereldwijd uniek te zijn."
@@ -2766,7 +2770,7 @@ components:
         - "SGTIN"
         - "SerialNumber"
     "ComponentIDType.Display":
-      description: "ComponentIDType met omschrijvingen (documentatie, niet voor validatie, zie D20). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_1f207a46-dde1-4b89-a974-c5dbaeee6b6a). Toegevoegd 01-07-2026."
+      description: "ComponentIDType met omschrijvingen (documentatie, niet voor validatie, zie D22). Bron: Semantic Treehouse (https://ketenstandaard.semantic-treehouse.nl/codelist/Codelist_1f207a46-dde1-4b89-a974-c5dbaeee6b6a). Toegevoegd 01-07-2026."
       oneOf:
         - const: "SGTIN"
           title: "The SGTIN is the Serialized Global Trade Item Number."
