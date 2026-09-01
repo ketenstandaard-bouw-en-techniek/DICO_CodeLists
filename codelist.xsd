@@ -12,8 +12,14 @@
 			<!-- Initial releasdate -->
 			<ReleaseDate>2018-11-01</ReleaseDate>
 			<!-- latest revision -->
-			<RevisionDate>2026-05-01</RevisionDate>
+			<RevisionDate>2026-09-01</RevisionDate>
 			<ModificationHistory>
+				<date v="2026-09-01">
+					<Changes code="MaintenanceType">Added INS, OFR</Changes>
+					<Changes code="StatusCode">Added RSM, QUA, QUR</Changes>
+					<Changes code="SpecialismCode">Created list Added ELE, LOO, OVE, SCH, STU, TIM, TEG, SLW, GLS, CVM, INS</Changes>
+					<Changes code="PaymentMethod">Created list Added AFK, ANS, EHP, REG, GAR</Changes>
+				</date>
 				<date v="2026-05-01">
 					<Changes code="EmissionsType">Added CO2eKG</Changes>
 				</date>
