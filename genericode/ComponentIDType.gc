@@ -20,12 +20,12 @@
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
-			<Data Type="string"/>
+			<Data Type="string" Lang="en"/>
 		</Column>
 		<Column Id="titleNl" Use="required">
 			<ShortName>titleNl</ShortName>
 			<LongName>Title (nl)</LongName>
-			<Data Type="string"/>
+			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>

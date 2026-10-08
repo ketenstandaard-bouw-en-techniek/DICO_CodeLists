@@ -20,42 +20,42 @@
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
-			<Data Type="string"/>
+			<Data Type="string" Lang="en"/>
 		</Column>
 		<Column Id="titleNl" Use="required">
 			<ShortName>titleNl</ShortName>
 			<LongName>Title (nl)</LongName>
-			<Data Type="string"/>
+			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Column Id="mainStatusEffectEn" Use="required">
 			<ShortName>mainStatusEffectEn</ShortName>
 			<LongName>Effect on main status (en)</LongName>
-			<Data Type="string"/>
+			<Data Type="string" Lang="en"/>
 		</Column>
 		<Column Id="mainStatusEffectNl" Use="required">
 			<ShortName>mainStatusEffectNl</ShortName>
 			<LongName>Effect on main status (nl)</LongName>
-			<Data Type="string"/>
+			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Column Id="initiatorEn" Use="required">
 			<ShortName>initiatorEn</ShortName>
 			<LongName>Initiator (en)</LongName>
-			<Data Type="string"/>
+			<Data Type="string" Lang="en"/>
 		</Column>
 		<Column Id="initiatorNl" Use="required">
 			<ShortName>initiatorNl</ShortName>
 			<LongName>Initiator (nl)</LongName>
-			<Data Type="string"/>
+			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Column Id="descriptionEn" Use="required">
 			<ShortName>descriptionEn</ShortName>
 			<LongName>Description (en)</LongName>
-			<Data Type="string"/>
+			<Data Type="string" Lang="en"/>
 		</Column>
 		<Column Id="descriptionNl" Use="required">
 			<ShortName>descriptionNl</ShortName>
 			<LongName>Description (nl)</LongName>
-			<Data Type="string"/>
+			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
