@@ -41,7 +41,7 @@ en de revisiedatum (`x-revisionDate`). Bij Treehouse-codelijsten staat in de
 ## Gebruik van de importbestanden
 
 De bestanden in `genericode/` volgen
-[OASIS genericode 1.0](https://www.oasis-open.org/committees/codelist/)
+[OASIS genericode 1.0](https://docs.oasis-open.org/codelist/genericode/v1.0/genericode-v1.0.html)
 en zijn bedoeld om een codelijst in andere systemen in te lezen. Haal de map op
 met:
 
