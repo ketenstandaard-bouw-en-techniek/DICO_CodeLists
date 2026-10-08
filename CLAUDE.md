@@ -118,10 +118,11 @@ importbestanden op `main`. Na een wijziging op `main` wordt `main` eerst in
   yaml; pas het importbestand aan.
 - Controleer na het schrijven dat het bestand wel-gevormd XML is.
 
-**Nog geen yaml/xsd-definitie:** `EventCode` (ONH, REX, VIN, AIN, VER, AFH,
-THD) bestaat voorlopig alleen als importbestand. Kolommen: `code`, `name`,
-`description`, `titleEn`, `descriptionEn`, `mainStatusEffectEn`/`Nl` (effect
-op de hoofdstatus) en `initiatorEn`/`Nl` (opdrachtnemer of opdrachtgever).
+**EventCode:** `EventCode` (ONH, REX, VIN, AIN, VER, AFH, THD) staat in
+`codelist.yaml`; per waarde zijn het effect op de hoofdstatus en de
+initiatiefnemer opgenomen als `x-mainStatusEffect(Nl)` en `x-initiator(Nl)`.
+In het importbestand zijn dat de kolommen `mainStatusEffectEn`/`Nl` en
+`initiatorEn`/`Nl`.
 
 Ontwerpbeslissingen achter dit format (dubbel D19-schema, bundeling per
 domein i.p.v. per codelijst, bilinguale `title`/`x-titleNl`) staan in
