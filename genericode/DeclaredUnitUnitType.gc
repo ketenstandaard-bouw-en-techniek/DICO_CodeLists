@@ -17,15 +17,15 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -35,73 +35,73 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>FTQ</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Kubieke voet</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Cubic foot</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Kubieke voet</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>FOT</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Voet</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Foot</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Voet</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>YDK</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Vierkante yard</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Square yard</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Vierkante yard</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>PCE</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Stuk</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Piece</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Stuk</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>MTK</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Vierkante meter</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Square metre</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Vierkante meter</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>LBR</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Pond</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Pound</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Pond</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>LTR</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Liter</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Litre</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Liter</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>KGM</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Kilogram</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Kilogram</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Kilogram</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>LTN</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Imperiale ton (long ton)</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Imperial ton (long ton)</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Imperiale ton (long ton)</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>MTQ</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Kubieke meter</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Cubic metre</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Kubieke meter</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>YRD</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Yard</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Yard</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Yard</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>TNE</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Metrieke ton</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Metric ton</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Metrieke ton</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>MTR</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Meter</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Metre</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Meter</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>FTK</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Vierkante voet</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Square foot</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Vierkante voet</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

@@ -17,25 +17,25 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
+		<Column Id="description" Use="required">
+			<ShortName>description</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
 		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
-		</Column>
 		<Column Id="descriptionEn" Use="required">
 			<ShortName>descriptionEn</ShortName>
 			<LongName>Description (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="descriptionNl" Use="required">
-			<ShortName>descriptionNl</ShortName>
-			<LongName>Description (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -45,52 +45,52 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>MUT</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Mutatie</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Onderhoudswerkzaamheden die worden uitgevoerd bij vertrek van de huurder (mutatieonderhoud), om de woning gereed te maken voor een nieuwe bewoner.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Turnover maintenance</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Mutatie</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Maintenance work carried out when a tenant moves out (turnover maintenance), to make the home ready for a new occupant.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Onderhoudswerkzaamheden die worden uitgevoerd bij vertrek van de huurder (mutatieonderhoud), om de woning gereed te maken voor een nieuwe bewoner.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>REN</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Renovatie</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Grootschalige verbouwing of renovatie van een woning of object, vaak om de staat te verbeteren of te moderniseren.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Renovation</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Renovatie</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Large-scale conversion or renovation of a home or object, often to improve its condition or to modernise it.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Grootschalige verbouwing of renovatie van een woning of object, vaak om de staat te verbeteren of te moderniseren.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>PLM</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Planmatig onderhoud</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Planmatig onderhoud volgens een vooraf opgesteld onderhoudsplan, om onverwachte gebreken te voorkomen en de levensduur te verlengen.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Planned maintenance</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Planmatig onderhoud</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Planned maintenance according to a predefined maintenance plan, to prevent unexpected defects and extend service life.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Planmatig onderhoud volgens een vooraf opgesteld onderhoudsplan, om onverwachte gebreken te voorkomen en de levensduur te verlengen.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>REP</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Reparatie</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Herstelwerkzaamheden aan een gebrek of defect dat is gemeld door de huurder of gebruiker.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Repair</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Reparatie</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Repair work on a defect or fault reported by the tenant or user.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Herstelwerkzaamheden aan een gebrek of defect dat is gemeld door de huurder of gebruiker.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>PRE</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Preventief onderhoud</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Preventief onderhoud volgens een vooraf opgesteld onderhoudsplan, om onverwachte gebreken te voorkomen en de levensduur te verlengen.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Preventive maintenance</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Preventief onderhoud</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Preventive maintenance according to a predefined maintenance plan, to prevent unexpected defects and extend service life.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Preventief onderhoud volgens een vooraf opgesteld onderhoudsplan, om onverwachte gebreken te voorkomen en de levensduur te verlengen.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>INS</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Inspectie</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Inspectie van de woning of het object om de staat vast te stellen en eventuele gebreken te identificeren.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Inspection</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Inspectie</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Inspection of the home or object to determine its condition and identify any defects.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Inspectie van de woning of het object om de staat vast te stellen en eventuele gebreken te identificeren.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>OFR</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Offerte</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Een offerte-aanvraag voor werkzaamheden waarbij de kosten vooraf moeten worden berekend en goedgekeurd. Het gaat expliciet om zaken waarvan nog geen prijs bekend is of kan zijn (bijvoorbeeld via een prijzenboek).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Quotation</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Offerte</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>A quotation request for work where the costs must be calculated and approved in advance. This explicitly concerns items for which no price is known yet or can be known (for example via a price book).</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Een offerte-aanvraag voor werkzaamheden waarbij de kosten vooraf moeten worden berekend en goedgekeurd. Het gaat expliciet om zaken waarvan nog geen prijs bekend is of kan zijn (bijvoorbeeld via een prijzenboek).</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

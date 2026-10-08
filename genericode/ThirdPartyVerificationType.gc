@@ -17,15 +17,15 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -35,18 +35,18 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>None</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Er is geen verificatie door een derde uitgevoerd.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>No third-party verification has been conducted.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Er is geen verificatie door een derde uitgevoerd.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>Internally</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Verificatie door een derde is uitgevoerd door een interne (onafhankelijke) persoon.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Third-party verification has been conducted by an internal (independent) person.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Verificatie door een derde is uitgevoerd door een interne (onafhankelijke) persoon.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>Externally</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Verificatie door een derde is uitgevoerd door een externe (onafhankelijke) persoon.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Third-party verification has been conducted by an external (independent) person.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Verificatie door een derde is uitgevoerd door een externe (onafhankelijke) persoon.</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

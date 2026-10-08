@@ -17,15 +17,15 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -35,13 +35,13 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>SGTIN</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>De SGTIN is het Serialized Global Trade Item Number (geserialiseerd wereldwijd handelsartikelnummer).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>The SGTIN is the Serialized Global Trade Item Number.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>De SGTIN is het Serialized Global Trade Item Number (geserialiseerd wereldwijd handelsartikelnummer).</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>SerialNumber</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Een serienummer is een unieke identificatie waarmee een item uniek wordt geïdentificeerd en wordt meestal oplopend of sequentieel toegekend.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>A serial number is a unique identifier used to uniquely identify an item, and is usually assigned incrementally or sequentially.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Een serienummer is een unieke identificatie waarmee een item uniek wordt geïdentificeerd en wordt meestal oplopend of sequentieel toegekend.</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

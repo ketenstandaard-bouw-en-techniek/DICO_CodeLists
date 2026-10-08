@@ -17,15 +17,15 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -35,23 +35,23 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>1</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Product- en merkspecifieke milieuverklaringen, vaak aangeleverd door fabrikanten.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Product- and brand-specific environmental declarations, often supplied by manufacturers.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Product- en merkspecifieke milieuverklaringen, vaak aangeleverd door fabrikanten.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>2</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Merkongebonden data van groepen van fabrikanten en/of toeleveranciers en branches.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Brand-independent data from groups of manufacturers and/or suppliers and sectors.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Merkongebonden data van groepen van fabrikanten en/of toeleveranciers en branches.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>3</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Merkongebonden data van Stichting Nationale Milieudatabase.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Brand-independent data from Stichting Nationale Milieudatabase.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Merkongebonden data van Stichting Nationale Milieudatabase.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>3a</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Merkongebonden data van Stichting Nationale Milieudatabase. Data van infrastructuur voor externe energielevering, energiedragers en milieuverklaringen van in zijn geheel her te gebruiken bouwelementen/installaties in nieuw te bouwen bouwwerken.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Brand-independent data from Stichting Nationale Milieudatabase. Data on infrastructure for external energy supply, energy carriers and environmental declarations of building elements/installations that can be reused in their entirety in new buildings.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Merkongebonden data van Stichting Nationale Milieudatabase. Data van infrastructuur voor externe energielevering, energiedragers en milieuverklaringen van in zijn geheel her te gebruiken bouwelementen/installaties in nieuw te bouwen bouwwerken.</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

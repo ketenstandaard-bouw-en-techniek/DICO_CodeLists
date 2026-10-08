@@ -17,25 +17,25 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
+		<Column Id="description" Use="required">
+			<ShortName>description</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
 		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
-		</Column>
 		<Column Id="descriptionEn" Use="required">
 			<ShortName>descriptionEn</ShortName>
 			<LongName>Description (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="descriptionNl" Use="required">
-			<ShortName>descriptionNl</ShortName>
-			<LongName>Description (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -45,10 +45,10 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>GLN</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>GLN</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Global Location Number, een wereldwijd uniek nummer om een partij of locatie te identificeren.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>GLN</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>GLN</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Global Location Number, a globally unique number to identify a party or location.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Global Location Number, een wereldwijd uniek nummer om een partij of locatie te identificeren.</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

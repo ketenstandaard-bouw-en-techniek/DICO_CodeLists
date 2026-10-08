@@ -17,15 +17,15 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -35,13 +35,13 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>GUID</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Een globally unique identifier of GUID is een pseudowillekeurig getal dat gebruikt wordt in softwaretoepassingen, en dat verondersteld wordt wereldwijd uniek te zijn.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>A globally unique identifier or GUID is a pseudo-random number used in software applications, which is assumed to be globally unique.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Een globally unique identifier of GUID is een pseudowillekeurig getal dat gebruikt wordt in softwaretoepassingen, en dat verondersteld wordt wereldwijd uniek te zijn.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>GIAI</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Het GS1 Global Individual Asset Identifier (GIAI) is een GS1 sleutel voor identificatie van assets.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>The GS1 Global Individual Asset Identifier (GIAI) is a GS1 key for the identification of assets.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Het GS1 Global Individual Asset Identifier (GIAI) is een GS1 sleutel voor identificatie van assets.</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

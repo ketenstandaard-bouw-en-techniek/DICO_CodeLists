@@ -17,25 +17,25 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
+		<Column Id="description" Use="required">
+			<ShortName>description</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
 		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
-		</Column>
 		<Column Id="descriptionEn" Use="required">
 			<ShortName>descriptionEn</ShortName>
 			<LongName>Description (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="descriptionNl" Use="required">
-			<ShortName>descriptionNl</ShortName>
-			<LongName>Description (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -45,80 +45,80 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>QUR</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Offerte niet gegund</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De offerte is niet gegund aan deze opdrachtnemer.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Quotation not awarded</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Offerte niet gegund</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The quotation has not been awarded to this contractor.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De offerte is niet gegund aan deze opdrachtnemer.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>AGE</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Administratief gereed</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De order of verzoek is administratief afgerond door Uitvoeren Onderhoudsorder, er mag geen verdere communicatie over deze order verwacht worden.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Administratively completed</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Administratief gereed</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The order or request has been administratively closed by Uitvoeren Onderhoudsorder (Execute Maintenance Order); no further communication about this order is to be expected.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De order of verzoek is administratief afgerond door Uitvoeren Onderhoudsorder, er mag geen verdere communicatie over deze order verwacht worden.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>VAN</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Verzoek tot annuleren</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De order of verzoek dient geannuleerd te worden.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Request to cancel</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Verzoek tot annuleren</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The order or request must be cancelled.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De order of verzoek dient geannuleerd te worden.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>REA</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Reactie</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Reactie op het reactie vereist bericht.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Response</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Reactie</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Response to the response-required message.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Reactie op het reactie vereist bericht.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>ACC</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Geaccepteerd</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Nadat de order of verzoek geaccepteerd is.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Accepted</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Geaccepteerd</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>After the order or request has been accepted.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Nadat de order of verzoek geaccepteerd is.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>REV</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Reactie Vereist</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Er wordt informatie doorgegeven waarop een reactie van de ontvangende partij vereist is. Het proces stopt tot de reactie gegeven is.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Response required</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Reactie Vereist</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Information is being passed on for which a response from the receiving party is required. The process stops until the response has been given.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Er wordt informatie doorgegeven waarop een reactie van de ontvangende partij vereist is. Het proces stopt tot de reactie gegeven is.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>WEI</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Weigeren</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De order of verzoek is geweigerd.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Refuse</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Weigeren</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The order or request has been refused.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De order of verzoek is geweigerd.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>QUA</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Offerte gegund</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De offerte is gegund aan deze opdrachtnemer.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Quotation awarded</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Offerte gegund</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The quotation has been awarded to this contractor.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De offerte is gegund aan deze opdrachtnemer.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>TGE</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Technisch gereed</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De order of verzoek is technisch gereed, er zijn geen werkzaamheden meer nodig.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Technically completed</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Technisch gereed</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The order or request is technically completed; no further work is needed.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De order of verzoek is technisch gereed, er zijn geen werkzaamheden meer nodig.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>ANN</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Annuleren</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De order of verzoek is geannuleerd.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Cancel</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Annuleren</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The order or request has been cancelled.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De order of verzoek is geannuleerd.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>REG</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Geregistreerd</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De order of verzoek is aangemaakt en verzonden.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Registered</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Geregistreerd</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The order or request has been created and sent.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De order of verzoek is aangemaakt en verzonden.</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

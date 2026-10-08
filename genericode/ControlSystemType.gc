@@ -17,15 +17,15 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -35,23 +35,23 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>GBS</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Sturing via GBS, Gebouwbeheersysteem</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Control via BMS, Building Management System</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Sturing via GBS, Gebouwbeheersysteem</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>EMS</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Sturing via EMS, Energiemanagementsysteem</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Control via EMS, Energy Management System</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Sturing via EMS, Energiemanagementsysteem</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>APP</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Sturing via installatie-specifieke app</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Control via installation-specific app</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Sturing via installatie-specifieke app</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>GEE</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Geen van bovenstaande alleen handmatig</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>None of the above, manual only</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Geen van bovenstaande alleen handmatig</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

@@ -17,15 +17,15 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -35,173 +35,173 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>FSC</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Forest Stewardship Council</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Forest Stewardship Council</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Forest Stewardship Council</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>ISPM</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>International Standards For Phytosanitary Measures No. 15</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>International Standards For Phytosanitary Measures No. 15</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>International Standards For Phytosanitary Measures No. 15</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>KEMA</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>KEMA-KEUR</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>KEMA-KEUR</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>KEMA-KEUR</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>KH</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Keurhout</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Keurhout</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Keurhout</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>KIWA</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>KIWA</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>KIWA</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>KIWA</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>KOMO</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>KOMO</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>KOMO</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>KOMO</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>PEFC</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Programme for Endorsement of Forest Certification</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Programme for Endorsement of Forest Certification</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Programme for Endorsement of Forest Certification</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>PVW</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Politiekeurmerk Veilig Wonen</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Police quality mark Safe Housing</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Politiekeurmerk Veilig Wonen</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>IHM</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Inventaris gevaarlijke materialen</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Inventory of hazardous materials</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Inventaris gevaarlijke materialen</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>SDS</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Veiligheidsblad</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Safety data sheet</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Veiligheidsblad</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>REACH</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Registratie, Evaluatie, Authorisatie en restrictie van CHemicaliën</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Registration, Evaluation, Authorisation and restriction of CHemicals</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Registratie, Evaluatie, Authorisatie en restrictie van CHemicaliën</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>ART</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>ART keurmerk tweewielersloten</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>ART mark (motor-)cycle locks</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>ART keurmerk tweewielersloten</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>Gastec</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Gastec keurmerk</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Gastec mark</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Gastec keurmerk</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>Gaskeur</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Gaskeur keurmerk</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Gaskeur mark</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Gaskeur keurmerk</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>ADR</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Europese verdrag voor het internationale vervoer van gevaarlijke goederen over de weg</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>European Agreement concerning the International Carriage of Dangerous Goods by Road</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Europese verdrag voor het internationale vervoer van gevaarlijke goederen over de weg</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>UN</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Identificatienummer gevaarlijke stoffen</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Hazardous materials identification number</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Identificatienummer gevaarlijke stoffen</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>GHS</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Wijze van indeling, kenmerking en etikettering van chemische stoffen en preparaten.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Globally Harmonized System of Classification and Labelling of Chemicals</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Wijze van indeling, kenmerking en etikettering van chemische stoffen en preparaten.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>LQC</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Limited Quantity waarde</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Limited Quantity Value</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Limited Quantity waarde</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>CMR</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Internationale conventie bij grensoverschrijdend wegvervoer informatie</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>United Nations Convention on the Contract for the International Carriage of Goods by Road Information</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Internationale conventie bij grensoverschrijdend wegvervoer informatie</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>DIN</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>DIN informatie</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>DIN information</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>DIN informatie</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>ISO</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>ISO informatie</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>ISO information</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>ISO informatie</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>ECCN</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Export Control Classification Number</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Export Control Classification Number</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Export Control Classification Number</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>WEEE</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Richtlijn afgedankte elektrische en elektronische apparatuur (AEEA)</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Waste of Electrical and Electronic Equipment</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Richtlijn afgedankte elektrische en elektronische apparatuur (AEEA)</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>DOP</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Prestatieverklaring</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Declaration of Performance</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Prestatieverklaring</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>EEL</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>EU energielabel</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>EU energy label</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>EU energielabel</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>ECO</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>ECO label</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>ECO label</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>ECO label</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>Seal</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Keurmerk</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Seal of Approval</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Keurmerk</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>DECL</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Leveranciersverklaring van preferentiële oorsprong</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Suppliers declaration of preferential origin</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Leveranciersverklaring van preferentiële oorsprong</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>CAL</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>kalibratiecertificaat</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Calibration certificate</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>kalibratiecertificaat</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>DOCCE</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>conformiteitsverklaring</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Declaration of Conformity</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>conformiteitsverklaring</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>MTCS</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Malaysian Timber Certification System</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Malaysian Timber Certification System</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Malaysian Timber Certification System</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>RoHS</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>RoHS-richtlijn (van het Engelse Restriction of Hazardous Substances - beperking van gevaarlijke stoffen)</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>RoHS Directive (Restriction of Hazardous Substances)</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>RoHS-richtlijn (van het Engelse Restriction of Hazardous Substances - beperking van gevaarlijke stoffen)</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>EPD</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Milieuproductverklaring</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Environmental Product Declaration</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Milieuproductverklaring</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>NL-BSB</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>NL-BSB staat voor Bouwstoffenbesluit en betekent dat bouwstoffen voldoen aan de regels van het [Besluit bodemkwaliteit](https://www.aco.nl/over-aco/certificaten/nl-bsb-certificaten)</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>NL-BSB stands for Building Materials Decree (Bouwstoffenbesluit) and means that building materials comply with the rules of the [Soil Quality Decree (Besluit bodemkwaliteit)](https://www.aco.nl/over-aco/certificaten/nl-bsb-certificaten)</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>NL-BSB staat voor Bouwstoffenbesluit en betekent dat bouwstoffen voldoen aan de regels van het [Besluit bodemkwaliteit](https://www.aco.nl/over-aco/certificaten/nl-bsb-certificaten)</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

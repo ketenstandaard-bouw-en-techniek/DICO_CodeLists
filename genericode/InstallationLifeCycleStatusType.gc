@@ -17,25 +17,25 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
+		<Column Id="description" Use="required">
+			<ShortName>description</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
 		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
-		</Column>
 		<Column Id="descriptionEn" Use="required">
 			<ShortName>descriptionEn</ShortName>
 			<LongName>Description (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="descriptionNl" Use="required">
-			<ShortName>descriptionNl</ShortName>
-			<LongName>Description (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -45,31 +45,31 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>Installed</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Geinstalleerd</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De installatie is geplaatst en aangesloten.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Installed</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Geinstalleerd</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The installation has been placed and connected.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is geplaatst en aangesloten.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>Commissioned</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>In bedrijf gesteld</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De installatie is in bedrijf gesteld (commissioning afgerond).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Commissioned</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>In bedrijf gesteld</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The installation has been commissioned (commissioning completed).</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is in bedrijf gesteld (commissioning afgerond).</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>Decommissioned</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Uit bedrijf genomen</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De installatie is uit bedrijf genomen (decommissioning).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Decommissioned</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Uit bedrijf genomen</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The installation has been decommissioned.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is uit bedrijf genomen (decommissioning).</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>Removed</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Verwijderd</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>De installatie is fysiek verwijderd.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Removed</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Verwijderd</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>The installation has been physically removed.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is fysiek verwijderd.</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

@@ -17,15 +17,15 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -35,48 +35,48 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>a1</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Naam a1 Omschrijving van a1.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Name a1 Description of a1.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Naam a1 Omschrijving van a1.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>a2</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Naam a2 Omschrijving van a2.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Name a2 Description of a2.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Naam a2 Omschrijving van a2.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>a3</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Naam a3 Omschrijving van a3.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Name a3 Description of a3.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Naam a3 Omschrijving van a3.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>b1</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Naam b1 Omschrijving van b1.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Name b1 Description of b1.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Naam b1 Omschrijving van b1.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>b2</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Naam b2 Omschrijving van b2.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Name b2 Description of b2.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Naam b2 Omschrijving van b2.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>b3</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Naam b3 Omschrijving van b3.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Name b3 Description of b3.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Naam b3 Omschrijving van b3.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>c1</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Naam c1 Omschrijving van c1.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Name c1 Description of c1.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Naam c1 Omschrijving van c1.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>c2</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Naam c2 Omschrijving van c2.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Name c2 Description of c2.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Naam c2 Omschrijving van c2.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>c3</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Naam c3 Omschrijving van c3.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Name c3 Description of c3.</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Naam c3 Omschrijving van c3.</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

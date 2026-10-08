@@ -17,25 +17,25 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
+		<Column Id="description" Use="required">
+			<ShortName>description</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
 		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
-		</Column>
 		<Column Id="descriptionEn" Use="required">
 			<ShortName>descriptionEn</ShortName>
 			<LongName>Description (en)</LongName>
 			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="descriptionNl" Use="required">
-			<ShortName>descriptionNl</ShortName>
-			<LongName>Description (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
 		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
@@ -45,80 +45,80 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>ELE</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Electra</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Elektrotechnische werkzaamheden (installatie, reparatie, onderhoud van elektrische systemen).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Electrician</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Electra</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Electrical work (installation, repair, maintenance of electrical systems).</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Elektrotechnische werkzaamheden (installatie, reparatie, onderhoud van elektrische systemen).</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>LOO</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Loodgieter</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Loodgieterswerk (sanitair, leidingen, kranen, CV-ketels).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Plumber</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Loodgieter</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Plumbing work (sanitary, pipes, taps, central heating boilers).</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Loodgieterswerk (sanitair, leidingen, kranen, CV-ketels).</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>OVE</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Overige</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Overige specialismen die niet in een andere categorie vallen.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Other</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Overige</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Other specialisms that do not fall into another category.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Overige specialismen die niet in een andere categorie vallen.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>SCH</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Schilderen</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Schilderwerk (binnen- en buitenschilderwerk, behangen).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Painting</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Schilderen</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Painting work (interior and exterior painting, wallpapering).</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Schilderwerk (binnen- en buitenschilderwerk, behangen).</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>STU</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Stucen</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Stucwerk (afwerking van wanden en plafonds).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Plastering</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Stucen</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Plastering work (finishing of walls and ceilings).</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Stucwerk (afwerking van wanden en plafonds).</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>TIM</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Timmeren</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Timmerwerk (houtconstructies, kozijnen, deuren, kasten).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Carpentry</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Timmeren</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Carpentry work (timber structures, window frames, doors, cabinets).</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Timmerwerk (houtconstructies, kozijnen, deuren, kasten).</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>TEG</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Tegelwerk</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Tegelzetwerk (vloer- en wandtegels, natuursteen).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Tiling</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Tegelwerk</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Tiling work (floor and wall tiles, natural stone).</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Tegelzetwerk (vloer- en wandtegels, natuursteen).</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>SLW</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Sloopwerk</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Sloopwerk en demontagewerkzaamheden.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Demolition</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Sloopwerk</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Demolition and dismantling work.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Sloopwerk en demontagewerkzaamheden.</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>GLS</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Glaszetter</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Glaszetwerk (ruiten, isolatieglas, spiegels).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Glazier</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Glaszetter</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Glazing work (windows, insulating glass, mirrors).</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Glaszetwerk (ruiten, isolatieglas, spiegels).</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>CVM</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>CV Monteur</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>CV-installatie en onderhoud (centrale verwarming, radiatoren, thermostaten).</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Central heating engineer</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>CV Monteur</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Central heating installation and maintenance (central heating, radiators, thermostats).</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>CV-installatie en onderhoud (centrale verwarming, radiatoren, thermostaten).</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>INS</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Inspecteur</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Inspecties en keuringen van woningen en installaties.</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Inspector</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Inspecteur</SimpleValue></Value>
 			<Value ColumnRef="descriptionEn"><SimpleValue>Inspections and surveys of homes and installations.</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Inspecties en keuringen van woningen en installaties.</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>

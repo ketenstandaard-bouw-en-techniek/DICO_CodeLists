@@ -17,15 +17,25 @@
 			<LongName>Code</LongName>
 			<Data Type="string"/>
 		</Column>
+		<Column Id="name" Use="required">
+			<ShortName>name</ShortName>
+			<LongName>Name (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
+		<Column Id="description" Use="required">
+			<ShortName>description</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string" Lang="nl"/>
+		</Column>
 		<Column Id="titleEn" Use="required">
 			<ShortName>titleEn</ShortName>
 			<LongName>Title (en)</LongName>
 			<Data Type="string" Lang="en"/>
 		</Column>
-		<Column Id="titleNl" Use="required">
-			<ShortName>titleNl</ShortName>
-			<LongName>Title (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
+		<Column Id="descriptionEn" Use="required">
+			<ShortName>descriptionEn</ShortName>
+			<LongName>Description (en)</LongName>
+			<Data Type="string" Lang="en"/>
 		</Column>
 		<Column Id="mainStatusEffectEn" Use="required">
 			<ShortName>mainStatusEffectEn</ShortName>
@@ -47,16 +57,6 @@
 			<LongName>Initiator (nl)</LongName>
 			<Data Type="string" Lang="nl"/>
 		</Column>
-		<Column Id="descriptionEn" Use="required">
-			<ShortName>descriptionEn</ShortName>
-			<LongName>Description (en)</LongName>
-			<Data Type="string" Lang="en"/>
-		</Column>
-		<Column Id="descriptionNl" Use="required">
-			<ShortName>descriptionNl</ShortName>
-			<LongName>Description (nl)</LongName>
-			<Data Type="string" Lang="nl"/>
-		</Column>
 		<Key Id="codeKey">
 			<ShortName>codeKey</ShortName>
 			<ColumnRef Ref="code"/>
@@ -65,80 +65,80 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>ONH</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Onderbroken</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Opdracht wordt op pauze gezet; optioneel redencode</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>On hold</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Onderbroken</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The order is put on hold; reason code optional</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectEn"><SimpleValue>Main status unchanged</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectNl"><SimpleValue>Hoofdstatus ongewijzigd</SimpleValue></Value>
 			<Value ColumnRef="initiatorEn"><SimpleValue>Contractor</SimpleValue></Value>
 			<Value ColumnRef="initiatorNl"><SimpleValue>Opdrachtnemer</SimpleValue></Value>
-			<Value ColumnRef="descriptionEn"><SimpleValue>The order is put on hold; reason code optional</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Opdracht wordt op pauze gezet; optioneel redencode</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>REX</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Hervatten</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Hervat uitvoering na Onderbroken</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Resume</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Hervatten</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Resumes execution after On hold</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectEn"><SimpleValue>Main status unchanged</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectNl"><SimpleValue>Hoofdstatus ongewijzigd</SimpleValue></Value>
 			<Value ColumnRef="initiatorEn"><SimpleValue>Contractor</SimpleValue></Value>
 			<Value ColumnRef="initiatorNl"><SimpleValue>Opdrachtnemer</SimpleValue></Value>
-			<Value ColumnRef="descriptionEn"><SimpleValue>Resumes execution after On hold</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Hervat uitvoering na Onderbroken</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>VIN</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Verzoek tot informatie</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Informatievraag aan opdrachtnemer</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Request for information</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Verzoek tot informatie</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Information request to the contractor</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectEn"><SimpleValue>Main status unchanged</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectNl"><SimpleValue>Hoofdstatus ongewijzigd</SimpleValue></Value>
 			<Value ColumnRef="initiatorEn"><SimpleValue>Contractor</SimpleValue></Value>
 			<Value ColumnRef="initiatorNl"><SimpleValue>Opdrachtnemer</SimpleValue></Value>
-			<Value ColumnRef="descriptionEn"><SimpleValue>Information request to the contractor</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Informatievraag aan opdrachtnemer</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>AIN</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Aanleveren aanvullende informatie</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Antwoord op VIN; kan ook op eigen initiatief door opdrachtgever verstuurd worden</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Provide additional information</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Aanleveren aanvullende informatie</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Answer to VIN; can also be sent by the client on its own initiative</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectEn"><SimpleValue>Main status unchanged</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectNl"><SimpleValue>Hoofdstatus ongewijzigd</SimpleValue></Value>
 			<Value ColumnRef="initiatorEn"><SimpleValue>Client</SimpleValue></Value>
 			<Value ColumnRef="initiatorNl"><SimpleValue>Opdrachtgever</SimpleValue></Value>
-			<Value ColumnRef="descriptionEn"><SimpleValue>Answer to VIN; can also be sent by the client on its own initiative</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Antwoord op VIN; kan ook op eigen initiatief door opdrachtgever verstuurd worden</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>VER</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Verlengen doorlooptijd</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Melding verlenging; optioneel redencode</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Extend lead time</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Verlengen doorlooptijd</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Notification of extension; reason code optional</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectEn"><SimpleValue>Main status unchanged</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectNl"><SimpleValue>Hoofdstatus ongewijzigd</SimpleValue></Value>
 			<Value ColumnRef="initiatorEn"><SimpleValue>Contractor</SimpleValue></Value>
 			<Value ColumnRef="initiatorNl"><SimpleValue>Opdrachtnemer</SimpleValue></Value>
-			<Value ColumnRef="descriptionEn"><SimpleValue>Notification of extension; reason code optional</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Melding verlenging; optioneel redencode</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>AFH</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Afspraak huurder</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Afspraakmelding met datum/tijd; optioneel redencode</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Tenant appointment</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Afspraak huurder</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Appointment notification with date/time; reason code optional</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectEn"><SimpleValue>Main status unchanged</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectNl"><SimpleValue>Hoofdstatus ongewijzigd</SimpleValue></Value>
 			<Value ColumnRef="initiatorEn"><SimpleValue>Contractor</SimpleValue></Value>
 			<Value ColumnRef="initiatorNl"><SimpleValue>Opdrachtnemer</SimpleValue></Value>
-			<Value ColumnRef="descriptionEn"><SimpleValue>Appointment notification with date/time; reason code optional</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Afspraakmelding met datum/tijd; optioneel redencode</SimpleValue></Value>
 		</Row>
 		<Row>
 			<Value ColumnRef="code"><SimpleValue>THD</SimpleValue></Value>
+			<Value ColumnRef="name"><SimpleValue>Tijdelijk hersteld</SimpleValue></Value>
+			<Value ColumnRef="description"><SimpleValue>Situatie is tijdelijk hersteld, komt een vervolg om het naar behoren te herstellen</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>Temporarily restored</SimpleValue></Value>
-			<Value ColumnRef="titleNl"><SimpleValue>Tijdelijk hersteld</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The situation has been temporarily restored; a follow-up will come to restore it properly</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectEn"><SimpleValue>Main status unchanged</SimpleValue></Value>
 			<Value ColumnRef="mainStatusEffectNl"><SimpleValue>Hoofdstatus ongewijzigd</SimpleValue></Value>
 			<Value ColumnRef="initiatorEn"><SimpleValue>Contractor</SimpleValue></Value>
 			<Value ColumnRef="initiatorNl"><SimpleValue>Opdrachtnemer</SimpleValue></Value>
-			<Value ColumnRef="descriptionEn"><SimpleValue>The situation has been temporarily restored; a follow-up will come to restore it properly</SimpleValue></Value>
-			<Value ColumnRef="descriptionNl"><SimpleValue>Situatie is tijdelijk hersteld, komt een vervolg om het naar behoren te herstellen</SimpleValue></Value>
 		</Row>
 	</SimpleCodeList>
 </gc:CodeList>
