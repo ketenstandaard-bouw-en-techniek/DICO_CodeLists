@@ -199,7 +199,7 @@
 			<Value ColumnRef="titleEn"><SimpleValue>Environmental Product Declaration</SimpleValue></Value>
 		</Row>
 		<Row>
-			<Value ColumnRef="code"><SimpleValue>NL-BSB</SimpleValue></Value>
+			<Value ColumnRef="code"><SimpleValue>NLBSB</SimpleValue></Value>
 			<Value ColumnRef="name"><SimpleValue>NL-BSB staat voor Bouwstoffenbesluit en betekent dat bouwstoffen voldoen aan de regels van het [Besluit bodemkwaliteit](https://www.aco.nl/over-aco/certificaten/nl-bsb-certificaten)</SimpleValue></Value>
 			<Value ColumnRef="titleEn"><SimpleValue>NL-BSB stands for Building Materials Decree (Bouwstoffenbesluit) and means that building materials comply with the rules of the [Soil Quality Decree (Besluit bodemkwaliteit)](https://www.aco.nl/over-aco/certificaten/nl-bsb-certificaten)</SimpleValue></Value>
 		</Row>
