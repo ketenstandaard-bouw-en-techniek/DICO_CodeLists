@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>PaymentMethod</ShortName>
+		<LongName xml:lang="en">Payment Method</LongName>
+		<LongName xml:lang="nl">Betaalwijze</LongName>
+		<Version>2026-10-08</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/PaymentMethod</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/PaymentMethod/2026-10-08</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionEn" Use="required">
+			<ShortName>descriptionEn</ShortName>
+			<LongName>Description (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionNl" Use="required">
+			<ShortName>descriptionNl</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>AFK</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Buy-out</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Afkoop</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Buy-out sum: a single fixed fee for all work, regardless of the actual costs.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>Afkoopsom: een eenmalige vaste vergoeding voor alle werkzaamheden, ongeacht de daadwerkelijke kosten.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>ANS</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Contract sum</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Aanneemsom</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Contract sum: a fixed amount agreed in advance for the total work, where the contractor bears the risk of cost overruns.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>Aanneemsom: een vooraf overeengekomen vast bedrag voor het totale werk, waarbij de aannemer het risico draagt van kostenoverschrijdingen.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>EHP</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Unit price</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Eenheidsprijs</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Unit prices: invoicing based on prices per unit agreed in advance (per hour, per m2, per piece); the costs follow from the quantity of units carried out.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>Eenheidsprijzen: facturering op basis van vooraf afgesproken prijzen per eenheid (per uur, per m2, per stuk); de kosten volgen uit de hoeveelheid uitgevoerde eenheden.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>REG</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Time and materials</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Regie</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Time and materials (regie): invoicing based on the hours and material costs actually incurred, usually with an hourly rate and a material surcharge. Also known as post-calculation.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>Regie: facturering op basis van werkelijk gemaakte uren en materiaalkosten, meestal met uurtarief en materiaalopslag. Ook wel nacalculatie genoemd.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>GAR</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Warranty</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Garantie</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Warranty: work under warranty, at no cost to the client (for example repair within the warranty period).</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>Garantie: werkzaamheden onder garantie, zonder kosten voor de opdrachtgever (bijvoorbeeld herstel binnen de garantieperiode).</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>

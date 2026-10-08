@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>SourceType</ShortName>
+		<LongName xml:lang="en">Source Type</LongName>
+		<LongName xml:lang="nl">Brontype</LongName>
+		<Version>2026-10-08</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/SourceType</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/SourceType/2026-10-08</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>2baValid</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>A validated product on 2ba.</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Een gevalideerde product op 2ba.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>2baNonValid</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>A non-validated product on 2ba.</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Een niet gevalideerde product op 2ba.</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>

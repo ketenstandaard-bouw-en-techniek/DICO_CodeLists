@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>ThirdPartyVerificationType</ShortName>
+		<LongName xml:lang="en">Third Party Verification Type</LongName>
+		<LongName xml:lang="nl">Type verificatie door derde</LongName>
+		<Version>2026-10-08</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/ThirdPartyVerificationType</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/ThirdPartyVerificationType/2026-10-08</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>None</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>No third-party verification has been conducted.</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Er is geen verificatie door een derde uitgevoerd.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>Internally</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Third-party verification has been conducted by an internal (independent) person.</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Verificatie door een derde is uitgevoerd door een interne (onafhankelijke) persoon.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>Externally</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Third-party verification has been conducted by an external (independent) person.</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Verificatie door een derde is uitgevoerd door een externe (onafhankelijke) persoon.</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>ComponentIDType</ShortName>
+		<LongName xml:lang="en">Component ID Type</LongName>
+		<LongName xml:lang="nl">Type component-ID</LongName>
+		<Version>2026-10-08</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/ComponentIDType</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/ComponentIDType/2026-10-08</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>SGTIN</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>The SGTIN is the Serialized Global Trade Item Number.</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>De SGTIN is het Serialized Global Trade Item Number (geserialiseerd wereldwijd handelsartikelnummer).</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>SerialNumber</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>A serial number is a unique identifier used to uniquely identify an item, and is usually assigned incrementally or sequentially.</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Een serienummer is een unieke identificatie waarmee een item uniek wordt geïdentificeerd en wordt meestal oplopend of sequentieel toegekend.</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>

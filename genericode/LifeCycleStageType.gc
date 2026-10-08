@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>LifeCycleStageType</ShortName>
+		<LongName xml:lang="en">Life Cycle Stage Type</LongName>
+		<LongName xml:lang="nl">Levenscyclusfase</LongName>
+		<Version>2026-10-08</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/LifeCycleStageType</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/LifeCycleStageType/2026-10-08</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>A1</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Raw material extraction and processing, processing of secondary material input (e.g. recycling processes)</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Winning en verwerking van grondstoffen, verwerking van secundaire grondstoffen (bijvoorbeeld recyclingprocessen)</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>A2</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Transport to the manufacturer</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Transport naar de fabrikant</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>A3</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Manufacturing</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Productie</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>A1 - A3</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Product stage combined (also known as 'cradle to gate')</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Productfase gecombineerd (ook bekend als 'cradle to gate')</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>A4</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Transport to the building site</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Transport naar de bouwplaats</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>A5</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Installation into the building</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Installatie in het gebouw</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>B1</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Use or application of the installed product</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Gebruik of toepassing van het geïnstalleerde product</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>B2</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Maintenance</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Onderhoud</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>B3</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Repair</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Reparatie</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>B4</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Replacement</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Vervanging</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>B5</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Refurbishment</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Renovatie</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>B6</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Operational energy use (e.g. operation of heating system and other building related installed services)</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Operationeel energiegebruik (bijvoorbeeld gebruik van het verwarmingssysteem en andere gebouwgebonden installaties)</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>B7</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Operational water use</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Operationeel watergebruik</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>B1-B7</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Use stage combined</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Gebruiksfase gecombineerd</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>C1</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>De-construction, demolition</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Sloop en demontage</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>C2</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Transport to waste processing</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Transport naar afvalverwerking</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>C3</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Waste processing for reuse, recovery and/or recycling</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Afvalverwerking voor hergebruik, terugwinning en/of recycling</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>C4</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Disposal</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Afvoer van afval</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>C1-C4</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>End of life stage combined</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Einde-levensduurfase gecombineerd</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>D</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Reuse, recovery and/or recycling potentials, expressed as net impacts and benefits</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Potentieel voor hergebruik, terugwinning en/of recycling, uitgedrukt in netto-effecten en voordelen</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>

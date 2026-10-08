@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>DeclaredUnitUnitType</ShortName>
+		<LongName xml:lang="en">Declared Unit Unit Type</LongName>
+		<LongName xml:lang="nl">Eenheid gedeclareerde eenheid</LongName>
+		<Version>2026-10-08</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/DeclaredUnitUnitType</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/DeclaredUnitUnitType/2026-10-08</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>FTQ</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Cubic foot</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Kubieke voet</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>FOT</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Foot</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Voet</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>YDK</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Square yard</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Vierkante yard</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>PCE</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Piece</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Stuk</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>MTK</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Square metre</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Vierkante meter</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>LBR</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Pound</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Pond</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>LTR</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Litre</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Liter</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>KGM</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Kilogram</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Kilogram</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>LTN</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Imperial ton (long ton)</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Imperiale ton (long ton)</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>MTQ</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Cubic metre</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Kubieke meter</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>YRD</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Yard</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Yard</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>TNE</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Metric ton</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Metrieke ton</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>MTR</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Metre</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Meter</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>FTK</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Square foot</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Vierkante voet</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>

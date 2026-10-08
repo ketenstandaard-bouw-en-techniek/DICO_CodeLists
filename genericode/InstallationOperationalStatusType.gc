@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>InstallationOperationalStatusType</ShortName>
+		<LongName xml:lang="en">Installation Operational Status Type</LongName>
+		<LongName xml:lang="nl">Operationele status installatie</LongName>
+		<Version>2026-10-08</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/InstallationOperationalStatusType</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/InstallationOperationalStatusType/2026-10-08</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionEn" Use="required">
+			<ShortName>descriptionEn</ShortName>
+			<LongName>Description (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionNl" Use="required">
+			<ShortName>descriptionNl</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>Down</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Down</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Uitgevallen</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The installation is not available.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is niet beschikbaar.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>ExternallyDisabled</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Externally disabled</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Extern uitgeschakeld</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The installation has been taken out of operation by an external party.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is door een externe partij buiten werking gesteld.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>TemporarilyDisabled</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Temporarily disabled</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Tijdelijk uitgeschakeld</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The installation has been temporarily taken out of use.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is tijdelijk buiten gebruik gesteld.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>Standby</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Standby</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Stand-by</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The installation is available but inactive.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is beschikbaar maar inactief.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>Operational</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Operational</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Operationeel</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The installation is functioning normally.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie functioneert normaal.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>Degraded</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Degraded</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Verminderd</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The installation is functioning in a limited way.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie functioneert beperkt.</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>

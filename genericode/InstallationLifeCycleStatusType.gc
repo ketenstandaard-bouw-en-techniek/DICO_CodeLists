@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>InstallationLifeCycleStatusType</ShortName>
+		<LongName xml:lang="en">Installation Life Cycle Status Type</LongName>
+		<LongName xml:lang="nl">Levenscyclusstatus installatie</LongName>
+		<Version>2026-10-08</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/InstallationLifeCycleStatusType</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/InstallationLifeCycleStatusType/2026-10-08</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionEn" Use="required">
+			<ShortName>descriptionEn</ShortName>
+			<LongName>Description (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionNl" Use="required">
+			<ShortName>descriptionNl</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>Installed</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Installed</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Geinstalleerd</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The installation has been placed and connected.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is geplaatst en aangesloten.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>Commissioned</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Commissioned</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>In bedrijf gesteld</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The installation has been commissioned (commissioning completed).</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is in bedrijf gesteld (commissioning afgerond).</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>Decommissioned</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Decommissioned</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Uit bedrijf genomen</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The installation has been decommissioned.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is uit bedrijf genomen (decommissioning).</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>Removed</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Removed</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Verwijderd</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The installation has been physically removed.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De installatie is fysiek verwijderd.</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>

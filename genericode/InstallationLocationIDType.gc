@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>InstallationLocationIDType</ShortName>
+		<LongName xml:lang="en">Installation Location ID Type</LongName>
+		<LongName xml:lang="nl">Type installatielocatie-ID</LongName>
+		<Version>2026-10-08</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/InstallationLocationIDType</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/InstallationLocationIDType/2026-10-08</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionEn" Use="required">
+			<ShortName>descriptionEn</ShortName>
+			<LongName>Description (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionNl" Use="required">
+			<ShortName>descriptionNl</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>GLN</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>GLN</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>GLN</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Global Location Number, a globally unique number to identify a party or location.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>Global Location Number, een wereldwijd uniek nummer om een partij of locatie te identificeren.</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>ClassificationType</ShortName>
+		<LongName xml:lang="en">Classification Type</LongName>
+		<LongName xml:lang="nl">Classificatietype</LongName>
+		<Version>2026-10-08</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/ClassificationType</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/ClassificationType/2026-10-08</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionEn" Use="required">
+			<ShortName>descriptionEn</ShortName>
+			<LongName>Description (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionNl" Use="required">
+			<ShortName>descriptionNl</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>NLSFB_tabel1</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>NL-SfB table 1</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>NL-SfB tabel 1</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Table 1 of the NL-SfB element classification.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>Tabel 1 van de elementen classificatie NL-SfB.</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>

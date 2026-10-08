@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>ControlSystemType</ShortName>
+		<LongName xml:lang="en">Control System Type</LongName>
+		<LongName xml:lang="nl">Type regelsysteem</LongName>
+		<Version>2026-10-08</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/ControlSystemType</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/ControlSystemType/2026-10-08</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>GBS</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Control via BMS, Building Management System</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Sturing via GBS, Gebouwbeheersysteem</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>EMS</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Control via EMS, Energy Management System</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Sturing via EMS, Energiemanagementsysteem</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>APP</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Control via installation-specific app</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Sturing via installatie-specifieke app</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>GEE</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>None of the above, manual only</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Geen van bovenstaande alleen handmatig</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>
