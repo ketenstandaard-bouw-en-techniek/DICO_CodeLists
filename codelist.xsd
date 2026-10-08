@@ -12,11 +12,13 @@
 			<!-- Initial releasdate -->
 			<ReleaseDate>2018-11-01</ReleaseDate>
 			<!-- latest revision -->
-			<RevisionDate>2026-09-01</RevisionDate>
+			<RevisionDate>2026-10-08</RevisionDate>
 			<ModificationHistory>
+				<date v="2026-10-08">
+					<Changes code="CertificateType">Added NL-BSB</Changes>
+				</date>
 				<date v="2026-09-01">
 					<Changes code="MaintenanceType">Added INS, OFR</Changes>
-					<Changes code="StatusCode">Added RSM, QUA, QUR</Changes>
 					<Changes code="SpecialismCode">Created list Added ELE, LOO, OVE, SCH, STU, TIM, TEG, SLW, GLS, CVM, INS</Changes>
 					<Changes code="PaymentMethod">Created list Added AFK, ANS, EHP, REG, GAR</Changes>
 				</date>
@@ -608,6 +610,12 @@
 				<xs:annotation>
 					<xs:documentation xml:lang="EN">Environmental Product Declaration</xs:documentation>
 					<xs:documentation xml:lang="NL">Milieuproductverklaring</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NL-BSB">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">NL-BSB stands for Building Materials Decree (Bouwstoffenbesluit) and means that building materials comply with the rules of the [Soil Quality Decree (Besluit bodemkwaliteit)](https://www.aco.nl/over-aco/certificaten/nl-bsb-certificaten)</xs:documentation>
+					<xs:documentation xml:lang="NL">NL-BSB staat voor Bouwstoffenbesluit en betekent dat bouwstoffen voldoen aan de regels van het [Besluit bodemkwaliteit](https://www.aco.nl/over-aco/certificaten/nl-bsb-certificaten)</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:minLength value="1" />
