@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+	<Identification>
+		<ShortName>StatusDetailCode</ShortName>
+		<LongName xml:lang="en">Status Detail Code</LongName>
+		<LongName xml:lang="nl">Statusdetailcode</LongName>
+		<Version>1.1</Version>
+		<CanonicalUri>https://www.ketenstandaard.nl/codelist/dico/StatusDetailCode</CanonicalUri>
+		<CanonicalVersionUri>https://www.ketenstandaard.nl/codelist/dico/StatusDetailCode/1.1</CanonicalVersionUri>
+		<Agency>
+			<LongName>Ketenstandaard Bouw en Techniek</LongName>
+		</Agency>
+	</Identification>
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>code</ShortName>
+			<LongName>Code</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleEn" Use="required">
+			<ShortName>titleEn</ShortName>
+			<LongName>Title (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="titleNl" Use="required">
+			<ShortName>titleNl</ShortName>
+			<LongName>Title (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionEn" Use="required">
+			<ShortName>descriptionEn</ShortName>
+			<LongName>Description (en)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Column Id="descriptionNl" Use="required">
+			<ShortName>descriptionNl</ShortName>
+			<LongName>Description (nl)</LongName>
+			<Data Type="string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>codeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>VBW</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>User request</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Verzoek Gebruiker</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The status change or delay is the direct result of a request from the user.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De statuswijziging of vertraging is het directe gevolg van een verzoek van de gebruiker.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>OHD</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Part not available</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Onderdeel niet beschikbaar</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The order or request is delayed because a required part is not available.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De order of verzoek is vertraagd omdat een benodigd onderdeel niet beschikbaar is.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>BNT</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>User not present</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Gebruiker niet aanwezig</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The user was not at home during the scheduled visit.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De gebruiker was niet thuis bij het geplande bezoek.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>MIB</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Material on order</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Materiaal in bestelling</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The order or request is delayed because required material is on order.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De order of verzoek is vertraagd omdat benodigd materiaal in bestelling is.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>AFR</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Awaiting response from supervisor</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Afwachten reactie opzichter</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The work has been postponed pending a response from the supervisor.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De werkzaamheden zijn uitgesteld in afwachting van reactie van de opzichter.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>AWE</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Additional work external</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Aanvullende werkzaamheden extern</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Additional work is needed that will be carried out by another contractor. The action lies with the client to initiate or organise this work. The current contractor will not carry out any additional work.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>Er is aanvullend werk nodig dat door een andere opdrachtnemer wordt uitgevoerd. De actie ligt bij de opdrachtgever om deze werkzaamheden te initiëren of te organiseren. De huidige opdrachtnemer zal geen aanvullende werkzaamheden uitvoeren.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>BBT</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>User will call back</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Gebruiker belt terug</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The user will call back to make an appointment.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De gebruiker zal terugbellen voor het maken van een afspraak.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>AFW</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Awaiting due to weather</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Afwachten in verband met weer</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>The work has been postponed because of weather conditions.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>De werkzaamheden zijn uitgesteld vanwege weersomstandigheden.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>AVW</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Additional work required</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Aanvullend werk nodig</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Additional work is needed to complete the assignment. A response from the client is required.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>Er is aanvullend werk nodig om de opdracht te voltooien. Een reactie van de opdrachtgever is vereist.</SimpleValue></Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code"><SimpleValue>AFN</SimpleValue></Value>
+			<Value ColumnRef="titleEn"><SimpleValue>Appointment with user failed</SimpleValue></Value>
+			<Value ColumnRef="titleNl"><SimpleValue>Afspraak Gebruiker niet gelukt</SimpleValue></Value>
+			<Value ColumnRef="descriptionEn"><SimpleValue>Making an appointment with the user did not succeed.</SimpleValue></Value>
+			<Value ColumnRef="descriptionNl"><SimpleValue>Het maken van een afspraak met de gebruiker is niet gelukt.</SimpleValue></Value>
+		</Row>
+	</SimpleCodeList>
+</gc:CodeList>
