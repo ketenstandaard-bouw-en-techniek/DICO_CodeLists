@@ -59,6 +59,14 @@ generator-script en geen van beide is afgeleid van de ander.
 Voor elke codelijst die wordt aangemaakt of gewijzigd hoort een importbestand
 in het formaat **OASIS genericode 1.0** (XML, `.gc`).
 
+**Het formaat volgt altijd de OASIS-specificatie**:
+<https://docs.oasis-open.org/codelist/genericode/v1.0/genericode-v1.0.html>
+(schema: <https://docs.oasis-open.org/codelist/genericode/xsd/genericode.xsd>).
+De eisen hieronder zijn een samenvatting; bij verschil of twijfel geldt de
+specificatie. Raadpleeg de specificatie bij elke nieuwe of gewijzigde
+structuur (extra kolommen, andere datatypes) en verzin geen eigen
+elementen of attributen.
+
 **Waar:** alleen op de branch `genericode`, in de map `genericode/`, een
 bestand per codelijst: `genericode/{Naam}.gc`. `main` bevat uitsluitend
 `codelist.yaml`, `codelist.xsd`, `README.md` en `CLAUDE.md`; zet geen
@@ -81,7 +89,9 @@ importbestanden op `main`. Na een wijziging op `main` wordt `main` eerst in
   - `CanonicalUri`: `https://www.ketenstandaard.nl/codelist/dico/{Naam}`.
   - `CanonicalVersionUri`: `{CanonicalUri}/{Version}`.
   - `Agency` met `LongName` `Ketenstandaard Bouw en Techniek`.
-- `ColumnSet`, alle kolommen `Use="required"` en `Data Type="string"`:
+- `ColumnSet`, alle kolommen `Use="required"` en `Data Type="string"`; bij
+  een taalspecifieke kolom (`...En`, `...Nl`) staat op `Data` ook
+  `Lang="en"` respectievelijk `Lang="nl"`:
   - `code` (sleutel), `titleEn`, `titleNl`; en `descriptionEn`,
     `descriptionNl` als de lijst omschrijvingen heeft.
   - Heeft de lijst extra attributen, dan komt er per attribuut en per taal
