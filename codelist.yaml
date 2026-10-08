@@ -9,7 +9,7 @@ x-modificationHistory:
   - date: "2026-10-08"
     changes:
       - code: "CertificateType"
-        description: "Added NL-BSB"
+        description: "Added NLBSB"
       - code: "EventCode"
         description: "Created list Added ONH, REX, VIN, AIN, VER, AFH, THD"
   - date: "2026-09-01"
@@ -394,7 +394,7 @@ components:
         - "MTCS"
         - "RoHS"
         - "EPD"
-        - "NL-BSB"
+        - "NLBSB"
     "CertificateType.Display":
       description: "CertificateType met EN/NL-omschrijvingen (documentatie, niet voor validatie, zie D22)."
       oneOf:
@@ -497,7 +497,7 @@ components:
         - const: "EPD"
           title: "Environmental Product Declaration"
           x-titleNl: "Milieuproductverklaring"
-        - const: "NL-BSB"
+        - const: "NLBSB"
           title: "NL-BSB stands for Building Materials Decree (Bouwstoffenbesluit) and means that building materials comply with the rules of the [Soil Quality Decree (Besluit bodemkwaliteit)](https://www.aco.nl/over-aco/certificaten/nl-bsb-certificaten)"
           x-titleNl: "NL-BSB staat voor Bouwstoffenbesluit en betekent dat bouwstoffen voldoen aan de regels van het [Besluit bodemkwaliteit](https://www.aco.nl/over-aco/certificaten/nl-bsb-certificaten)"
     CommonChargeType:
