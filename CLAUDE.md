@@ -90,13 +90,25 @@ importbestanden op `main`. Na een wijziging op `main` wordt `main` eerst in
   - `CanonicalVersionUri`: `{CanonicalUri}/{Version}`.
   - `Agency` met `LongName` `Ketenstandaard Bouw en Techniek`.
 - `ColumnSet`, alle kolommen `Use="required"` en `Data Type="string"`; bij
-  een taalspecifieke kolom (`...En`, `...Nl`) staat op `Data` ook
-  `Lang="en"` respectievelijk `Lang="nl"`:
-  - `code` (sleutel), `titleEn`, `titleNl`; en `descriptionEn`,
-    `descriptionNl` als de lijst omschrijvingen heeft.
-  - Heeft de lijst extra attributen, dan komt er per attribuut en per taal
-    een kolom bij (bijvoorbeeld `initiatorEn` en `initiatorNl` bij
-    `EventCode`).
+  een taalspecifieke kolom staat op `Data` ook `Lang="en"` of `Lang="nl"`:
+  - **Importvereiste Semantic Treehouse:** de importer van Semantic Treehouse
+    leest alleen kolommen met `ColumnRef` (= kolom-`Id`) `code`, `name` en
+    `description` (exacte, kleine letters); alle andere kolommen worden
+    stilzwijgend genegeerd. Kolommen met andere namen (zoals `titleNl` of
+    `descriptionNl`) komen dus niet mee. Verplichte kolommen, in deze
+    volgorde: `code` (sleutel), `name` (Nederlandse titel, `Lang="nl"`) en,
+    als de lijst omschrijvingen heeft, `description` (Nederlandse
+    omschrijving, `Lang="nl"`). Bron: `XmlCodelistImporter.php` in
+    <https://gitlab.com/semantic-treehouse/semantic-treehouse>.
+  - De importer zet `name` in het omschrijvingsveld van de code en plakt
+    `description` er na een regeleinde achter. De `Value` van `name` moet
+    daarom vóór die van `description` in de `Row` staan (komt `description`
+    eerst, dan overschrijft `name` hem). Heeft een lijst geen omschrijvingen,
+    dan komt de titel als omschrijving in Treehouse.
+  - Daarnaast mogen extra kolommen volgen voor wat Treehouse niet importeert:
+    `titleEn` en `descriptionEn` (Engels, `Lang="en"`) en eventuele andere
+    attributen per taal (bijvoorbeeld `initiatorEn` en `initiatorNl` bij
+    `EventCode`). Deze kolommen worden alleen door andere systemen gebruikt.
   - Eén `Key` met `Id="codeKey"` en `ColumnRef Ref="code"`.
 - `SimpleCodeList`: een `Row` per waarde, in dezelfde volgorde als in de
   yaml, met voor elke kolom een `Value ColumnRef="..."` met `SimpleValue`.
@@ -107,9 +119,9 @@ importbestanden op `main`. Na een wijziging op `main` wordt `main` eerst in
 - Controleer na het schrijven dat het bestand wel-gevormd XML is.
 
 **Nog geen yaml/xsd-definitie:** `EventCode` (ONH, REX, VIN, AIN, VER, AFH,
-THD) bestaat voorlopig alleen als importbestand. Kolommen: `code`, `titleEn`,
-`titleNl`, `mainStatusEffectEn`/`Nl` (effect op de hoofdstatus),
-`initiatorEn`/`Nl` (opdrachtnemer of opdrachtgever), `descriptionEn`/`Nl`.
+THD) bestaat voorlopig alleen als importbestand. Kolommen: `code`, `name`,
+`description`, `titleEn`, `descriptionEn`, `mainStatusEffectEn`/`Nl` (effect
+op de hoofdstatus) en `initiatorEn`/`Nl` (opdrachtnemer of opdrachtgever).
 
 Ontwerpbeslissingen achter dit format (dubbel D19-schema, bundeling per
 domein i.p.v. per codelijst, bilinguale `title`/`x-titleNl`) staan in
